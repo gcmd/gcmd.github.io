@@ -2,7 +2,7 @@ body {background:#000045 url(img/blueline.png) fixed; color:#ccc; margin-left:8%
 h1 {font-family:serif; margin-top:0.5em; text-align:center;}
 h3 {margin-left:0.5em;}
 p {margin:1em;}
-li{margin-bottom:0.2em;}
+li{margin-bottom:0.4em;}
 a {background:transparent; color:#0a0;}
 a:hover {background:transparent; color:#0f0;}
 span {display:block; width:8em; padding:2px}
@@ -26,5 +26,5 @@ span:hover {background:#ccc; color:#f00;}
 #scrshot {margin-left:1em; max-width:40em;}
 #def {float: left; margin-bottom:1em;}
 #cust {float: right;}
-
+#vers {float: right; margin:1em 2em 1em 2em;}
 
