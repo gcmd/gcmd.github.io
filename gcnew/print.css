@@ -1,0 +1,11 @@
+body {background:#fff; color:#000; margin-left:6%; margin-right:3%; font-family: helvetica,sans-serif;}
+.stil {background:transparent; color:#000; margin-left:0px;}
+.vit {background:transparent; color:#fff; font-weight:bold;}
+.htwo { margin-left:0px; text-align:left; width:8em; background:transparent; color:#000;}
+#urub {font-size:90%; text-align:center; }
+#logo {display:none;}
+#float {display:none;}
+#menu {display:none;}
+
+#def {float: left; margin-bottom:1em;}
+#cust {float: right;}
