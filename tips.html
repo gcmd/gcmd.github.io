@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>GNOME Commander - Tips and tricks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta name="KeyWords" content="gnome,commander,filemanager">   
+<meta name="Description" content="Tips and tricks for the Gnome commander filemanager">
+<link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<link href="style-b.css" rel="alternate stylesheet" title="Blue" type="text/css">
+<link href="print.css" rel="stylesheet" type="text/css" media="print">
+<style type="text/css"><!--
+@import url(style-x.css);
+--></style>
+<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="stil" id="topp">
+<img src="img/logo.png" width="100" height="79" id="logo" alt="">
+<img src="img/floating.png" width="94" height="79" id="float" alt="">
+<h1>GNOME Commander</h1>
+<h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
+<br class="bryt"></div>
+<div id="luft">&nbsp;</div>
+
+<div id="menu">
+<span>[<a href="index.html">home</a>]</span>
+<span>[<a href="index.html#news">news</a>]</span>
+<span>[<a href="index.html#screenshots">screenshots</a>]</span>
+<span>[<a href="index.html#authors">authors</a>]</span>
+<span>[<a href="index.html#download">download</a>]</span>
+<span>[<a href="index.html#maillists">mailing&nbsp;lists</a>]</span>
+<span>[<a href="tips.html">tips&nbsp;and&nbsp;tricks</a>]</span>
+</div>
+
+<div id="cont" class="stil">
+<h2>Tips and tricks for Gnome Commander</h2> 
+
+<h3>1. Using a nice nautilus icon theme</h3>
+<p>The default icon theme that comes with GC lacks icons for a lot of 
+file types and only looks good at icon size 16. There are other themes around 
+though that are more complete and looks better in bigger sizes. Unscalable 
+Gorilla by Jimmac is a good example and can be used in GC by following theese 
+steps:</p>
+<ul>
+<li>Download Unscalable Gorilla from <a href="http://jimmac.musichall.cz/download.php3?id=29">here.</a></li>
+<li>Unpack the theme to whereever you want.</li>
+<li>Start GC and open the options dialog. In the<i> Layout</i> tab set the <i>Theme icon directory</i> 
+to be the folder where you extracted Unscalable Gorilla. Also change <i>Row height</i> and <i>Icon size</i> 
+to 20 or some other size that you like. When you're done also make sure that the <i>Graphical mode</i> 
+is set to <i>MIME icons</i>.</li>
+<li>When you now close the options dialog the file lisings should refresh 
+and you should see Unscalable Gorilla being used.</li>
+</ul>
+<p>This guide should work for all other nautilus icon themes as well.</p>
+<hr>
+
+<h3>2. Handling archives</h3>
+<p>GC still lacks built in browsing of compressed archives. However
+the program can be configured so that working with archives becomes quite
+practical anyway. This is how you do it:</p>
+<ul>
+<li>If you dont already have the program <a href="http://fileroller.sourceforge.net/">Fileroller</a>, 
+download it and install it.</li>
+<li>Open the options dialog and go to the <i>Programs</i> tab.&nbsp;</li>
+<li>Add two favorite apps using the values shown <a href="tips_images/create_archive.png">here</a> 
+and <a href="tips_images/extract_archive.png">here</a>.</li>
+</ul>
+<p>You can now right click any file or folder and choose <i>Create archive...</i> to compress it and 
+right click compressed files and choose <i>Extract archive...</i> to extract it.</p>
+<hr>
+
+<h3>3. Using removable devices</h3>
+<p>If you use removable devices such as cd's, floppies and cameras a 
+lot you can make GC automaticly take care of mounting them by following this 
+guide:</p>
+
+<ul>
+<li>Open the options dialog and go to the <i>Devices</i> tab.</li>
+<li>Add the devices that you are using.&nbsp;<a href="tips_images/dev_cd.png">This</a> is how I have added 
+my scsi cdrom.&nbsp;<a href="tips_images/mounting.png">This</a> is how the program looks with a few added 
+devices. In the last image circle A shows the available devices and circle B shows the button to press if we 
+want to unmount the floppy, which happened to be mounted. The icons that are used for the devices in
+the example should be available in the <i>$(prefix)/share/pixmaps/gnome-commander/device-icons</i> 
+folder on your computer.</li>
+</ul>
+
+<hr>
+<p>Ok, that is all for now. If you find any problems or errors in this guide
+send me an email using this address: marbj499 at student.liu.se.</p>
+<p class="cntr"><a href="#topp">To top of page</a></p>
+</div>
+
+</body>
+</html>
