@@ -14,43 +14,55 @@
 </head>
 <body onload="visa('hide');">
 <div class="stil" id="topp">
-<div id="logo"><img src="img/logo.png" width="100" height="79" alt=""></div>
-<div id="float"><img src="img/floating.png" width="94" height="79" alt=""></div>
+<img src="img/logo.png" width="100" height="79" id="logo" alt="">
+<img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
+<br class="bryt"></div>
 
 <div id="menu">
-[<a href="index.html#news">news</a>]
-[<a href="index.html#screenshots">screenshots</a>]
-[<a href="index.html#authors">authors</a>]
-[<a href="index.html#download">download</a>]
-[<a href="index.html#maillists">mailing&nbsp;lists</a>]
-[<a href="tips.html">tips&nbsp;and&nbsp;tricks</a>]
+<span>[<a href="index.html">home</a>]</span>
+<span>[<a href="index.html#news">news</a>]</span>
+<span>[<a href="index.html#screenshots">screenshots</a>]</span>
+<span>[<a href="index.html#authors">authors</a>]</span>
+<span>[<a href="index.html#download">download</a>]</span>
+<span>[<a href="index.html#maillists">mailing&nbsp;lists</a>]</span>
+<span>[<a href="tips.html">tips&nbsp;and&nbsp;tricks</a>]</span>
 </div>
 
 <div id="cont" class="stil">
-<h2 class="htwo"><a name="information">Information</a></h2> 
-<p>GNOME Commander is a nice and fast file manager for the GNOME desktop. 
-bla bla bla bla bla<br>bla bla blaaa bla bla bla bla blaaa bla bla bla bla 
-bla bla blaaa bla bla bla bla blaaa bla bla bla bla</p>
-<p>blaaa bla bla bla bla blaaa bla bla bla bla blaaa bla bla bla bla bla bla bla bla bla 
-blaaa bla bla bla bla blaaa bla bla bla bla blaaa bla bla bla bla bla bla<br>bla bla bla</p>
+<h2 class="htwo">Information<a name="information">&nbsp;</a></h2> 
+<p>GNOME Commander is a fast and powerful graphical filemanager for  the Gnome desktop environment, 
+it has a "two-filelist" interface in the tradition of Norton and Midnight Commander.</p> 
+<h4>Features</h4> 
+<ul>
+<li>Gnome mimetypes</li>
+<li>Drag'n drop</li>
+<li>File transfer protocol</li>
+<li>Mounting and unmounting of devices</li>
+<li>Context menus</li>
+</ul>
+ 
+<p>Gnome Commander is released under <a href="http://www.gnu.org/copyleft/gpl.html">GPL licence</a> 
+and has it's  developer site and CVS tree at Savannah.</p> 
 
-<div id="hide"><a href="javascript:skift('cssbyt');">Change skin</a>
+<div class="cntr"><img src="img/floating.png" width="94" height="79" alt=""><br>
+<a href="https://savannah.gnu.org/projects/gcmd/">Visit the GNOME Commander developer site at Savannah</a>.</div> 
+
+<div id="hide"><a href="javascript:skift('cssbyt');" title="This requires javascript.">Change style on this site.</a>
 <div id="cssbyt">
-<p>Changing skin on this site will store a cookie to remember your setting for 60 days.</p>
+<p>Changing style on this site will store a cookie to remember your setting for 60 days.</p>
 <ul>
 <li><a href="#" onclick="javascript:bytstil('Default'); return false;">Default style</a></li>
 <li><a href="#" onclick="javascript:bytstil('Blue'); return false;">Blue style</a></li>
 </ul></div></div>
 <hr>
 
-<h2 class="htwo"><a name="news">Latest news</a></h2> 
+<h2 class="htwo">Latest news<a name="news">&nbsp;</a></h2> 
 <h3>0.9.9 Released - Jan 19 2003</h3>
 <p> There are not so many new features
 in this version. On the other hand there are lots of improvements all over
-the program so the old features are now a lot mure useable than they used
+the program so the old features are now a lot more useable than they used
 to be.</p>
 
 <p>Some highlights from the ChangeLog:</p>
@@ -74,7 +86,7 @@ and unmounting, file lists refresh without FAM, last visited directory history a
 <div class="cntr"><a href="oldnews.html">News history</a></div>
 <hr>
 
-<h2 class="htwo"><a name="screenshots">Screenshots</a></h2>
+<h2 class="htwo">Screenshots<a name="screenshots">&nbsp;</a></h2>
 <h3>Some screenshots of the main window.</h3>
 <div id="scrshot"><div id="def" class="cntr">Overview with the default theme<br>&nbsp;<br>
 <a href="http://www.nongnu.org/gcmd/ss/main_window.png"> 
@@ -87,42 +99,53 @@ and unmounting, file lists refresh without FAM, last visited directory history a
 <hr>
 
 
-<h2 class="htwo"><a name="authors">Authors</a></h2> 
-<table width="90%" summary="Developers" border="0"><caption>Developers of this project.</caption><tr>
+<h2 class="htwo">Authors<a name="authors">&nbsp;</a></h2> 
+<table width="90%" cellspacing="3" summary="Developers" border="0">
+<caption>Developers of this project.</caption><tr>
 <th class="vit" scope="col">Name</th> 
 <th class="vit" scope="col">email</th> 
 <th class="vit" scope="col">uin</th> 
+<th class="vit" scope="col">Does</th> 
 </tr> 
 <tr> 
-<td>Marcus Bjurman</td> 
-<td>marbj499 at student.liu.se</td> 
-<td>11209076</td> 
+<td width="25%">Marcus Bjurman</td> 
+<td width="30%">marbj499 at student.liu.se</td> 
+<td width="15%">11209076</td> 
+<td>Manager/Developer</td>
 </tr>
 <tr> 
 <td>Piotr Eljasiak</td> 
 <td>epiotr at idea.net.pl</td> 
 <td>&nbsp;</td> 
+<td>Developer</td>
+</tr>
+<tr> 
+<td>Magnus St&aring;lnacke</td> 
+<td>jemamo at telia.com</td> 
+<td>&nbsp;</td> 
+<td>Webpages</td>
 </tr>
 </table> 
+<p class="cntr"><a href="#topp">To top of page</a></p>
 <hr>
 
-<h2 class="htwo"><a name="download">Download</a></h2> 
+<h2 class="htwo">Download<a name="download">&nbsp;</a></h2> 
 <ul>
 <li> Released source packages and rpm's can be download from the 
 <a href="https://savannah.gnu.org/files/?group_id=1576">download page</a> at Savannah.</li>
-<li> The daily CVS snapshot can be obtained by gently clicking 
-<a href="http://savannah.nongnu.org/download/gcmd/snapshot/gnome-commander-cvs-latest.tar.bz2">here</a>.</li>
+<li> The daily CVS snapshot can be obtained by gently 
+<a href="http://savannah.nongnu.org/download/gcmd/snapshot/gnome-commander-cvs-latest.tar.bz2">clicking here</a>.</li>
 <li> There is also a debian package in the SID tree nowadays.</li>
 </ul>
 <hr>
 
-<h2 class="htwo"><a name="maillists">Mailing lists</a></h2>
+<h2 class="htwo">Mailing lists<a name="maillists">&nbsp;</a></h2>
 <ul> 
 <li>users: <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/gcmd-users">gcmd-users</a></li> 
 <li>devel: <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/gcmd-devel">gcmd-devel</a></li>
 </ul> 
 <hr>
-
+<p class="cntr"><a href="#topp">To top of page</a></p>
 </div>
 
 
