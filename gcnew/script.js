@@ -1,5 +1,6 @@
 dl="document.getElementById";ja="'block'";nej="'none'";
 disp=".style.display=";obj = "(lager)";is=1;
+visad="'visible'";bort="'hidden'";vi=".style.visibility=";
 
 function skift(lager){
 if (is==1){eval(dl + obj + disp + ja); is=2;}
@@ -7,10 +8,20 @@ else {eval(dl + obj + disp + nej); is=1;}}
 
 function visa(lager){eval(dl + obj + disp + ja);}
 
+function titta(lager){
+eval(dl + "('general')" + vi + bort);
+eval(dl + "('pres')" + vi + bort);
+eval(dl + "('layo')" + vi + bort);
+eval(dl + "('color')" + vi + bort);
+eval(dl + "('filt')" + vi + bort);
+eval(dl + "('prog')" + vi + bort);
+eval(dl + "('devi')" + vi + bort);
+eval(dl + obj + vi + visad)} 
+
 // The cookie script below is based on Paul Snowden's work described on A List Apart
-//  <http://www.alistapart.com/stories/alternate/>
-// Small modifications (no automatic cookie creation by onunload) by Magnus Stålnacke
-//  <http://w1.970.telia.com/~u97007522/>
+// <http://www.alistapart.com/stories/alternate/>
+// Small modifications (no automatic cookie creation by onunload and a page reload) 
+// by Magnus Stålnacke<http://w1.970.telia.com/~u97007522/>
 
 function bytstil(title) {skift('cssbyt'); stilbyte(title); bakas(); setTimeout("laddaom()", 500)}
 
@@ -54,9 +65,8 @@ var title = cookie ? cookie : aktiv();
 stilbyte(title);}
 
 function bakas() {
-  var title = aktiv();
-  baka("GNOME-Commander", title, 60);
-}
+var title = aktiv();
+baka("GNOME-Commander", title, 60);}
 
 var cookie = smaka("GNOME-Commander");
 var title = cookie ? cookie : vald();
