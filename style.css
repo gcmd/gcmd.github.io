@@ -1,0 +1,7 @@
+p  {margin:2px 10px 8px 10px}
+h2 {margin-bottom:10px}
+#cont  {margin:0px auto;}
+a:link {color:#00F;}
+a:visited {color:#00A;} 
+a:link:hover {color:#F00; background:#D0D0D0}
+a:visited:hover {color:#CC0; background:#D0D0D0}
