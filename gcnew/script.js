@@ -12,7 +12,8 @@ function visa(lager){eval(dl + obj + disp + ja);}
 // Small modifications (no automatic cookie creation by onunload) by Magnus Stålnacke
 //  <http://w1.970.telia.com/~u97007522/>
 
-function bytstil(title) {skift('cssbyt'); stilbyte(title); bakas(); document.location="index.html"}
+function bytstil(title) {skift('cssbyt'); stilbyte(title); bakas(); setTimeout("laddaom()", 500)}
+
 
 function stilbyte(title) {
 var i, a, main;
@@ -61,3 +62,4 @@ var cookie = smaka("GNOME-Commander");
 var title = cookie ? cookie : vald();
 stilbyte(title);
 
+function laddaom(){document.location="index.html"}
