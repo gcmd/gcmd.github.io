@@ -1,8 +1,11 @@
 body {background:#fff; color:#000; margin-left:6%; margin-right:3%; font-family: helvetica,sans-serif;}
+p  {margin: 1em 3em 1em 0.5em;}
+a {background:transparent; color:#000; }
 .stil {background:transparent; color:#000; margin-left:0px;}
 .vit {background:transparent; color:#fff; font-weight:bold;}
 .htwo { margin-left:0px; text-align:left; width:8em; background:transparent; color:#000;}
-#urub {font-size:90%; text-align:center; }
+#urub {font-size:90%; text-align:center;}
+#cont {margin:0em;border:1px solid #000;} 
 #logo {display:none;}
 #float {display:none;}
 #menu {display:none;}
