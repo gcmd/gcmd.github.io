@@ -1,4 +1,4 @@
-body {background:#079; color:#000; margin-left:13%; margin-right:14%;}
+body {background:#079; color:#000; margin-left:13%; margin-right:14%; font-family: helvetica,sans-serif;}
 h1{font-family:serif; margin-bottom:0.5em;}
 h3 {margin-left:0.5em;}
 p  {margin:1em 2em 1em 1em;}
@@ -19,7 +19,7 @@ li {margin-bottom:0.2em;}
 #urub {font-size:90%; margin:0px;}
 #luft {display:none;}
 #scrshot {max-width:40em;}
-#logo {float:left; width:100px;}
-#float {float:right; width:100px;}
+#logo {float:left;}
+#float {float:right;}
 #def{float: left; margin-bottom:1em;}
 #cust{float: right;}
