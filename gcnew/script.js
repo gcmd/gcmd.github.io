@@ -12,7 +12,7 @@ function visa(lager){eval(dl + obj + disp + ja);}
 // Small modifications (no automatic cookie creation by onunload) by Magnus Stålnacke
 //  <http://w1.970.telia.com/~u97007522/>
 
-function bytstil(title) {skift('cssbyt'); stilbyte(title); bakas();}
+function bytstil(title) {skift('cssbyt'); stilbyte(title); bakas(); document.location="index.html"}
 
 function stilbyte(title) {
 var i, a, main;
