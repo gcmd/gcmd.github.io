@@ -15,6 +15,7 @@ span:hover {background:#ccc; color:#f00;}
 .bryt {clear:both;}
 .nobord {border:0;}
 .small {font-size:100%;}
+.ram {border:1px solid #080; width:90%; margin-left:4%;}
 
 #menu {clear:both; float:left; width:8em; padding:1em; height:20em; border:1px solid #66b; background:transparent; color:#ccc}
 #menu a {text-decoration:none; font-weight:bold; background:transparent; color:#0a0; }
