@@ -1,4 +1,4 @@
-body {background:#079; color:#000; margin-left:13%; margin-right:14%; font-family: helvetica,sans-serif;}
+body {background:#079; color:#000; margin-left:13%; margin-right:14%; font-family: helvetica,sans-serif; font-size:90%;}
 h1{font-family:serif; margin-top:0.2em;}
 h3 {margin-left:0.5em;}
 h4 {margin:1em;}
@@ -14,10 +14,10 @@ li {margin-bottom:0.4em;}
 #menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold; max-width:46em;}
 #menu a {text-decoration:none; font-weight:bold; background:#079; color:#e8e8e8; }
 #menu a:hover {background:#079; color:#0f0; }
-#hide {display:none; background:#ccc; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em;}
+#hide {display:none; background:#ccc; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em; padding:3px; font-size:80%;}
 #cssbyt {display:none;}
 #topp{text-align:center;}
-#urub {margin-top:-0.5em; margin-bottom:0em;}
+#urub {margin-top:-0.5em; margin-bottom:0em; font-size:90%;}
 #luft {display:none;}
 #logo {float:left;}
 #float {float:right;}

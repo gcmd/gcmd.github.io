@@ -1,4 +1,4 @@
-body {background:#000045; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif;}
+body {background:#000045; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
 h1 {font-family:serif; margin-top:0.5em; text-align:center;}
 h3 {margin-left:0.5em;}
 h4 {margin:1em;}
@@ -19,11 +19,12 @@ span:hover {background:#ccc; color:#f00;}
 #menu a {text-decoration:none; font-weight:bold; background:transparent; color:#0a0; }
 #menu a:hover {background:transparent; color:#f00; }
 #topp {padding:6px; border:1px solid #66b; max-width:54em} 
-#urub {margin-top:-1em; margin-bottom:0em;}
+#urub {margin-top:-1em; margin-bottom:0em; font-size:90%;}
 #logo {float:left;}
 #float {float:right;}
 #cont {margin:0em 0em 1em 11.3em; padding:1%; border:1px solid #66b; max-width:42.3em} 
-#hide {display:none; background:transparent; color:#ccc; margin-top:1em; font-weight:bold; border:1px solid #66b;}
+#hide {display:none; background:transparent; color:#ccc; font-weight:bold; border:1px solid #66b; 
+          margin-top:1em; padding:3px; font-size:80%;}
 #cssbyt {display:none;}
 #def {float: left; margin-bottom:1em;}
 #cust {float: right;}
