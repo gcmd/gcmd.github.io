@@ -29,4 +29,6 @@ span:hover {background:#ccc; color:#f00;}
 #def {float: left; margin-bottom:1em;}
 #cust {float: right;}
 #vers {float: right; margin:1em 2em 1em 2em;}
+#keys {border:1px solid #080; width:90%; margin-left:4%;}
+#keys td {border-bottom:1px solid #66b;}
 

@@ -1,4 +1,4 @@
-body {background:#079; color:#000; margin-left:13%; margin-right:14%; font-family: helvetica,sans-serif; font-size:90%;}
+body {background:#079; color:#000; margin-left:13%; margin-right:13%; font-family: helvetica,sans-serif; font-size:90%;}
 h1{font-family:serif; margin-top:0.2em;}
 h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin:1em;}
@@ -24,3 +24,5 @@ li {margin-bottom:0.4em;}
 #def{float: left; margin-bottom:1em;}
 #cust{float: right;}
 #vers {float: right; margin:2em 3em 1em 2em;}
+#keys {border:1px solid #000; width:90%; margin-left:4%;}
+#keys td {border-bottom:1px solid #000;}
