@@ -1,13 +1,13 @@
 # Copyright 1999-2003 Gentoo Technologies, Inc.
 # Distributed under the terms of the GNU General Public License, v2 or later
 # Maintainer: Nuno Araujo <araujo_n@russo79.com>
-# $Header: /web/gcmd/gcmd/Attic/gnome-commander-0.9.10.ebuild,v 1.1 2003/03/04 10:58:19 opum Exp $
+# $Header: /web/gcmd/gcmd/Attic/gnome-commander-latest.ebuild,v 1.1 2003/03/25 15:30:09 opum Exp $
 
 S="${WORKDIR}/${P}"
 
 DESCRIPTION="File Manager for Gnome"
 
-SRC_URI="http://savannah.nongnu.org/download/gcmd/gcmd.pkg/0.9.10/${P}.tar.gz"
+SRC_URI="http://savannah.nongnu.org/download/gcmd/gcmd.pkg/0.9.12/${P}.tar.gz"
 
 HOMEPAGE="http://www.nongnu.org/gcmd/"
 
