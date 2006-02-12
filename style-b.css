@@ -1,9 +1,9 @@
-body {background:#000045; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
+body {background:#004; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
 h1 {font-family:serif; margin-top:0.5em; text-align:center;}
 h3 {margin-left:0.5em;}
 h4 {margin:0em; margin-bottom:5px;}
-p {margin:1em;}
-li{margin-bottom:0.4em;}
+p,table {margin:1em;}
+li{margin-bottom:0.4em; margin-right:12%;}
 a {background:transparent; color:#0b0;}
 a:visited {background:transparent; color:#080;}
 a:hover {background:transparent; color:#0f0;}
@@ -18,21 +18,25 @@ span:hover {background:#ccc; color:#f00;}
 .ram {border:1px solid #080; width:90%; margin-left:5px; padding:10px;}
 .warning {color: #f00; font-size:80%;}
 .newsruler {width: 80%;}
+.rgt {float: right; margin:0em 1em 1em 2em;}
+.stil {Background:#115;}
+.mnu li {list-style-type:none; display:inline; margin:1em;}
+.mnu a {text-decoration:none; font-weight:bold;}
 
-#menu {clear:both; float:left; width:8em; padding:1em; height:20em; border:1px solid #66b; background:transparent; color:#ccc}
+#menu {clear:both; float:left; width:8em; padding:1em; height:20em; border:1px solid #66b; background:#115; color:#ccc}
 #menu a {text-decoration:none; font-weight:bold; background:transparent; color:#0a0; }
 #menu a:hover {background:transparent; color:#f00; }
 #topp {padding:6px; border:1px solid #66b; max-width:54em} 
+#topp img {margin-left:3%; margin-right:3%;}
 #urub {margin-top:-1em; margin-bottom:0em; font-size:90%;}
 #logo {float:left;}
 #float {float:right;}
 #cont {margin:0em 0em 1em 11.3em; padding:1%; border:1px solid #66b; max-width:42.3em} 
 #hide {display:none; background:transparent; color:#ccc; font-weight:bold; border:1px solid #66b; 
-          margin-top:1em; padding:3px; font-size:80%;}
+       margin-top:1em; padding:3px; font-size:80%;}
 #cssbyt {display:none;}
 #def {float: left; margin-bottom:1em;}
 #cust {float: right;}
-#vers {float: right; margin:1em 2em 1em 2em;}
 #keys {border:1px solid #080; width:90%; margin-left:4%;}
 #keys td {border-bottom:1px solid #66b;}
 

@@ -12,7 +12,7 @@
 </head>
 <body onload="visa('hide');">
 <div class="stil" id="topp">
-<img src="img/logo.png" width="85" height="85" id="logo" alt="">
+<img src="img/logo.png" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
@@ -20,26 +20,30 @@
 <div id="luft">&nbsp;</div>
 
 <div id="menu">
-<span>[<a href="index.html">home</a>]</span>
-<span>[<a href="index.html#news">news</a>]</span>
-<span>[<a href="shots.html">screenshots</a>]</span>
-<span>[<a href="index.html#authors">authors</a>]</span>
-<span>[<a href="index.html#download">download</a>]</span>
-<span>[<a href="index.html#maillists">mailing&nbsp;lists</a>]</span>
-<span>[<a href="doc.html">documentation</a>]</span>
+<span>[<a href="index.html">Home</a>]</span>
+<span>[<a href="shots.html">Screenshots</a>]</span>
+<span>[<a href="download.html">Download</a>]</span>
+<span>[<a href="doc.html">Documentation</a>]</span>
 </div>
 
 <div id="cont" class="stil">
 <h2 class="htwo">Information<a name="information">&nbsp;</a></h2> 
+<img src="img/shot.png" width="204" height="148" class="rgt" alt="">
 <p>GNOME Commander is a fast and powerful graphical filemanager for  the Gnome desktop environment, 
 it has a "two-pane" interface in the tradition of Norton and Midnight Commander. Take a look at 
 <a href="shots.html">the screenshots</a>, images tell a lot.</p> 
 
-<h3>Great news Feb 02 2006</h3>
-<p>This project has been unmaintained for quite some time, two years since last release, but it is not unmaintained anymore. 
-Piotr Eljasiak has agreed to maintain and keep on developing gcmd. <a href="#news">Read more in the news section</a>.</p>
+<div class="mnu">
+<ul>
+<li><a href="index.html#news">Latest news</a></li>
+<li><a href="index.html#authors">Authors</a></li>
+<li><a href="index.html#maillists">Mailing&nbsp;lists</a></li>
+</ul>
+</div>
 
-<img src="img/shot.png" width="205" height="148" id="vers" alt="">
+<h4>Download.</h4>
+<p>Latest version is 1.1.6 <a href="download.html">available from the download page</a>.</p>
+
 <h3>Features</h3> 
 <ul>
 <li>Drag'n drop.</li>
@@ -53,7 +57,9 @@ viewers, editiors or shell scripts to work on selected files or directories.</li
 <li>Latest accessed folder history.</li>
 <li>Folder bookmarks.</li>
 <li>Plugin support under development.</li>
+<li>Fast fileviewer for text and images.</li>
 </ul>
+
 
 <p>Gnome Commander is Open Source and released under the <a href="http://www.gnu.org/copyleft/gpl.html">GPL 
 licence</a>, and has it's developer site at <a href="https://savannah.gnu.org">Savannah</a>.</p> 
@@ -70,12 +76,13 @@ licence</a>, and has it's developer site at <a href="https://savannah.gnu.org">S
 </ul></div></div>
 <hr>
 
-
 <h2 class="htwo">Latest news<a name="news">&nbsp;</a></h2>
-<h3>New project maintainer - Feb 6 2006</h3>
-<p>Piotr Eljasiak has agreed to maintain and keep on developing this project. One more developer, A Gordon has also 
-joined the project and recently 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?rev=1.72&sortby=date&view=markup">submitted 
+
+<h3>New project maintainer! - Feb 06 2006</h3>
+<p>This project has been unmaintained for quite some time, two years since last release, but it is not unmaintained anymore. 
+Piotr Eljasiak has agreed to maintain and keep on developing this project. One more developer, Assaf Gordon has also joined 
+the project and recently 
+<a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?rev=1.72&amp;sortby=date&amp;view=markup">submitted 
 some new code and patches</a>. So, this project is alive again and the 
 work for next release 1.1.7 has begun = more news to come...</p>
 <hr class="newsruler">
@@ -84,88 +91,37 @@ work for next release 1.1.7 has begun = more news to come...</p>
 <p>This version improves keyboard navigation and adds some other miscellaneous polish.</p>
 <hr class="newsruler">
 
-<h3>1.1.5 Released - Jan 12 2004</h3>
-<p>This release mostly consists of numerous small bug fixes. The only new 
-feature is that the directory indicator above each file list now can be used 
-to navigate to parent directories.</p>
-<hr class="newsruler">
+<div class="mnu">
+<ul class="cntr">
+<li><a href="oldnews.html" title="Old news at this site">Old news</a></li>
+<li><a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup" title="View of the file /gnome-commander/NEWS">Version news</a></li>
+</ul>
+</div>
 
-<h3>Bugzilla now available - Dec 2 2003</h3>
-<p>Bugs in GNOME Commander can now be reported using Bugzilla here:</p>
-<p><a href="http://bugzilla.gnome.org/">http://bugzilla.gnome.org/</a>.</p>
-<p>The product name to use is gnome-commander.</p>
-<hr class="newsruler">
-
-
-<h3>CVS tree moved - Dec 2 2003</h3>
-<p>The cvs tree for GNOME Commander has now moved to the gnome cvs server. 
-Se this page for information on how to work with it:</p>
-<p><a href="http://developer.gnome.org/tools/cvs.html">
-http://developer.gnome.org/tools/cvs.html</a>.</p>   
-<hr class="newsruler">
-
-<div class="cntr"><a href="oldnews.html">Old news</a> | <a href="http://savannah.nongnu.org/cgi-bin/viewcvs/*checkout*/gcmd/gnome-commander/ChangeLog?rev=HEAD&amp;content-type=text/plain">View changelog</a></div>
 <hr>
 
 <h2 class="htwo">Authors<a name="authors">&nbsp;</a></h2> 
 <p>The authors of the GNOME Commander project.</p>
 <ul>
-<li><strong>Piotr Eljasiak</strong>, Project manager/Developer<br>
+<li><b>Piotr Eljasiak</b>, Project manager/Developer<br>
 Mail: epiotr at use.pl</li>
 
-<li><strong>Assaf Gordon</strong>, Developer<br>
+<li><b>Assaf Gordon</b>, Developer<br>
 Mail: agordon88 at gmail.com</li>
 
-<li><strong>Magnus St&aring;lnacke</strong>, Webpages only<br>
+<li><b>Magnus St&aring;lnacke</b>, Webpages only<br>
 Mail: jemamo at telia.com</li>
 
-<li><strong>Marcus Bjurman</strong>, Former project manager/Developer<br>
+<li><b>Marcus Bjurman</b>, Former project manager/Developer<br>
 Mail: no mail</li>
 
 </ul>
 <p class="cntr"><a href="#topp">To top of page</a></p>
 <hr>
 
-<h2 class="htwo">Download<a name="download">&nbsp;</a></h2>
-<h3 class="small">Download the GNOME Commander sourcecode from the gnome.org FTP-server:</h3>
-
-<div class="ram">
-<h4>The stable 1.0 versions (Gnome 1.x).</h4>
-<ul>
-
-<li>The latest source packages:
-<a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.0/gnome-commander-1.0.1.tar.gz">tar.gz</a>,
-<a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.0/gnome-commander-1.0.1.tar.bz2">tar.bz2</a>,
-</li>
-
-</ul>
-</div>
-&nbsp;
-<div class="ram">
-<h4>The 1.1 development branch (Gnome 2.x)</h4>
-<div class="warning"><em>These may be unstable and are for testing purposes only, do not handle important data with these releases.</em></div>
-
-<ul>
-
-<li>The latest source packages:
-<a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.1/gnome-commander-1.1.6.tar.gz">tar.gz</a>,
-<a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.1/gnome-commander-1.1.6.tar.bz2">tar.bz2</a>
-</ul>
-</div>
-
-<h3 class="small">External downloads, not maintained by the project authors:</h3>
-<ul>
-<li><img src="img/deb.png" alt="" /><a href="http://ftp.debian.org/debian/pool/main/g/gnome-commander/">Debian packages.</a></li>
-<li><img src="img/mdk.png" alt="" /><a href="http://rpms.mandrakeclub.com/search.php?query=gnome-commander&amp;submit=Search+...&amp;arch=">Mandrake RPMS</a></li>
-<li><img src="img/rpm.png" alt="" /><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gnome-commander&amp;submit=Search+...">RPM packages at rpmfind.net</a></li>
-<li><img src="img/rpm.png" alt="" /><a href="http://rpmseek.com/rpm-pl/gnome-commander.html?hl=com&amp;cs=gnome-commander:PN:0:0:0">RPM packages at rpmseek.com</a></li>
-<li><img src="img/rpm.png" alt="" /><a href="http://rpm.pbone.net/index.php3/stat/3/search/gnome-commander">RPM packages at rpm.bone.net</a></li>
-<li><img src="img/gentoo.png" alt="" /><a href="gnome-commander-1.0.1-r1.ebuild">A gentoo ebuild file</a> for the 1.0.1 release.</li>
-<li><img src="img/win32.png" alt="" /><a href="http://sourceforge.net/project/showfiles.php?group_id=67909">Cygwin port</a></li>
-</ul>
-<hr>
 
 <h2 class="htwo">Mailing lists<a name="maillists">&nbsp;</a></h2>
+<p>The old mailinglists are no longer in active use, we hope to set up a new mailinglist soon.</p>
 <ul> 
 <li>users: <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/gcmd-users">gcmd-users</a></li> 
 <li>devel: <a href="http://mail.freesoftware.fsf.org/mailman/listinfo/gcmd-devel">gcmd-devel</a></li>
