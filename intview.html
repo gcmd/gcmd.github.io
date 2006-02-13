@@ -29,6 +29,17 @@
 <div id="cont" class="stil">
 <h2 class="htwo">Documentation: Internal file viewer<a name="information">&nbsp;</a></h2> 
 
+<div id="infor">
+<ul>
+<li><a href="#use">Using the viewer</a></li>
+<li><a href="#input">Input Modes</a></li>
+<li><a href="#txt">Text Mode</a></li>
+<li><a href="#bin">Binary Mode</a></li>
+<li><a href="#hex">Hex Mode</a></li>
+<li><a href="#img">Image Mode</a></li>
+</ul>
+</div>
+
 <h3>Main features include:</h3>
 
 <ul>
@@ -72,7 +83,7 @@
 </ul>
 
 
-<h3>Using the internal viewer</h3>
+<h3><a name="use">Using the internal viewer</a></h3>
 <table id="keys">
 <tr>
 <th>Menu Item</th>
@@ -198,7 +209,7 @@
 </table>
 
 
-<h3>Input Modes</h3>
+<h3><a name="input">Input Modes</a></h3>
 <p>Here's an example of using different input modes.<br>
 The displayed file is a UTF-8 file (this is actually the Hungarian translation file from the gnome-commander project).</p>
 
@@ -216,7 +227,7 @@ are displayed.</p>
 <p>In UTF-8 Input mode (Press "U" to set it), the correct characters are displayed.</p>
 <img src="img/gnome-cmd-iv-text-utf8.png" width="505" height="353" alt="Text mode with UTF-8 encoding">
 
-<h3>Text Display Mode</h3>
+<h3><a name="txt">Text Display Mode</a></h3>
 <p>In Text mode, you can set the input mode to either ASCII or UTF-8.<br>
 You can set line wrapping by pressing "W".<br>
 <br>
@@ -226,7 +237,7 @@ Text with Fixed width font display (Press "1" to set it) is suitible for viewing
 <p>Text with Variable width font display (Press "2" to set it) is suitible for viewing text files:</p>
 <img src="img/gnome-cmd-iv-text-variable.png" width="505" height="339" alt="Text mode with Variable width font">
 
-<h3>Binary Display Mode</h3>
+<h3><a name="bin">Binary Display Mode</a></h3>
 <p>Binary display mode is suitible for quickly viewing binary files (If that sort of thing is you bag...).
 In Binary display mode, you can only use ASCII input mode, with or without additional character encodings 
 (but not UTF-8). Number of bytes displayed on each line can be changed in the "Settings" menu.</p>
@@ -237,7 +248,7 @@ In Binary display mode, you can only use ASCII input mode, with or without addit
 <p>The same file as above, with Codepage 437 encoding:</p>
 <img src="img/gnome-cmd-iv-bin-cp437.png" width="505" height="339" alt="Binary mode with Codepage 437 encoding">
 
-<h3>Hex dump Display Mode</h3>
+<h3><a name="hex">Hex dump Display Mode</a></h3>
 <p>This is a simple Hex dump display mode (similar to using <code>od -t x1</code>). In Hex dump display mode, 
 you can only use ASCII input mode, with or without additional character encodings (but not UTF-8).</p>
 
@@ -253,6 +264,10 @@ each byte corresponds to a different ASCII value.</p>
 
 <p>Cyrillic Encoding:</p>
 <img src="img/gnome-cmd-iv-hex-cyrillic.png" width="505" height="339" alt="Hex mode with Cyrillic encoding">
+
+<h3><a name="img">Image Display Mode</a></h3>
+<p>The viewer starts with the image fitted to the viewer window size = larger window = larger view</p>
+<img src="img/gnome-cmd-iv-image.jpg" width="506" height="341" alt="Image mode">
 
 <h3>Bugs</h3>
 <p>If you find any, please post a bug report (or better yet: send a patch to fix it).</p>
