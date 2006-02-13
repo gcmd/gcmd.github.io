@@ -2,6 +2,7 @@ body {background:#079; color:#000; margin-left:13%; margin-right:13%; font-famil
 h1{font-family:serif; margin-top:0.2em;}
 h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin:0em; margin-bottom:5px;}
+h5 {margin:0.5em;}
 p,table  {margin:0.5em 2em 1.5em 1em;}
 li {margin-bottom:0.4em; margin-right:12%;}
 a:hover {background:transparent; color:#079; }
@@ -14,11 +15,9 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 .nobord {border:0;}
 .small {font-size:100%;}
 .ram {border:1px solid #000; width:90%; margin:1em; padding:10px;}
-.warning {color: #f00; font-size:80%;}
+.warning {background:transparent; color: #f00;}
 .newsruler {width: 80%;}
 .rgt {float: right; margin:0em 1em 0em 2em;}
-.mnu li {list-style-type:none; display:inline; margin:1em;}
-.mnu a {text-decoration:none; font-weight:bold;}
 
 #menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold; max-width:46em;}
 #menu a {text-decoration:none; font-weight:bold; background:#079; color:#e8e8e8;}
@@ -35,4 +34,4 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 #cust{float: right;}
 #keys {border:1px solid #000; width:90%; margin-left:4%;}
 #keys td {border-bottom:1px solid #000;}
-#infor {float:right; width:13em; margin:0em 2em 0em 2em; padding:0.5em; background:#ccc; color:#000; border:1px solid #000;}
+#infor {clear:right; float:right; width:206px; margin:0em 1em 0em 2em; padding:0.4em; background:#ccc; color:#000; border:1px solid #000;}
