@@ -36,4 +36,7 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 #keys td {border-bottom:1px solid #000;}
 #infor {clear:right; float:right; width:206px; margin:0em 1em 0em 2em; padding:0.4em; background:#ccc; color:#000; border:1px solid #000;}
 #infor ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
-#infor li a {text-decoration:none; font-weight:bold;}
+#infor ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; font-weight:bold; display:block; background:#e8e8e8; color:#00f;}
+#infor ul a:visited {background:#e8e8e8; color:#528;}
+#infor ul a:hover {background:#079; color:#ccc;}
+#infor li {margin-bottom:0em;}
