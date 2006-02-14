@@ -1,12 +1,12 @@
-body {background:#004; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
+body {background:#003; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
 h1 {font-family:serif; margin-top:0.5em; text-align:center;}
 h3 {margin-left:0.5em;}
 h4 {margin:0em; margin-bottom:5px;}
 p,table {margin:1em;}
 li{margin-bottom:0.4em; margin-right:12%;}
-a {background:transparent; color:#0b0;}
-a:visited {background:transparent; color:#080;}
-a:hover {background:transparent; color:#0f0;}
+a:link {background:transparent; color:#0a0;}
+a:visited, #infor a:visited {background:transparent; color:#96a;}
+a:link:hover {background:transparent; color:#0f0;}
 span {display:block; width:8em; padding:2px}
 span:hover {background:#ccc; color:#f00;}
 
@@ -16,14 +16,14 @@ span:hover {background:#ccc; color:#f00;}
 .nobord {border:0;}
 .small {font-size:100%;}
 .ram {border:1px solid #080; width:90%; margin-left:5px; padding:10px;}
-.warning {color: #f00; font-size:80%;}
+.warning {backrgound: transparent; color: #f06; font-style:italic;}
 .newsruler {width: 80%;}
 .rgt {float: right; margin:0em 1em 1em 2em;}
-.stil {Background:#115;}
+.stil {Background:#116; color:#ccc;}
 .mnu li {list-style-type:none; display:inline; margin:1em;}
 .mnu a {text-decoration:none; font-weight:bold;}
 
-#menu {clear:both; float:left; width:8em; padding:1em; height:20em; border:1px solid #66b; background:#115; color:#ccc}
+#menu {clear:both; float:left; width:8em; padding:1em; height:20em; border:1px solid #66b; background:#116; color:#ccc}
 #menu a {text-decoration:none; font-weight:bold; background:transparent; color:#0a0; }
 #menu a:hover {background:transparent; color:#f00; }
 #topp {padding:6px; border:1px solid #66b; max-width:54em} 
@@ -40,6 +40,10 @@ span:hover {background:#ccc; color:#f00;}
 #keys {border:1px solid #080; width:90%; margin-left:4%;}
 #keys td {border-bottom:1px solid #66b;}
 #infor {clear:right; float:right; width:206px; margin:0em 1em 0em 2em; padding:0.4em; background:#ccc; color:#000; border:1px solid #000;}
+#infor a {color:#00e; background:transparent;}
 #infor ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
-#infor li a {text-decoration:none; font-weight:bold;}
+#infor ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; font-weight:bold; display:block; background:#116; color:#0a0;}
+#infor ul a:visited {background:#116; color:#96a;}
+#infor ul a:hover {background:#003; color:#ccc;}
+#infor li {margin-bottom:0em;}
 
