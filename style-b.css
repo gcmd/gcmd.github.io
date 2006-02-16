@@ -1,7 +1,7 @@
 body {background:#003; color:#ccc; margin-left:8%; margin-right:5%; font-family:sans-serif; font-size:90%;}
 h1 {font-family:serif; margin-top:0.5em; text-align:center;}
 h3 {margin-left:0.5em;}
-h4 {margin:0em; margin-bottom:5px;}
+h4 {margin-left:0.5em; margin-bottom:5px;}
 p,table {margin:1em;}
 li{margin-bottom:0.4em; margin-right:12%;}
 a:link {background:transparent; color:#0a0;}
