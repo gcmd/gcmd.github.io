@@ -12,8 +12,6 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 .htwo{background:#ccc; color:#000; border:1px solid #000; padding-left:6px; padding-top:2px; margin-top:0.5em; font-family:serif;}
 .cntr{text-align:center;}
 .right {text-align:right}
-.bryt {clear:both;}
-.right {text-align:right}
 .nobord {border:0;}
 .small {font-size:100%;}
 .ram {border:1px solid #000; width:90%; margin:1em; padding:10px;}
@@ -26,9 +24,7 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 #menu a:hover {background:#079; color:#0f0;}
 #menu span {margin:0em 2% 0em 2%}
 #hide {display:none; background:#ccc; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em; padding:3px; font-size:80%;}
-#cssbyt {display:none;}
-#luft {display:none;}
-#topp{text-align:center;}
+#topp{text-align:center; padding-bottom:2.2em;}
 #urub {margin-top:-0.5em; margin-bottom:0em; font-size:90%;}
 #logo {float:left;}
 #float {float:right;}
@@ -45,3 +41,17 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 #infor h4 {margin-top:0px;}
 #imglist {list-style:none; }
 #imglist a {margin-left:0.6em; position:relative; top:-12px;;}
+
+@media print {
+body {background:#fff; color:#000; margin-left:4%; margin-right:2%; font-family: helvetica,sans-serif;}
+p  {margin: 1em 3em 1em 0.5em;}
+a {background:transparent; color:#000; text-decoration:none; }
+img, #infor ul, #menu, #hide a  {display:none; background:transparent; color:#fff;}
+.stil, .htwo, #cont, #hide {background:transparent; color:#000; margin-left:0px; border:0;}
+.vit {background:transparent; color:#fff; font-weight:bold;}
+.htwo { margin-left:0px; text-align:left; width:8em; background:transparent; color:#000;}
+#urub {font-size:90%; text-align:center;}
+#def {float: left; margin-bottom:1em;}
+#cust {float: right;}
+}
+
