@@ -14,7 +14,7 @@
 <img src="img/logo.png" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
-<h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
+<h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
 </div>
 
 <div id="menu">
@@ -22,34 +22,77 @@
 <span>[<a href="shots.html">Screenshots</a>]</span>
 <span>[<a href="download.html">Download</a>]</span>
 <span>[<a href="doc.html">Documentation</a>]</span>
+<span>[<a href="dev.html">Development</a>]</span>
 </div>
 
 <div id="cont" class="stil">
-<h2 class="htwo">Information<a name="information">&nbsp;</a></h2> 
+<h2>Information<a name="information">&nbsp;</a></h2> 
 
-<div id="infor"><img src="img/shot.png" width="204" height="148" alt="Small screenshot">
+<div id="infor"><img src="img/shot.png" width="204" height="148" alt="">
 <h5>1.1.7 Released Feb. 12 2006</h5>
 <ul>
-<li><a href="#news">Latest news</a></li>
+<li><a href="#about">About GCMD</a></li>
 <li><a href="#authors">Authors</a></li>
-<li><a href="#maillists">Mailing&nbsp;lists</a></li>
-<li><a href="#bugs">Bugs</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 <p><a href="ftp://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.1/gnome-commander-1.1.7.tar.gz">Download 
 latest version</a> from the gnome FTP, or visit the <a href="download.html">download page</a> for other versions, 
-or information about downloading from CVS, there are also some links to binary releases not maintained 
-by this project authors.</p>
+or information about downloading from CVS. The download page also contains some links to packages not maintained 
+by the authors of this project.</p>
 
-<p>GNOME Commander is <a href="http://www.gnomefiles.org/app.php?soft_id=1279">also 
-available at GNOMEfiles</a>, a site created for the GNOME Desktop Environment (Unix/Linux) and 
-also other GTK+ applications.</p>
+<p>Gnome Commander is a free program, released under the <a href="http://www.gnu.org/copyleft/gpl.html">GPL 
+licence</a>.</p> 
 </div>
 
 <p>GNOME Commander is a fast and powerful graphical filemanager for  the Gnome desktop environment, 
 it has a "two-pane" interface in the tradition of Norton and Midnight Commander. Take a look at 
-<a href="shots.html">the screenshots</a>, images tell a lot.</p> 
+<a href="shots.html">the screenshots</a>, images tell a lot.</p>
+<p>Read more <a href="#about">About Gnome Commander</a> below.</p> 
 
-<h3>Features</h3> 
+<h2 class="nh"><a name="news">Latest news:</a></h2>
+
+<h4 class="nh4">Mailinglists are up again - Feb 26 2006</h4>
+<p>The <a href="dev.html#maillists">mailinglists</a> are up and working again.<br>
+For a long time the only mails coming of the lists have ben spam, but now the lists are beeing 
+moderated again since the new project management gained admin access to them. All posts from 
+non members of the lists are now beeing held for approval, this will stop spam effectively. Tough 
+anyone are welcome to sign up on the lists.</p>
+
+<h4 class="nh4">1.1.7 Released - Feb 12 2006</h4>
+<p>Gnome Commander 1.1.7 is now released, 
+<a href="ftp://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.1/gnome-commander-1.1.7.tar.bz2" title="Download">available 
+at the gnome.org FTP-server</a>. This release has some bugfixes and a couple of new features, this release requires GTK+ of 
+version 2.6.0 or above.</p>
+<h5>New Features:</h5>
+<ul>
+<li>Superfast <a href="intview.html">internal file viewer</a> for text and images.</li>
+<li>Copying selected filename(s) to clipboard.</li>
+<li>Inserting selected file full path to the cmdline when pressing CTRL+SHIFT+ENTER.</li>
+<li>Some new or updated translations.</li>
+<li>A couple of new key bindings.</li>
+</ul>
+<p>Read more in <a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup">the release changelog</a> 
+about bugfixes and new features.</p>
+
+<h4 class="nh4">New project maintainer! - Feb 06 2006</h4>
+<p>This project has been unmaintained for quite some time, two years since last release, but it is not unmaintained anymore. 
+Piotr Eljasiak has agreed to maintain and keep on developing this project. One more developer, Assaf Gordon has also joined 
+the project and recently 
+<a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?rev=1.72&amp;sortby=date&amp;view=markup">submitted 
+some new code and patches</a>. So, this project is alive again and the 
+work for next release 1.1.7 has begun = more news to come...</p>
+
+<p class="cntr">
+<a href="oldnews.html" title="Old news at this site">Old news</a> ||
+<a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup" title="View of the file /gnome-commander/NEWS">Version 
+news</a></p>
+
+<hr>
+<h2><a name="about">About GCMD</a></h2> 
+
+<p>Gnome Commander is a free two pane filemanager built on the GTK-toolkit and various parts of Gnome.</p>
+
+<h3>Features:</h3> 
 <ul>
 <li>Drag'n drop.</li>
 <li>Gnome mimetypes.</li>
@@ -65,119 +108,31 @@ viewers, editiors or shell scripts to work on selected files or directories.</li
 <li>Fast fileviewer for text and images.</li>
 </ul>
 
-<p>Gnome Commander is Open Source and released under the <a href="http://www.gnu.org/copyleft/gpl.html">GPL 
-licence</a>, and has it's developer site at <a href="https://savannah.gnu.org">Savannah</a>.</p> 
-
-<div class="cntr"><img src="img/floating.png" width="94" height="79" alt=""><br>
-<a href="https://savannah.gnu.org/projects/gcmd/">Visit the GNOME Commander developer site at Savannah</a>.<br>&nbsp;</div> 
-
-<hr>
-
-<h2 class="htwo">Latest news<a name="news">&nbsp;</a></h2>
-
-<h3>Mailinglists are up again - Mars 05 2006</h3>
-<p>The <a href="#maillists">mailinglists</a> are working again.. The folks at lists.gnu.org seem to 
-have got things working again, lets hope it will be stable now.</p>
-<hr class="newsruler">
-
-<h3>Mailinglists down again - Feb 27 2006</h3>
-<p>The <a href="#maillists">mailinglists</a> are <b>not</b> working..<br>
-This project now needs a new host with a working and stable setup of mailman.</p>
-<hr class="newsruler">
-
-<h3>Mailinglists are up again - Feb 26 2006</h3>
-<p>The <a href="#maillists">mailinglists</a> are up and working again.<br>
-For a long time the only mails coming of the lists have ben spam, but now the lists are beeing 
-moderated again since the new project management gained admin access to them. All posts from 
-non members of the lists are now beeing held for approval, this will stop spam effectively. Tough 
-anyone are welcome to sign up on the lists.</p>
-<hr class="newsruler">
-
-<h3>1.1.7 Released - Feb 12 2006</h3>
-<p>Gnome Commander 1.1.7 is now released, 
-<a href="ftp://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.1/gnome-commander-1.1.7.tar.bz2" title="Download">available 
-at the gnome.org FTP-server</a>. This release has some bugfixes and a couple of new features, this release requires GTK+ of 
-version 2.6.0 or above.</p>
-<h5>New Features:</h5>
-<ul>
-<li>Superfast <a href="intview.html">internal file viewer</a> for text and images.</li>
-<li>Copying selected filename(s) to clipboard.</li>
-<li>Inserting selected file full path to the cmdline when pressing CTRL+SHIFT+ENTER.</li>
-<li>Some new or updated translations.</li>
-<li>A couple of new key bindings.</li>
-</ul>
-<p>Read more in <a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup">the release changelog</a> 
-about bugfixes and new features.</p>
-<hr class="newsruler">
-
-<h3>New project maintainer! - Feb 06 2006</h3>
-<p>This project has been unmaintained for quite some time, two years since last release, but it is not unmaintained anymore. 
-Piotr Eljasiak has agreed to maintain and keep on developing this project. One more developer, Assaf Gordon has also joined 
-the project and recently 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?rev=1.72&amp;sortby=date&amp;view=markup">submitted 
-some new code and patches</a>. So, this project is alive again and the 
-work for next release 1.1.7 has begun = more news to come...</p>
-<hr class="newsruler">
-
-<p class="cntr">
-<a href="oldnews.html" title="Old news at this site">Old news</a> ||
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup" title="View of the file /gnome-commander/NEWS">Version 
-news</a></p>
-
-<hr>
-
-<h2 class="htwo">Authors<a name="authors">&nbsp;</a></h2> 
+<h3><a name="authors">Authors</a></h3> 
 <p>The authors of the GNOME Commander project.</p>
 <ul>
 <li><b>Piotr Eljasiak</b>, Project manager/Developer<br>
 Mail: epiotr at use.pl</li>
-
 <li><b>Assaf Gordon</b>, Developer<br>
 Mail: agordon88 at gmail.com</li>
-
 <li><b>Magnus St&aring;lnacke</b>, Webpages only<br>
 Mail: jemamo at telia.com</li>
-
 <li><b>Marcus Bjurman</b>, Former project manager/Developer<br>
 Mail: no mail</li>
-
 </ul>
+
+<h3><a name="contact">Contact</a></h3>
+<p>If you like to get in contact with us behind the project, then you can drop a mail to one of 
+<a href="dev.html#maillists">our mailinglists</a> or contact the developers above directly.</p>
+<p>If you found a bug, please report that on <a href="http://bugzilla.gnome.org/browse.cgi?product=gnome-commander">our 
+bugzilla at gnome.org</a>, there you can also check if it is allredy reported, maybe even fixed in CVS. If you have something 
+to say about this website, then contact Magnus St&aring;lnacke the author of these webpages.</p>
+<hr class="sruler">
 <p class="cntr"><a href="#topp">To top of page</a></p>
 <hr>
 
-
-<h2 class="htwo">Mailing lists<a name="maillists">&nbsp;</a></h2>
-<p>There are two mailing lists regarding Gnome Commander.</p> 
-<p>The user list is mostly for topics about using Gnome Commander, a kind of support list. 
-The devel list is where the developers of this project are discussing topics about the development. 
-For the moment, all posts from non members of these lists are beeing held for approval due to 
-spam reasons, but anyone are welcome to sign up on the lists and post unmoderated. So, if you 
-post without beeing signed up your mail will be moderated before it is sent to the list, and remember 
-that you should note in the email that people should cc their replies to you.</p>
-<ul> 
-<li>The user list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-users">gcmd-users</a></li> 
-<li>The developer list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-devel">gcmd-devel</a></li>
-</ul> 
-
-
-<h2 class="htwo"><a name="bugs">Bugs</a></h2>
-<h3>Discovered a bug?</h3>
-<p>You can report or view Gnome Commander bugs at 
-<a href="http://bugzilla.gnome.org/browse.cgi?product=gnome-commander" title="Please report bugs here">the 
-gnome.org Bugzilla</a>.</p>
-
-<p>Though Gnome Commander is relatively free from bugs and a quite mature program, no programs will 
-ever be totally bugfree, new bugs can be introduced with new features or through other programs and 
-libraries it depends on, this goes especially for development and testing versions. Good bugreporting 
-is very important and can be a very good help for the developers to make a better program. Bugreporting 
-is not an act of dissatisfaction, so you are very welcome to help us hunt down and kill the bugs. 
-Testing of new releases and bugreporting is the best way users without programming knowledge can help 
-out in the development of a program, and those with programming knowledge are welcome to suggest fixes 
-and/or send patches to the developers, all in the spirit of free and open source software.</p>
-<p class="right"><i>Given enough eyeballs, all bugs are shallow.</i><br>//Linus law.</p>
-
-<hr>
-<p class="cntr"><a href="#topp">To top of page</a></p>
+<div class="cntr"><img src="img/floating.png" width="94" height="79" alt=""><br>
+<a href="https://savannah.gnu.org/projects/gcmd/">Visit the GNOME Commander developer site at Savannah</a>.<br>&nbsp;</div> 
 
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">

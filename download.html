@@ -14,7 +14,7 @@
 <img src="img/logo.png" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
-<h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
+<h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
 </div>
 
 <div id="menu">
@@ -22,21 +22,34 @@
 <span>[<a href="shots.html">Screenshots</a>]</span>
 <span>[<a href="download.html">Download</a>]</span>
 <span>[<a href="doc.html">Documentation</a>]</span>
+<span>[<a href="dev.html">Development</a>]</span>
 </div>
 
 <div id="cont" class="stil">
-<h2 class="htwo">Download GNOME Commander<a name="download">&nbsp;</a></h2>
+<h2>Download GNOME Commander</h2>
+
 <div id="infor">
 <h4>Versions</h4>
-<p>Gnome Commander is going to be developed in a stable and a testing branch, where the test releases are for testing of 
+<ul>
+<li><a href="#latest">Latest stable</a></li>
+<li><a href="#testing">Latest testing</a></li>
+<li><a href="#cvs">CVS Source</a></li>
+<li><a href="#old">Old releases</a></li>
+<li><a href="#distro">Distro packages</a></li>
+</ul>
+<p>Gnome Commander is being developed in a stable and a testing branch, where the test releases are for testing of 
 new ideas. Successful ideas will then get backported to the stable branch.</p>
+<p>GNOME Commander is <a href="http://www.gnomefiles.org/app.php?soft_id=1279">also 
+available at GNOMEfiles</a>, a site created for the GNOME Desktop Environment (Unix/Linux) and 
+also other GTK applications.</p>
 </div>
+
 <h3>The GNOME Commander sourcecode</h3>
 
 <p>All releases can be found on <a href="ftp://ftp.gnome.org/pub/GNOME/sources/gnome-commander/">the Gnome FTP server</a>. 
 The latest releases of the stable and development versions can be found on this page.</p> 
 
-<h3>Latest releases</h3>
+<h3><a name="latest">Latest releases</a></h3>
 <h4>Latest 1.1.x release (Gnome 2.x):</h4>
 <ul>
 <li>
@@ -51,18 +64,19 @@ The latest releases of the stable and development versions can be found on this 
 <li>&nbsp;</li>
 </ul>
 
-<p>All releases from 1.2.x will contain a Gentoo ebuild file in the source tarball. You can 
+<p>All releases from 1.2.x contains a Gentoo ebuild file in the source tarball. You can 
 <a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/data/gnome-commander.ebuild">download 
 the ebuild with this link</a> that checks it out from CVS.</p>
 
-<p class="cntr"><a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup">The version changelog</a></p>
+<p class="cntr"><a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup">View the version changelog</a></p>
 
+<h3><a name="testing">Unstable branch</a></h3>
 <div class="ram">
 <h4>Latest 1.3 development branch releases</h4>
-<p>For testing purposes only, we plan to make releases for testing of new ideas (and backporting successful ones to 1.2.x ).</p>
-<p class="warning">
-<em>These may be unstable and are for testing purposes only, do not handle important data with these releases.</em>
-</p>
+<p>For testing purposes only, we plan to make testing releases for testing of new ideas (and later backporting 
+successful ones to the stable branch ).</p>
+<p class="warning"><em>These may be unstable and are for testing purposes only, do not handle important 
+data with these releases.</em></p>
 <ul>
 <li>The latest source packages:
 XX,
@@ -70,6 +84,7 @@ XX
 </ul>
 </div>
 
+<h3><a name="old">Old releases</a></h3>
 <div class="ram">
 <h4>The old 1.0 versions (Gnome 1.x).</h4>
 
@@ -81,12 +96,14 @@ XX
 </ul>
 </div>
 
-<h3>Source from CVS</h3>
-<p>For those of you hwo feel really adventurous, or maybe want to hack on the latest code, there is also the possibility 
-to download the sourcecode or individual files directly from CVS. Gnome Commander has its 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/">source tree hosted at gnome.org</a>. There is also a 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?view=markup">detailed changelog</a>. 
-To check out the latest code from CVS folowing command can be used:</p>
+<h3><a name="cvs">Source from CVS</a></h3>
+<p>For those of you hwo feel really adventurous, or maybe want to hack on the latest code, can download 
+the latest development sourcecode or individual files directly from CVS (just remember to run "autogen.sh" 
+when compiling).</p> 
+
+<p>Gnome Commander has its <a href="http://cvs.gnome.org/viewcvs/gnome-commander/">source tree hosted at gnome.org</a>. 
+In the source tree there is also a <a href="http://cvs.gnome.org/viewcvs/gnome-commander/ChangeLog?view=markup">detailed 
+changelog</a>. To check out the latest code from CVS, folowing command can be used:</p>
 
 <p class="cntr"><code>cvs -z3 -d:pserver:anonymous@anoncvs.gnome.org:/cvs/gnome co gnome-commander</code></p>
 
@@ -94,17 +111,20 @@ To check out the latest code from CVS folowing command can be used:</p>
 information about CVS at cvs.gnome.org</a>.</p>
 
 <hr>
+<p class="cntr"><a href="#topp">To top of page</a></p>
 
-<h3>External downloads, not maintained by the project authors:</h3>
+<h2><a name="distro">External binary downloads</a></h2>
+<p>Here are some links to binary packages for those of you that do not want to compile the 
+source yourself. These packages are not maintained by the authors of this project.</p>
 <ul id="imglist">
-<li><img src="img/deb.png" width="30" height="30" alt="" /><a href="http://ftp.debian.org/debian/pool/main/g/gnome-commander/">Debian packages.</a></li>
+<li><img src="img/deb.png" width="30" height="30" alt=""><a href="http://ftp.debian.org/debian/pool/main/g/gnome-commander/">Debian packages.</a></li>
 <li><img src="img/ubuntu.png" width="30" height="30" alt=""><a href="ftp://ftp.ubuntu.com/ubuntu/pool/universe/g/gnome-commander/">Ubuntu packages.</a></li>
 <li><img src="img/suse.png" width="30" height="30" alt=""><a href="ftp://ftp.gwdg.de/pub/linux/misc/suser-guru/rpm/packages/System/gnome-commander/">SUSE RPMs</a></li>
-<li><img src="img/mdk.png" width="32" height="32" alt="" /><a href="http://rpms.mandrivaclub.com/linux/rpm2html/search.php?query=gnome-commander">Mandriva RPMs</a></li>
-<li><img src="img/rpm.png" width="32" height="32" alt="" /><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gnome-commander&amp;submit=Search+...">RPM packages at rpmfind.net</a></li>
-<li><img src="img/rpm.png" width="32" height="32" alt="" /><a href="http://rpmseek.com/rpm-pl/gnome-commander.html?hl=com&amp;cs=gnome-commander:PN:0:0:0">RPM packages at rpmseek.com</a></li>
-<li><img src="img/rpm.png" width="32" height="32" alt="" /><a href="http://rpm.pbone.net/index.php3/stat/3/search/gnome-commander">RPM packages at rpm.bone.net</a></li>
-<li><img src="img/win32.png" width="32" height="32" alt="" /><a href="http://sourceforge.net/project/showfiles.php?group_id=67909">Cygwin port</a></li>
+<li><img src="img/mdk.png" width="32" height="32" alt=""><a href="http://rpms.mandrivaclub.com/linux/rpm2html/search.php?query=gnome-commander">Mandriva RPMs</a></li>
+<li><img src="img/rpm.png" width="32" height="32" alt=""><a href="http://rpmfind.net/linux/rpm2html/search.php?query=gnome-commander&amp;submit=Search+...">RPM packages at rpmfind.net</a></li>
+<li><img src="img/rpm.png" width="32" height="32" alt=""><a href="http://rpmseek.com/rpm-pl/gnome-commander.html?hl=com&amp;cs=gnome-commander:PN:0:0:0">RPM packages at rpmseek.com</a></li>
+<li><img src="img/rpm.png" width="32" height="32" alt=""><a href="http://rpm.pbone.net/index.php3/stat/3/search/gnome-commander">RPM packages at rpm.bone.net</a></li>
+<li><img src="img/win32.png" width="32" height="32" alt=""><a href="http://sourceforge.net/project/showfiles.php?group_id=67909">Cygwin port</a></li>
 </ul>
 
 <hr>

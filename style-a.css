@@ -1,44 +1,48 @@
-body {background:#079; color:#000; margin-left:13%; margin-right:13%; font-family: helvetica,sans-serif; font-size:90%;}
+body {background:#079; color:#000; margin-left:12%; margin-right:12%; font-family: helvetica,sans-serif; font-size:90%;}
 h1{font-family:serif; margin-top:0.2em;}
+h2{background:#ccc; color:#000; border:1px solid #000; padding-left:6px; padding-top:2px; margin-top:1em; font-family:serif; }
 h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin-left:0.5em; margin-bottom:0em;}
 h5 {margin:0.5em;}
-p,table  {margin:0.6em 2em 1.5em 1em;}
+p,table  {margin:0.5em 3em 1em 1em;}
 li {margin-bottom:0.3em; margin-right:12%;}
 a:link:hover {background:transparent; color:#079; }
 code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 
-.stil{background:#e8e8e8; color:#000; margin:0px; padding:0.8em 2% 0.8em 2%; border:0.2em ridge #ccc; max-width:47em;}
-.htwo{background:#ccc; color:#000; border:1px solid #000; padding-left:6px; padding-top:2px; margin-top:0.5em; font-family:serif;}
-.cntr{text-align:center;}
+.nh4, .nh {margin-right:230px;}
+.nh4 { background:transparent; color:#000; text-decoration:underline;}
+.stil{background:#e8e8e8; color:#000; margin:0px; padding:0.7em 2% 0.8em 2%; border:0.2em ridge #ccc; max-width:49em;}
+.cntr{text-align:center; clear:both;}
 .right {text-align:right}
 .nobord {border:0;}
 .small {font-size:100%;}
 .ram {border:1px solid #000; width:90%; margin:1em; padding:10px;}
 .warning {background:transparent; color: #f00;}
-.newsruler {width: 80%;}
+.sruler {width: 80%;}
 .rgt {float: right; margin:0em 1em 0em 2em;}
 
-#menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold; max-width:46em;}
+#topp{text-align:center; padding-bottom:1em;}
+#cont {padding-top:0em;}
+#urub {background:transparent; color:#000; border:0; font-size:90%; font-family:sans-serif;}
+#menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold; max-width:49em;}
 #menu a {text-decoration:none; font-weight:bold; background:#079; color:#e8e8e8;}
 #menu a:hover {background:#079; color:#0f0;}
-#menu span {margin:0em 2% 0em 2%}
+#menu span {margin:0em 1.5% 0em 1.5%}
 #hide {display:none; background:#ccc; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em; padding:3px; font-size:80%;}
-#topp{text-align:center; padding-bottom:2.2em;}
-#urub {margin-top:-0.5em; margin-bottom:0em; font-size:90%;}
 #logo {float:left;}
 #float {float:right;}
-#def{float: left; margin-bottom:1em;}
-#cust{float: right;}
 #keys {border:1px solid #000; width:90%; margin-left:4%;}
 #keys td {border-bottom:1px solid #000;}
-#infor {clear:right; float:right; width:206px; margin:0em 1em 0em 2em; padding:0.4em; background:#ccc; color:#000; border:1px solid #000;}
+
+#infor {float:right; width:206px; margin-left:4%; padding:0.4em; background:#ccc; color:#000; border:1px solid #000;}
 #infor ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
 #infor ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; font-weight:bold; display:block; background:#e8e8e8; color:#00f;}
 #infor ul a:visited {background:#e8e8e8; color:#528;}
 #infor ul a:hover {background:#079; color:#ccc;}
 #infor li {margin-bottom:0em;}
 #infor h4 {margin-top:0px;}
+#infor p {margin:0.5em 1em 0.5em 1em;}
+
 #imglist {list-style:none; }
 #imglist a {margin-left:0.6em; position:relative; top:-12px;;}
 
@@ -49,9 +53,6 @@ a {background:transparent; color:#000; text-decoration:none; }
 img, #infor ul, #menu, #hide a  {display:none; background:transparent; color:#fff;}
 .stil, .htwo, #cont, #hide {background:transparent; color:#000; margin-left:0px; border:0;}
 .vit {background:transparent; color:#fff; font-weight:bold;}
-.htwo { margin-left:0px; text-align:left; width:8em; background:transparent; color:#000;}
 #urub {font-size:90%; text-align:center;}
-#def {float: left; margin-bottom:1em;}
-#cust {float: right;}
 }
 

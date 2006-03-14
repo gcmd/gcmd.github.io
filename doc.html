@@ -14,7 +14,7 @@
 <img src="img/logo.png" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
-<h2 id="urub" class="cntr">A powerful filemanager for the Gnome desktop environment</h2>
+<h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
 </div>
 
 <div id="menu">
@@ -22,52 +22,27 @@
 <span>[<a href="shots.html">Screenshots</a>]</span>
 <span>[<a href="download.html">Download</a>]</span>
 <span>[<a href="doc.html">Documentation</a>]</span>
+<span>[<a href="dev.html">Development</a>]</span>
 </div>
 
 <div id="cont" class="stil">
-<h2 class="htwo">Documentation</h2> 
-
+<h2>Documentation</h2> 
+<p>This page is going to contain user documentation, FAQ, useful tips and tricks, filemanagement scripts that 
+can be connected to Gnome Commander and so on. Today there is not much information here, but hopefully 
+there will be. Check this page from time to time, or you could maybe contact <a href="mailto:jemamo at telia.com">the 
+author of these pages</a> and suggest/contribute with some content of this part of the website.</p>
 <h3>Help, tips and tricks and other information.</h3>
 <ul>
-<li><a href="doc.html#bidra">Contributing</a></li>
 <li><a href="doc.html#build">Building from source</a></li>
 <li><a href="tips.html">Tips and tricks</a></li>
 <li><a href="keys.html">Keyboard shortcuts</a></li>
 <li><a href="intview.html">The internal file viewer</a> (New feature in version 1.1.7)</li>
 </ul>
 
-<h3>Hacking.</h3>
-<p>Links to documents regarding Gnome Commander internals.</p>
-<ul>
-<li><a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/doc/internal_viewer_hacking.txt">Internel-Viewer Internals</a>. 
-This document describes details of the 'libgviewer' library, which implements GnomeCommander's Internal-Viewer. 
-If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading 
-this document first (However note that <a href="http://cvs.gnome.org/viewcvs/gnome-commander/">the source files in CVS</a> 
-always are more updated than this document).</li>
-</ul>
-<hr>
-
-<h2 class="htwo">Contributing<a name="bidra">&nbsp;</a></h2>
-
-<p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the FAQ and 
-the <a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/TODO">TODO file</a> 
-first before sending an <a href="index.html#authors">email to the authors</a>.</p>
-
-<p>If you want to submit a patch please do so.</p>
-<ul>
-<li>Send an email with the patch to the developers, and include it as text together with your description of what it does.</li>
-<li>Please use the -u flag when generating a patch.</li>
-<li>Write a good explanation of what the patch does.</li>
-</ul>
-<h4>Special note for translators:</h4>
-<ul>
-<li>Send translations as gzipped or bzipped attachments to avoid losing language specific characters.</li>
-</ul>
-<hr>
-
-<h2 class="htwo">Building from source<a name="build">&nbsp;</a></h2>
+<h2><a name="build">Building from source</a></h2>
 <h4>Required libraries:</h4>
 <ul>
+<li>GTK -2.8.0 or above for latest version.</li>
 <li>gnome-libs: Used for the graphics of the program.</li>
 <li>GnomeVFS: Used for most of the file handling. </li>
 </ul>
