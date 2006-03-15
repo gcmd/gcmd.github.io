@@ -42,6 +42,7 @@ code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
 #infor li {margin-bottom:0em;}
 #infor h4 {margin-top:0px;}
 #infor p {margin:0.5em 1em 0.5em 1em;}
+#infor img  {border:0;}
 
 #imglist {list-style:none; }
 #imglist a {margin-left:0.6em; position:relative; top:-12px;;}
