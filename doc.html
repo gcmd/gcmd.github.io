@@ -42,18 +42,21 @@ author of these pages</a> and suggest/contribute with some content of this part 
 <h2><a name="build">Building from source</a></h2>
 <h4>Required libraries:</h4>
 <ul>
-<li>GTK -2.8.0 or above for latest version.</li>
+<li>GTK+2-2.8.0 or above for latest version.</li>
 <li>gnome-libs: Used for the graphics of the program.</li>
 <li>GnomeVFS: Used for most of the file handling. </li>
 </ul>
 <p>If you have the libraries above, and of course, a sane build environment the "./configure; make; make install" 
 procedure should work like a charm.</p>
 
-<p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is a strongly recommended library, it is used to 
+<p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to 
 monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from 
-FAM so it can update it's directory views. You can build this program without FAM but then you'll have to prepare 
-to do a lot of manual reloading since even files that are altered with this program won't show up until you manually reload.<br>
+FAM so it can update it's directory views on the fly.<br>
 <strong>Update: from 0.9.8 and on, files modified within GC should update without FAM</strong>.</p>
+
+<p>For the internal viewer to be able to show exif and IPTC data you also need to have 
+<a href="http://libexif.sourceforge.net/">libexif</a> and <a href="http://libiptcdata.sourceforge.net/">libiptcdata</a> 
+installed, this is optional though.</p>
 <hr>
 
 <p class="cntr"><a href="doc.html#topp">To top of page</a></p>
