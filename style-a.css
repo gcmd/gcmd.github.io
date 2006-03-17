@@ -5,9 +5,11 @@ h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin-left:0.5em; margin-bottom:0em;}
 h5 {margin:0.5em;}
 p,table,object  {margin:0.5em 3em 1em 1em;}
-li {margin-bottom:0.3em; margin-right:12%;}
+li {margin-bottom:0.7em; margin-right:12%;}
+li span {background:transparent; color:#a00;}
 a:link:hover {background:transparent; color:#079; }
-code {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
+code,li pre {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
+pre {margin-bottom:1.5em;}
 
  .nh {margin-right:11em;}
 .nh4 { background:transparent; color:#000; text-decoration:underline;}
