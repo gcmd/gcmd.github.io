@@ -33,8 +33,9 @@
 <ul>
 <li><a href="#doc">Hacking documents</a></li>
 <li><a href="#contr">Contributing</a></li>
+<li><a href="#build">Build sources</a></li>
 <li><a href="#bugs">Bugs</a></li>
-<li><a href="#mailllists">Mailing lists</a></li>
+<li><a href="#maillists">Mailing lists</a></li>
 <li><a href="#team">The team</a></li>
 </ul>
 </div>
@@ -83,20 +84,42 @@ always are more updated than this document).</li>
 </ul>
 <hr>
 
+<h2><a name="build">Building from source</a></h2>
+<h4>Required libraries:</h4>
+<ul>
+<li>GTK+2 (2.6.0) or above for latest version.</li>
+<li>GnomeVFS (2.0) Used for most of the file handling. </li>
+<li>Glib (2.0.0)</li>
+<li>Gnome (2.0)</li>
+<li>GnomeUI (2.0)</li>
+</ul>
+<p>If you have the libraries above, and of course their sub-dependencys, devel-packages and a sane build 
+environment, the usual "./configure  make make install" procedure should work like a charm.</p>
+
+<p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to 
+monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from 
+FAM so it can update it's directory views on the fly.<br>
+<strong>Update: from 0.9.8 and on, files modified within GC should update without FAM</strong>.</p>
+
+<p>For the internal viewer to be able to show exif and IPTC data you also need to have 
+<a href="http://libexif.sourceforge.net/">libexif</a> and <a href="http://libiptcdata.sourceforge.net/">libiptcdata</a> 
+installed, this is optional though.</p>
+<hr>
+
 <h2><a name="bugs">Bugs</a></h2>
 <h3>Discovered a bug?</h3>
 <p>You can report or view Gnome Commander bugs at 
 <a href="http://bugzilla.gnome.org/browse.cgi?product=gnome-commander" title="Please report bugs here">the 
 gnome.org Bugzilla</a>.</p>
 
-<p>Though Gnome Commander is relatively free from bugs and a quite mature program, no programs will 
-ever be totally bugfree. New bugs can be introduced with new features or through other programs and 
-libraries it depends on, this goes especially for development and testing versions. Good bugreporting 
+<p>Though Gnome Commander is relatively free from bugs and is a quite mature program, no programs will 
+ever be totally bugfree. New bugs can be introduced with new features, or through other programs and 
+libraries it depends on, this goes especially for development and testing versions. Quality bugreporting 
 is very important and can be a very good help for the developers to make a better program. Bugreporting 
-is not an act of dissatisfaction, so you are very welcome to help us hunt down and kill the bugs. 
+is not an act of dissatisfaction, so you are very welcome to help us find, hunt down and kill the bugs. 
 Testing of new releases and bugreporting is the best way users without programming knowledge can help 
-out in the development of a program, and those with programming knowledge are welcome to suggest fixes 
-and/or send patches to the developers, all in the spirit of free and open source software.</p>
+out in the development of a program, and those with programming knowledge are very welcome to suggest 
+fixes and/or send patches to the developers, all in the spirit of free and open source software.</p>
 <p class="right"><i>Given enough eyeballs, all bugs are shallow.</i><br>//Linus law.</p>
 <hr>
 <p class="cntr"><a href="#topp">To top of page</a></p>
