@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<title>GNOME Commander - Documantation</title>
+<title>GNOME Commander - Documentation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
 <meta name="KeyWords" content="gnome,commander,filemanager,documantation,faq,contributing">   
 <meta name="Description" content="Documentation for the Gnome commander filemanager">
@@ -27,44 +27,44 @@
 
 <div id="cont" class="stil">
 <h2>Documentation</h2> 
-<p>This page is going to contain user documentation, FAQ, useful tips and tricks, filemanagement scripts that 
+<p>This page is going to contain user documentation, FAQ, useful tips and tricks, file management scripts that 
 can be connected to Gnome Commander and so on. Today there is not much information here, but hopefully 
 there will be. Check this page from time to time, or you could maybe contact <a href="mailto:jemamo at telia.com">the 
 author of these pages</a> and suggest/contribute with some content of this part of the website.</p>
 <h3>Help, tips and tricks and other information.</h3>
 <ul>
-<li><a href="doc.html#build">Building from source</a></li>
+<li><a href="doc.html#mime">Handling mime types</a></li>
 <li><a href="tips.html">Tips and tricks</a></li>
 <li><a href="keys.html">Keyboard shortcuts</a></li>
 <li><a href="intview.html">The internal file viewer</a> (New feature in version 1.1.7)</li>
 </ul>
 
-<h2>Mime types</h2>
-<p>The editing of prefered programs in Gnome Commander is currently boken (v 1.1.7) since 
+<h2><a href="#mime">Mime types</a></h2>
+<p>The editing of preferred programs in Gnome Commander is currently broken (v 1.1.7) since 
 Gnome has changed this to follow <a href="http://www.freedesktop.org/">the freedesktop.org</a> 
 standard of handling this. There are two ways of managing this on user basis; use nautilus or 
 "manually" edit the configuration files that handles this in you home directory. </p>
 <h3>The Nautilus way:</h3>
 <p>To use Nautilus for doing this can feel a little awkward for many GCMD users, we usually do 
-not use Gnome Commander because we like usin Nautilus.., and for users using another WM 
+not use Gnome Commander because we like using Nautilus.., and for users using another WM 
 than Gnome Nautilus also kidnaps the users desktop (background and desktop icons) if it not 
 is stared the right way: <code>nautilus --no-desktop</code>. Anyway, here is how to do it:</p>
 <ul>
 <li>Start Nautilus</li>
-<li>Mark a file of the mimetype you want to change.</li>
+<li>Mark a file of the mime type you want to change.</li>
 <li>Right click and chose "Properties" and then the tab "Open with" .</li>
 <li>In the "Open with" tab chose "Add" and you will be presented a list with programs, 
 in this dialog you can also click "Use a custom command", click "Add" when you are done and 
 your chosen program will be listed in the "Open with" list where you now can chose it.</li>
 </ul>
 <h3>The manual way:</h3>
-<p>Insted of using Nautilus you can do this manually by editing the configuration files 
-that controls what programs that is available in various menus for different mimetypes. 
+<p>Instead of using Nautilus you can do this manually by editing the configuration files 
+that controls what programs that is available in various menus for different mime types. 
 These files usually lives in <code>~/.local/share/applications</code>. There are three 
 types of files here:</p>
 <ul>
 <li><span>XXX-usercreated.desktop</span> Where "XXX" stands for the application in question. 
-These files controls which mimetypes the application in question can handle, what command 
+These files controls which mime types the application in question can handle, what command 
 to use for starting it, if it shall run in terminal and so on. 
 <pre>
 [Desktop Entry]
@@ -75,14 +75,14 @@ Exec='/usr/bin/display'
 Type=Application
 Terminal=false
 NoDisplay=true</pre></li>
-<li><span>mimeinfo.cache</span> This file contains a list of mimetypes with the above files 
-specified for which programs to handle the mimetype in question. There can be more than 
-one XXX-usercreated.desktop specified for every mimetype (semicolon separated).
+<li><span>mimeinfo.cache</span> This file contains a list of mime types with the above files 
+specified for which programs to handle the mime type in question. There can be more than 
+one XXX-usercreated.desktop specified for every mime type (semicolon separated).
 <pre>
 [MIME Cache]
 audio/mpeg=xmms-usercreated.desktop;mpg123-usercreated.desktop;
 image/png=display-usercreated.desktop</pre></li>
-<li><span>defaults.list</span> This file controls which application that is the defalt one, the one 
+<li><span>defaults.list</span> This file controls which application that is the default one, the one 
 that starts when you double click a file. It looks like this:<br>
 <pre>
 [Default Applications]
