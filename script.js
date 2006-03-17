@@ -12,7 +12,6 @@ function titta(lager){
 eval(dl + "('general')" + vi + bort);
 eval(dl + "('pres')" + vi + bort);
 eval(dl + "('layo')" + vi + bort);
-eval(dl + "('color')" + vi + bort);
 eval(dl + "('filt')" + vi + bort);
 eval(dl + "('prog')" + vi + bort);
 eval(dl + "('devi')" + vi + bort);
