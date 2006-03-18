@@ -40,34 +40,21 @@ author of these pages</a> and suggest/contribute with some content of this part 
 </ul>
 
 <h2><a name="#mime">Mime types</a></h2>
-<p>The editing of preferred programs in Gnome Commander is currently broken (v 1.1.7) since 
-Gnome has changed this to follow <a href="http://www.freedesktop.org/">the freedesktop.org</a> 
-standard of handling this. We do have this in our 
+<p>Since Gnome has changed to follow <a href="http://www.freedesktop.org/">the freedesktop.org</a> 
+standard of handling mimetypes, the editing of preferred programs in Gnome Commander is currently 
+broken (v 1.1.7). We do have this in our 
 <a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/TODO">TODO file</a>, 
-but until GCMD can handle this, there are two ways of managing this on user basis; use nautilus or 
-"manually" edit the configuration files that handles this in you home directory. </p>
-<h3>The Nautilus way:</h3>
-<p>To use Nautilus for doing this can feel a little awkward for many GCMD users, we usually do 
-not use Gnome Commander because we like using Nautilus.., and for users using another WM 
-than Gnome Nautilus also kidnaps the users desktop (background and desktop icons) if it not 
-is stared the right way: <code>nautilus --no-desktop</code>. Anyway, here is how to do it:</p>
-<ul>
-<li>Start Nautilus</li>
-<li>Mark a file of the mime type you want to change.</li>
-<li>Right click and chose "Properties" and then the tab "Open with" .</li>
-<li>In the "Open with" tab chose "Add" and you will be presented a list with programs, 
-in this dialog you can also click "Use a custom command", click "Add" when you are done and 
-your chosen program will be listed in the "Open with" list where you now can chose it.</li>
-</ul>
-<h3>The manual way:</h3>
-<p>Instead of using Nautilus you can do this manually by editing the configuration files 
-that controls what programs that is available in various menus for different mime types. 
-These files usually lives in <code>~/.local/share/applications</code>. There are three 
-types of files here:</p>
+but until GCMD can handle edititing of preferred programs, there are two other ways of managing 
+this on user basis; use nautilus or manually edit the configuration files that controls mime types in 
+your home directory. Using Nautilus for doing this can feel quite awkward for Gnome Commander 
+users, we usually do not use Gnome Commander because we like using Nautilus.. Anyway, here is 
+how to do it the manual way:</p>
+<p>These configuration files  usually lives in <code>~/.local/share/applications</code>. 
+There are three types of files here:</p>
 <ul>
 <li><span>XXX-usercreated.desktop</span> Where "XXX" stands for the application in question. 
-These files controls which mime types the application in question can handle, what command 
-to use for starting it, if it shall run in terminal and so on. 
+These files contain information about which mime types the application can handle, what command 
+will be used for launching it, if it shall run in terminal, and language localization.<br>Example:
 <pre>
 [Desktop Entry]
 Encoding=UTF-8
@@ -77,15 +64,16 @@ Exec='/usr/bin/display'
 Type=Application
 Terminal=false
 NoDisplay=true</pre></li>
-<li><span>mimeinfo.cache</span> This file contains a list of mime types with the above files 
-specified for which programs to handle the mime type in question. There can be more than 
-one XXX-usercreated.desktop specified for every mime type (semicolon separated).
+<li><span>mimeinfo.cache</span> This single file assigns every mimetype a list of applications. 
+These are the entries you will see via "Open with" in GCMD. However, instead of application commands, 
+each entry points to the .desktop files, like the XXX-usercreated.desktop from above. There can be 
+several possible targets for a single mime-type entry, separated by semicolon.<br>Example:
 <pre>
 [MIME Cache]
 audio/mpeg=xmms-usercreated.desktop;mpg123-usercreated.desktop;
 image/png=display-usercreated.desktop</pre></li>
 <li><span>defaults.list</span> This file controls which application that is the default one, the one 
-that starts when you double click a file. It looks like this:<br>
+that starts when you double click a file. <br>Example:
 <pre>
 [Default Applications]
 audio/mpeg=xmms-usercreated.desktop
