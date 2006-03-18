@@ -13,7 +13,7 @@ pre {margin-bottom:1.5em;}
 
  .nh {margin-right:11em;}
 .nh4 { background:transparent; color:#000; text-decoration:underline;}
-.stil{background:#e8e8e8; color:#000; margin:0px; padding:0.7em 2% 0.8em 2%; border:0.2em ridge #ccc; max-width:49em;}
+.stil{background:#e8e8e8; color:#000; margin:0px; padding:0.7em 2% 0.8em 2%; border:0.2em ridge #ccc; max-width:56em;}
 .cntr{text-align:center; clear:both;}
 .right {text-align:right}
 .nobord {border:0;}
@@ -25,7 +25,7 @@ pre {margin-bottom:1.5em;}
 #topp{text-align:center; padding-bottom:1em;}
 #cont {padding-top:0em;}
 #urub {background:transparent; color:#000; border:0; font-size:90%; font-family:sans-serif;}
-#menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold;}
+#menu{background:transparent; color:#e8e8e8; padding:0.4%; text-align:center; font-weight:bold; max-width:56em;}
 #menu a {text-decoration:none; font-weight:bold; background:#079; color:#e8e8e8;}
 #menu a:hover {background:#079; color:#0f0;}
 #menu span {margin:0em 1.2% 0em 1.2%;}
