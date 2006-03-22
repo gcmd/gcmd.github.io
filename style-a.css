@@ -4,12 +4,12 @@ h2{background:#ccc; color:#000; border:1px solid #000; padding-left:6px; padding
 h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin-left:0.5em; margin-bottom:0em;}
 h5 {margin:0.5em;}
-p,table,object  {margin:0.5em 3em 1em 1em;}
+p,table,object,pre  {margin:0.2em 3em 1em 1em;}
 li {margin-bottom:0.7em; margin-right:12%;}
 li span {background:transparent; color:#a00;}
+li pre {margin:0.2em 0em 0em 0em;}
 a:link:hover {background:transparent; color:#079; }
-code,li pre {background:#ccc; color:#000; font-size:1.2em; padding:0.2em;}
-pre {margin-bottom:1.5em;}
+code, pre {background:#ccc; color:#000; padding:0.2em;}
 
  .nh {margin-right:11em;}
 .nh4 { background:transparent; color:#000; text-decoration:underline;}

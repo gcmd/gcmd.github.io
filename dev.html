@@ -68,6 +68,36 @@ good or bad, then you are welcome to contact us thrugh <a href="#maillists">our 
 <li>Include it as text together with a good explanation of what the patch does or what problem/bug it solves.</li>
 </ul>
 <h4>Special note for translators:</h4>
+
+
+<p>Although GNOME Commander is currently available in over 30 languages, there are still many missing 
+and those to improve. Here you will find the recipe on how to contribute your new or updated translation 
+(replace "LL" with your language code, see the 
+<a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">complete list of language codes</a>). </p>
+<ol>
+<li>Get a fresh copy of the program source (either from cvs or snapshot)</li>
+<li>Unpack it and run <code>./autogen.sh</code> if you got the source from CVS.</li>
+<li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory 
+and run <code>intltool-update LL</code>.</li>
+</ol>
+        
+<p>You may find translation compedia to be quite handy as a reference. To create such a compedium 
+from all LL GNOME translations it is required to:</p>
+
+<pre>
+wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/extras/
+wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/office/
+wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/fifth-toe/
+msgcat -o compendium-LL.po *.po
+</pre>
+
+<p>Our recommended translation tools are: KBabel (http://kbabel.kde.org/)
+and gtranslator (http://gtranslator.sourceforge.net/). KBabel seems to
+be a bit more advanced tool at the the moment.</p>
+
+<p>All translation files (LL.po) MUST be UTF-8 and to avoid corruption by
+mail application please send them as gzipped or bzipped attachments.</p>
+
 <ul>
 <li>Send translations as gzipped or bzipped attachments to avoid losing language specific characters.</li>
 </ul>
