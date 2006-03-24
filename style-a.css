@@ -46,8 +46,8 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 #infor .shot {display:block; text-align:center;}
 #infor img  {border:0;}
 
-#imglist {list-style:none; }
-#imglist a {margin-left:0.6em; position:relative; top:-12px;;}
+.imglist {list-style:none; }
+.imglist a {margin-left:0.6em; position:relative; top:-12px;;}
 
 @media print {
 body {background:#fff; color:#000; margin-left:4%; margin-right:2%; font-family: helvetica,sans-serif;}
