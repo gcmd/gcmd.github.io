@@ -21,6 +21,7 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 .ram {border:1px solid #000; width:90%; margin:1em; padding:10px;}
 .warning {background:transparent; color: #f00;}
 .sruler {width: 80%;}
+.flr {float:right; margin-bottom:1em; margin-left:1em;}
 
 #topp{text-align:center; padding-bottom:1em;}
 #cont {padding-top:0em;}
