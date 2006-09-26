@@ -54,43 +54,38 @@ management, their work through special applications and running smart commands. 
 
 <h2 class="nh"><a name="news">Latest news:</a></h2>
 
-<h4 class="nh4">1.2.0 Released - May 07 2006</h4>
-<p>The GNOME Commander team is proud to announce the stable release of
-GNOME Commander: 1.2.0. Get the new release from <a href="download.html">our downloadpage</a>. </p>
+<h4 class="nh4">1.2.1 Released - Sept 25 2006</h4>
+<p>A new release in the stable 1.2 branch. As usual you can find both source downloads 
+and some distro-specific binary packages at <a href="download.html">our downloadpage</a>.</p>
 
-<p>On the "surface" there are not much difference from 
-the last release 1.1.7, but underneath there are a couple of new features and 
-some bugs have been fixed. This version-jump to 1.2.0 also marks the first 
-stable release from the new GNOME Commander team, it is also the first release 
-under the new version numbering where new and experimental functions first 
-are developed and tested in an unstable odd numbered development branch 
-of the project. The 1.2.x version will get updates, bugfixes and also successful 
-features backported from the 1.3.x devel branch.</p>
+<p>This release does not contain any new or groundbreaking features, except maybee 
+the new python-like indices in the advanced file renaming tool.</p>
 
-<h5>What's new since 1.1.7:</h5>
+<h5>New features</h5>
 <ul>
-<li>Monitoring of mounted volumes</li>
-<li>Rewritten internal viewer</li>
-<li>Support for viewing Exif and IPTC tags in the internal viewer</li>
-<li>Zooming for internal viewer</li>
-<li>Text selection for internal viewer</li>
-<li>Revamped toolbar layout</li>
-<li>Options for controlling copy, move and overwriting</li>
-<li>Copying selected full file paths with SHIFT+click on toolbar button</li>
-<li> Better handling the change of the column sorting key</li>
-<li>Initial documentation framework</li>
-<li> New key bindings:<br>
-<code>
-SHIFT+F3       Internal viewer<br>
-ALT+F3         External viewer<br>
-ALT+letters    Quick search<br>
-CTRL+SHIFT+A   Deselecting all files
-</code></li>
-<li>New or updated translations of: de, es, eu, hu, pl, ro, ru, sl, sv, vi</li>
+<li>Support for archives (gz,bz2,zip,lha,rar,jar,7-zip,zoo,deb,rpm) via FileRoller plugin</li>
+<li>New python-like indices for advanced file rename templates</li>
+<li>Revamped application menus</li>
+<li>Saving window state across sessions</li>
+<li>New icon for internal viewer</li>
+<li>Updated help docs</li>
+<li>New or updated translations: ca, cs, de, el, en_GB, es, eu, hu, it, ne, ru, sv, vi</li>
 </ul>
+
 <p>For a brief list of fixed bugs since last version, see the 
 <a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup" title="View of the file /gnome-commander/NEWS">Release 
 news</a></p>
+
+<h4>The unstable 1.3 branch.</h4>
+<p>In the unstable branch the team behind GCMD are now experimenting with 
+meta-data. So far we have working code for extracting Exif, File and IPTC meta-data 
+in the advrename tool by a new "Template" placeholder <code>$T(meta.data)</code>. The plan is to add this 
+functionality to the searchtool, custom columns and the internal viewer. The 
+<a href="http://cvs.gnome.org/viewcvs/gnome-commander/TODO?sortby=date&view=markup">TODO file</a> 
+gives a hint on what we are working on and maybe appreciate some community efforts on. 
+Users and developers are as usual welcome to contact us, ask questions and discuss the development 
+on <a href="dev.html#maillists">our mailinglists</a>.</p>
+
 
 <p class="cntr">
 <a href="oldnews.html" title="Old news at this site">Old news</a> ||
