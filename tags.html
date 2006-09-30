@@ -7,7 +7,7 @@
 <meta name="Description" content="Documentation for the Gnome commander filemanager">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
-<style>
+<style type="text/css">
 td {border-bottom:1px dotted #000;}
 table {width:96%;}
 </style>
@@ -36,12 +36,12 @@ table {width:96%;}
 <h4>Metadata</h4>
 <p>Metadata formats supported by GCMD:</p>
 <ul>
-<li><a href="#audio" title="List of supported Audio tags">Audio</a></li>
-<li><a href="#doc" title="List of supported doc tags">Document</a></li>
-<li><a href="#exif" title="List of supported Exif tags">Exif</a></li>
-<li><a href="#file" title="List of supported File tags">File</a></li>
-<li><a href="#iptc" title="List of supported IPTC tags">IPTC</a></li>
-<li><a href="#image" title="List of supported Image tags">Image</a></li>
+<li><a href="#Audio" title="List of supported Audio tags">Audio</a></li>
+<li><a href="#Doc" title="List of supported doc tags">Document</a></li>
+<li><a href="#Exif" title="List of supported Exif tags">Exif</a></li>
+<li><a href="#File" title="List of supported File tags">File</a></li>
+<li><a href="#IPTC" title="List of supported IPTC tags">IPTC</a></li>
+<li><a href="#Image" title="List of supported Image tags">Image</a></li>
 </ul>
 </div>
 
@@ -59,7 +59,7 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 
 
 <h2>Supported metatag listing</h2>
-<h3 class="cntr"><a name="audio">Audio</a></h3>
+<h3 class="cntr"><a name="Audio">Audio</a></h3>
 <table>
 <tr>
 <th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
@@ -95,12 +95,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Audio.TrackNo</td><td>Track Number</td><td>Position of track on the album.</td></tr>
 <tr><td>Audio.TrackPeakGain</td><td>Track Peak Gain</td><td>Peak gain adjustment of track.</td></tr>
 </table>
-<p class="cntr"><a href="#topp">To top of page</a></p>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<h3 class="cntr"><a name="doc">Document</a></h3>
+<h3 class="cntr"><a name="Doc">Doc</a></h3>
 <table>
 <tr>
-<th>Tag code</th><th>Tag name</th><th>Tag description</th>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
 </tr>
 <tr><td>Doc.Author</td><td>Author</td><td>Name of the author.</td></tr>
 <tr><td>Doc.Comments</td><td>Comments</td><td>User definable free text.</td></tr>
@@ -111,12 +111,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Doc.Title</td><td>Title</td><td>Title of the document.</td></tr>
 <tr><td>Doc.WordCount</td><td>Word Count</td><td>Total number of chars in document.</td></tr>
 </table>
-<p class="cntr"><a href="#topp">To top of page</a></p>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<h3 class="cntr"><a name="exif">Exif</a></h3>
+<h3 class="cntr"><a name="Exif">Exif</a></h3>
 <table>
 <tr>
-<th>Tag code</th><th>Tag name</th><th>Tag description</th>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
 </tr>
 <tr><td>Exif.ApertureValue</td><td>Aperture</td><td>The lens aperture. The unit is the APEX value.</td></tr>
 <tr><td>Exif.Artist</td><td>Artist</td><td>Name of the camera owner, photographer or image creator. The detailed format is not specified, but it is recommended that the information be written for ease of Interoperability. When the field is left blank, it is treated as unknown.</td></tr>
@@ -188,7 +188,7 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Exif.MeteringMode</td><td>Metering Mode</td><td>The metering mode.</td></tr>
 <tr><td>Exif.Model</td><td>Model</td><td>The model name or model number of the equipment. This is the model name or number of the DSC, scanner, video digitizer or other equipment that generated the image. When the field is left blank, it is treated as unknown.</td></tr>
 <tr><td>Exif.NewSubfileType</td><td>New Subfile Type</td><td>A general indication of the kind of data contained in this subfile.</td></tr>
-<tr><td>Exif.OECF</td><td>OECF</td><td>Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. "Exif.OECF"> is the relationship between the camera optical input and the image values.</td></tr>
+<tr><td>Exif.OECF</td><td>OECF</td><td>Indicates the Opto-Electoric Conversion Function (OECF) specified in ISO 14524. "Exif.OECF" is the relationship between the camera optical input and the image values.</td></tr>
 <tr><td>Exif.Orientation</td><td>Orientation</td><td>The image orientation viewed in terms of rows and columns.</td></tr>
 <tr><td>Exif.PhotometricInterpretation</td><td>Photometric Interpretation</td><td>The pixel composition. In JPEG compressed data a JPEG marker is used instead of this tag.</td></tr>
 <tr><td>Exif.PixelXDimension</td><td>Pixel X Dimension</td><td>Information specific to compressed data. When a compressed file is recorded, the valid width of the meaningful image must be recorded in this tag, whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file.</td></tr>
@@ -235,12 +235,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Exif.YCbCrSubSampling</td><td>YCbCr Sub-Sampling</td><td>The sampling ratio of chrominance components in relation to the luminance component. In JPEG compressed data a JPEG marker is used instead of this tag.</td></tr>
 <tr><td>Exif.YResolution</td><td>y Resolution</td><td>The number of pixels per "Exif.ResolutionUnit" in the "Exif.ImageLength" direction. The same value as "Exif.XResolution" is designated.</td></tr>
 </table>
-<p class="cntr"><a href=#topp">To top of page</a></p>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<h3 class="cntr"><a name="file">File</a></h3>
+<h3 class="cntr"><a name="File">File</a></h3>
 <table>
 <tr>
-<th>Tag code</th><th>Tag name</th><th>Tag description</th>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
 </tr>
 <tr><td>File.Accessed</td><td>Accessed</td><td>Last access datetime.</td></tr>
 <tr><td>File.Content</td><td>Content</td><td>File's contents filtered as plain text.</td></tr>
@@ -259,12 +259,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>File.Size</td><td>Size</td><td>Size of the file in bytes or if a directory number of items it contains.</td></tr>
 <tr><td>File.SmallThumbnailPath</td><td>Small Thumbnail Path</td><td>Editable file URI for a small thumbnail of the file suitable for use in icon views.</td></tr>
 </table>
-<p class="cntr"><a href="#topp">To top of page</a></p>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<h3 class="cntr"><a name="iptc">IPTC</a></h3>
+<h3 class="cntr"><a name="IPTC">IPTC</a></h3>
 <table>
 <tr>
-<th>Tag code</th><th>Tag name</th><th>Tag description</th>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
 </tr>
 <tr><td>IPTC.ARMID</td><td>ARM Identifier</td><td>Identifies the Abstract Relationship Method (ARM).</td></tr>
 <tr><td>IPTC.ARMVersion</td><td>ARM Version</td><td>Identifies the version of the Abstract Relationship Method (ARM).</td></tr>
@@ -345,12 +345,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>IPTC.Urgency</td><td>Urgency</td><td>Specifies the editorial urgency of content and not necessarily the envelope handling priority. '1' is most urgent, '5' normal, and '8' least urgent.</td></tr>
 <tr><td>IPTC.WriterEditor</td><td>Writer/Editor</td><td>The name of the person involved in the writing, editing or correcting the object or caption/abstract</td></tr>
 </table>
-<p class="cntr"><a href="#topp">To top of page</a></p>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<h3 class="cntr"><a name="image">Image</a></h3>
+<h3 class="cntr"><a name="Image">Image</a></h3>
 <table>
 <tr>
-<th>Tag code</th><th>Tag name</th><th>Tag description</th>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
 </tr>
 <tr><td>Image.Album</td><td>Album</td><td>Name of an album the image belongs to.</td></tr>
 <tr><td>Image.CameraMake</td><td>Camera Make</td><td>Make of camera used to take the image.</td></tr>
@@ -375,8 +375,8 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Image.WhiteBalance</td><td>White Balance</td><td>White balance setting of the camera when the picture was taken (auto or manual).</td></tr>
 <tr><td>Image.Width</td><td>Width</td><td>Width in pixels.</td></tr>
 </table>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
 
-<p class="cntr"><a href="#topp">To top of page</a></p>
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
