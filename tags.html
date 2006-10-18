@@ -153,12 +153,12 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Exif.FlashEnergy</td><td>Flash Energy</td><td>Indicates the strobe energy at the time the image is captured, as measured in Beam Candle Power Seconds (BCPS).</td></tr>
 <tr><td>Exif.FlashPixVersion</td><td>FlashPixVersion</td><td>The FlashPix format version supported by a FPXR file.</td></tr>
 <tr><td>Exif.FocalLength</td><td>Focal Length</td><td>The actual focal length of the lens, in mm. Conversion is not made to the focal length of a 35 mm film camera.</td></tr>
-<tr><td>Exif.FocalLengthIn35mmFilm</td><td>Focal Length In 35mm Film</td><td>This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the FocalLength tag.</td></tr>
+<tr><td>Exif.FocalLengthIn35mmFilm</td><td>Focal Length In 35mm Film</td><td>This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the "Exif.FocalLength" tag.</td></tr>
 <tr><td>Exif.FocalPlaneResolutionUnit</td><td>Focal Plane Resolution Unit</td><td>Indicates the unit for measuring "Exif.FocalPlaneXResolution" and "Exif.FocalPlaneYResolution". This value is the same as the "Exif.ResolutionUnit".</td></tr>
 <tr><td>Exif.FocalPlaneXResolution</td><td>Focal Plane x-Resolution</td><td>Indicates the number of pixels in the image width (X) direction per "Exif.FocalPlaneResolutionUnit" on the camera focal plane.</td></tr>
 <tr><td>Exif.FocalPlaneYResolution</td><td>Focal Plane y-Resolution</td><td>Indicates the number of pixels in the image height (V) direction per "Exif.FocalPlaneResolutionUnit" on the camera focal plane.</td></tr>
-<tr><td>Exif.GPS.Altitude</td><td>Altitude</td><td>Indicates the altitude based on the reference in GPSAltitudeRef. The reference unit is meters.</td></tr>
-<tr><td>Exif.GPS.AltitudeRef</td><td>Altitude Reference</td><td>Indicates the altitude used as the reference altitude. If the reference is sea level and the altitude is above sea level, 0 is given. If the altitude is below sea level, a value of 1 is given and the altitude is indicated as an absolute value in the GSPAltitude tag. The reference unit is meters.</td></tr>
+<tr><td>Exif.GPS.Altitude</td><td>Altitude</td><td>Indicates the altitude based on the reference in "Exif.GPS.AltitudeRef". The reference unit is meters.</td></tr>
+<tr><td>Exif.GPS.AltitudeRef</td><td>Altitude Reference</td><td>Indicates the altitude used as the reference altitude. If the reference is sea level and the altitude is above sea level, 0 is given. If the altitude is below sea level, a value of 1 is given and the altitude is indicated as an absolute value in the "Exif.GPS.Altitude" tag. The reference unit is meters.</td></tr>
 <tr><td>Exif.GPS.InfoIFDPointer</td><td>GPS Info IFDPointer</td><td>A pointer to the GPS Info IFD. The Interoperability structure of the GPS Info IFD, like that of Exif IFD, has no image data.</td></tr>
 <tr><td>Exif.GPS.Latitude</td><td>Latitude</td><td>Indicates the latitude. The latitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. When degrees, minutes and seconds are expressed, the format is dd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format is dd/1,mmmm/100,0/1.</td></tr>
 <tr><td>Exif.GPS.LatitudeRef</td><td>North or South Latitude</td><td>Indicates whether the latitude is north or south latitude. The ASCII value 'N' indicates north latitude, and 'S' is south latitude.</td></tr>
@@ -231,7 +231,7 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Exif.XMLPacket</td><td>XML Packet</td><td>XMP Metadata.</td></tr>
 <tr><td>Exif.XResolution</td><td>x Resolution</td><td>The number of pixels per "Exif.ResolutionUnit" in the "Exif.ImageWidth" direction. When the image resolution is unknown, 72 [dpi] is designated.</td></tr>
 <tr><td>Exif.YCbCrCoefficients</td><td>YCbCr Coefficients</td><td>The matrix coefficients for transformation from RGB to YCbCr image data. No default is given in TIFF; but here "Color Space Guidelines" is used as the default. The color space is declared in a color space information tag, with the default being the value that gives the optimal image characteristics Interoperability this condition.</td></tr>
-<tr><td>Exif.YCbCrPositioning</td><td>YCbCr Positioning</td><td>The position of chrominance components in relation to the luminance component. This field is designated only for JPEG compressed data or uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr = 4:2:2 it is recommended in this standard that 2 (co-sited) be used to record data, in order to improve the image quality when viewed on TV systems. When this field does not exist, the reader shall assume the TIFF default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is recommended. If the reader does not have the capability of supporting both kinds of "Exif.YCbCrPositioning", it shall follow the TIFF default regardless of the value in this field. It is preferable that readers be able to support both centered and co-sited positioning.</td></tr>
+<tr><td>Exif.YCbCrPositioning</td><td>YCbCr Positioning</td><td>The position of chrominance components in relation to the luminance component. This field is designated only for JPEG compressed data or uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr = 4:2:2 it is recommended that 2 (co-sited) be used to record data, in order to improve the image quality when viewed on TV systems. When this field does not exist, the reader shall assume the TIFF default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is recommended. If the reader does not have the capability of supporting both kinds of "Exif.YCbCrPositioning", it shall follow the TIFF default regardless of the value in this field. It is preferable that readers be able to support both centered and co-sited positioning.</td></tr>
 <tr><td>Exif.YCbCrSubSampling</td><td>YCbCr Sub-Sampling</td><td>The sampling ratio of chrominance components in relation to the luminance component. In JPEG compressed data a JPEG marker is used instead of this tag.</td></tr>
 <tr><td>Exif.YResolution</td><td>y Resolution</td><td>The number of pixels per "Exif.ResolutionUnit" in the "Exif.ImageLength" direction. The same value as "Exif.XResolution" is designated.</td></tr>
 </table>
@@ -274,16 +274,16 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>IPTC.AudioSamplingRate</td><td>Audio Sampling Rate</td><td>The sampling rate in Hz of the audio data.</td></tr>
 <tr><td>IPTC.AudioSamplingRes</td><td>Audio Sampling Resolution</td><td>The number of bits in each audio sample.</td></tr>
 <tr><td>IPTC.AudioType</td><td>Audio Type</td><td>The number of channels and type of audio (music, text, etc.) in the object.</td></tr>
-<tr><td>IPTC.Byline</td><td>By-line</td><td>Name of the creator of the object, e.g. writer, photographer or graphic artist.</td></tr>
+<tr><td>IPTC.Byline</td><td>By-line</td><td>Name of the creator of the object, e.g. writer, photographer or graphic artist (multiple values allowed).</td></tr>
 <tr><td>IPTC.BylineTitle</td><td>By-line Title</td><td>Title of the creator or creators of the object.</td></tr>
-<tr><td>IPTC.Caption</td><td>Caption/Abstract</td><td>A textual description of the data</td></tr>
+<tr><td>IPTC.Caption</td><td>Caption, Abstract</td><td>A textual description of the data</td></tr>
 <tr><td>IPTC.Category</td><td>Category</td><td>Identifies the subject of the object in the opinion of the provider (Deprecated).</td></tr>
 <tr><td>IPTC.CharacterSet</td><td>Coded Character Set</td><td>Control functions used for the announcement, invocation or designation of coded character sets.</td></tr>
 <tr><td>IPTC.City</td><td>City</td><td>City of object origin.</td></tr>
 <tr><td>IPTC.ConfirmedDataSize</td><td>Confirmed Data Size</td><td>Total size of the object data.</td></tr>
-<tr><td>IPTC.Contact</td><td>Contact</td><td>The person or organization which can provide further background information on the object.</td></tr>
-<tr><td>IPTC.ContentLocCode</td><td>Content Location Code</td><td>Indicates the code of a country/geographical location referenced by the content of the object.</td></tr>
-<tr><td>IPTC.ContentLocName</td><td>Content Location Name</td><td>A full, publishable name of a country/geographical location referenced by the content of the object.</td></tr>
+<tr><td>IPTC.Contact</td><td>Contact</td><td>The person or organization which can provide further background information on the object (multiple values allowed).</td></tr>
+<tr><td>IPTC.ContentLocCode</td><td>Content Location Code</td><td>Indicates the code of a country/geographical location referenced by the content of the object (multiple values allowed).</td></tr>
+<tr><td>IPTC.ContentLocName</td><td>Content Location Name</td><td>A full, publishable name of a country/geographical location referenced by the content of the object (multiple values allowed).</td></tr>
 <tr><td>IPTC.CopyrightNotice</td><td>Copyright Notice</td><td>Any necessary copyright notice.</td></tr>
 <tr><td>IPTC.CountryCode</td><td>Country Code</td><td>The code of the country/primary location where the object was created.</td></tr>
 <tr><td>IPTC.CountryName</td><td>Country Name</td><td>The name of the country/primary location where the object was created.</td></tr>
@@ -305,13 +305,13 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>IPTC.Headline</td><td>Headline</td><td>A publishable entry providing a synopsis of the contents of the object.</td></tr>
 <tr><td>IPTC.ImageOrientation</td><td>Image Orientation</td><td>The layout of the image area: 'P' for portrait, 'L' for landscape, and 'S' for square.</td></tr>
 <tr><td>IPTC.ImageType</td><td>Image Type</td><td>Indicates the data format of the image object.</td></tr>
-<tr><td>IPTC.Keywords</td><td>Keywords</td><td>Used to indicate specific information retrieval words.</td></tr>
+<tr><td>IPTC.Keywords</td><td>Keywords</td><td>Used to indicate specific information retrieval words (multiple values allowed).</td></tr>
 <tr><td>IPTC.LanguageID</td><td>Language Identifier</td><td>The major national language of the object, according to the 2-letter codes of ISO 639:1988.</td></tr>
 <tr><td>IPTC.MaxObjectSize</td><td>Maximum Object Size</td><td>The largest possible size of the object if the size is not known.</td></tr>
 <tr><td>IPTC.MaxSubfileSize</td><td>Max Subfile Size</td><td>The maximum size for a subfile dataset (8:10) containing a portion of the object data.</td></tr>
 <tr><td>IPTC.ModelVersion</td><td>Model Version</td><td>Version of IIM part 1.</td></tr>
-<tr><td>IPTC.ObjectAttribute</td><td>Object Attribute Reference</td><td>Defines the nature of the object independent of the subject.</td></tr>
-<tr><td>IPTC.ObjectCycle</td><td>Object Cycle</td><td>Where 'a' is morning, 'b' is evening, 'b' is both.</td></tr>
+<tr><td>IPTC.ObjectAttribute</td><td>Object Attribute Reference</td><td>Defines the nature of the object independent of the subject (multiple values allowed).</td></tr>
+<tr><td>IPTC.ObjectCycle</td><td>Object Cycle</td><td>Where 'a' is morning, 'p' is evening, 'b' is both.</td></tr>
 <tr><td>IPTC.ObjectName</td><td>Object Name</td><td>A shorthand reference for the object.</td></tr>
 <tr><td>IPTC.ObjectSizeAnnounced</td><td>Object Size Announced</td><td>The total size of the object data if it is known.</td></tr>
 <tr><td>IPTC.ObjectType</td><td>Object Type Reference</td><td>Distinguishes between different types of objects within the IIM.</td></tr>
@@ -322,7 +322,7 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>IPTC.PreviewFileFormatVer</td><td>Preview File Format Version</td><td>The version of the preview file format specified in 2:200.</td></tr>
 <tr><td>IPTC.ProductID</td><td>Product ID</td><td>Allows a provider to identify subsets of its overall service.</td></tr>
 <tr><td>IPTC.ProgramVersion</td><td>Program Version</td><td>The version of the originating program.</td></tr>
-<tr><td>IPTC.Province</td><td>Province/State</td><td>The Province/State where the object originates.</td></tr>
+<tr><td>IPTC.Province</td><td>Province, State</td><td>The Province/State where the object originates.</td></tr>
 <tr><td>IPTC.RasterizedCaption</td><td>Rasterized Caption</td><td>Contains rasterized object description and is used where characters that have not been coded are required for the caption.</td></tr>
 <tr><td>IPTC.RecordVersion</td><td>Record Version</td><td>Identifies the version of the IIM, Part 2</td></tr>
 <tr><td>IPTC.RefDate</td><td>Reference Date</td><td>The date of a prior envelope to which the current object refers.</td></tr>
@@ -334,16 +334,16 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>IPTC.SizeMode</td><td>Size Mode</td><td>Set to 0 if the size of the object is known and 1 if not known.</td></tr>
 <tr><td>IPTC.Source</td><td>Source</td><td>The original owner of the intellectual content of the object.</td></tr>
 <tr><td>IPTC.SpecialInstructions</td><td>Special Instructions</td><td>Other editorial instructions concerning the use of the object.</td></tr>
-<tr><td>IPTC.State</td><td>Province/State</td><td>The Province/State where the object originates.</td></tr>
+<tr><td>IPTC.State</td><td>Province, State</td><td>The Province/State where the object originates.</td></tr>
 <tr><td>IPTC.Subfile</td><td>Subfile</td><td>The object data itself. Subfiles must be sequential so that the subfiles may be reassembled.</td></tr>
 <tr><td>IPTC.SubjectRef</td><td>Subject Reference</td><td>A structured definition of the subject matter. It must contain an IPR, an 8 digit Subject Reference Number and an optional Subject Name, Subject Matter Name, and Subject Detail Name each separated by a colon (:).</td></tr>
 <tr><td>IPTC.Sublocation</td><td>Sub-location</td><td>The location within a city from which the object originates.</td></tr>
 <tr><td>IPTC.SupplCategory</td><td>Supplemental Category</td><td>Further refines the subject of the object (Deprecated).</td></tr>
-<tr><td>IPTC.TimeCreated</td><td>Time Created</td><td>The time the intellectual content of the object was created rather than the date of the creation of the physical representation.</td></tr>
+<tr><td>IPTC.TimeCreated</td><td>Time Created</td><td>The time the intellectual content of the object was created rather than the date of the creation of the physical representation (multiple values allowed).</td></tr>
 <tr><td>IPTC.TimeSent</td><td>Time Sent</td><td>The time the service sent the material.</td></tr>
 <tr><td>IPTC.UNO</td><td>Unique Name of Object</td><td>An eternal, globally unique identification for the object, independent of provider and for any media form.</td></tr>
 <tr><td>IPTC.Urgency</td><td>Urgency</td><td>Specifies the editorial urgency of content and not necessarily the envelope handling priority. '1' is most urgent, '5' normal, and '8' least urgent.</td></tr>
-<tr><td>IPTC.WriterEditor</td><td>Writer/Editor</td><td>The name of the person involved in the writing, editing or correcting the object or caption/abstract</td></tr>
+<tr><td>IPTC.WriterEditor</td><td>Writer/Editor</td><td>The name of the person involved in the writing, editing or correcting the object or caption/abstract (multiple values allowed)</td></tr>
 </table>
 <p class="cntr"><a href="#topp">To top of page</a></p> 
 
