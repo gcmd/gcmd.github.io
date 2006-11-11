@@ -40,6 +40,7 @@ table {width:96%;}
 <li><a href="#Doc" title="List of supported doc tags">Document</a></li>
 <li><a href="#Exif" title="List of supported Exif tags">Exif</a></li>
 <li><a href="#File" title="List of supported File tags">File</a></li>
+<li><a href="#ID3" title="List of supported ID3 tags">ID3</a></li>
 <li><a href="#IPTC" title="List of supported IPTC tags">IPTC</a></li>
 <li><a href="#Image" title="List of supported Image tags">Image</a></li>
 </ul>
@@ -82,7 +83,7 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>Audio.IsNew</td><td>Is new</td><td>Set to "1" if track is new to the user (default "0").</td></tr>
 <tr><td>Audio.LastPlay</td><td>Last Play</td><td>When track was last played.</td></tr>
 <tr><td>Audio.Lyrics</td><td>Lyrics</td><td>Lyrics of the track.</td></tr>
-<tr><td>Audio.MBAlbumArtistID</td><td>MB album artist id</td><td>MusicBrainz album artist ID in UUID format.</td></tr>
+<tr><td>Audio.MBAlbumArtistID</td><td>MB album artist ID</td><td>MusicBrainz album artist ID in UUID format.</td></tr>
 <tr><td>Audio.MBAlbumID</td><td>MB Album ID</td><td>MusicBrainz album ID in UUID format.</td></tr>
 <tr><td>Audio.MBArtistID</td><td>MB Artist ID</td><td>MusicBrainz artist ID in UUID format.</td></tr>
 <tr><td>Audio.MBTrackID</td><td>MB Track ID</td><td>MusicBrainz track ID in UUID format.</td></tr>
@@ -258,6 +259,116 @@ as Template in the inputbox at top, then it will replace the filenames in marked
 <tr><td>File.Rank</td><td>Rank</td><td>Editable file rank for grading favourites. Value should be in the range 1..10.</td></tr>
 <tr><td>File.Size</td><td>Size</td><td>Size of the file in bytes or if a directory number of items it contains.</td></tr>
 <tr><td>File.SmallThumbnailPath</td><td>Small Thumbnail Path</td><td>Editable file URI for a small thumbnail of the file suitable for use in icon views.</td></tr>
+</table>
+<p class="cntr"><a href="#topp">To top of page</a></p> 
+
+<h3 class="cntr"><a name="ID3">ID3</a></h3>
+<table>
+<tr>
+<th>Tag.Code</th><th>Tag name</th><th>Tag description</th>
+</tr>
+<tr><td>ID3.Album</td><td>Album</td><td>Name of the album.</td></tr>
+<tr><td>ID3.AlbumSortOrder</td><td>Album Sort Order</td><td>String which should be used instead of the album name for sorting purposes.</td></tr>
+<tr><td>ID3.AudioCrypto</td><td>Audio Encryption</td><td>Frame indicates if the audio stream is encrypted, and by whom.</td></tr>
+<tr><td>ID3.AudioSeekPoint</td><td>Audio Seek Point</td><td>Fractional offset within the audio data, providing a starting point from which to find an appropriate point to start decoding.</td></tr>
+<tr><td>ID3.BPM</td><td>BPM</td><td>BPM (beats per minute).</td></tr>
+<tr><td>ID3.Band</td><td>Band</td><td>Additional information about the performers in the recording.</td></tr>
+<tr><td>ID3.Bitrate</td><td>Bitrate</td><td>Bitrate in kbps.</td></tr>
+<tr><td>ID3.BufferSize</td><td>Buffer Size</td><td>Recommended buffer size.</td></tr>
+<tr><td>ID3.CDID</td><td>CD ID</td><td>Music CD identifier.</td></tr>
+<tr><td>ID3.ChannelMode</td><td>Channel mode</td><td>Channel mode.</td></tr>
+<tr><td>ID3.Channels</td><td>Channels</td><td>Number of channels in the audio (2 = stereo).</td></tr>
+<tr><td>ID3.Comment</td><td>Comment</td><td>Comments on the track.</td></tr>
+<tr><td>ID3.Commercial</td><td>Commercial</td><td>Commercial frame.</td></tr>
+<tr><td>ID3.Composer</td><td>Composer</td><td>Composer.</td></tr>
+<tr><td>ID3.Conductor</td><td>Conductor</td><td>Conductor.</td></tr>
+<tr><td>ID3.ContentGroup</td><td>Content Group</td><td>Content group description.</td></tr>
+<tr><td>ID3.ContentType</td><td>Content Type</td><td>Type of music classification for the track as defined in ID3 spec.</td></tr>
+<tr><td>ID3.Copyright</td><td>Copyright</td><td>Copyright message.</td></tr>
+<tr><td>ID3.CryptoReg</td><td>Encryption Registration</td><td>Encryption method registration.</td></tr>
+<tr><td>ID3.Date</td><td>Date</td><td>Date.</td></tr>
+<tr><td>ID3.Duration</td><td>Duration</td><td>Duration of track in seconds.</td></tr>
+<tr><td>ID3.Duration.MMSS</td><td>Duration [MM:SS]</td><td>Duration of track as MM:SS.</td></tr>
+<tr><td>ID3.Emphasis</td><td>Emphasis</td><td>Emphasis.</td></tr>
+<tr><td>ID3.EncodedBy</td><td>Encoded By</td><td>Person or organisation that encoded the audio file. This field may contain a copyright message, if the audio file also is copyrighted by the encoder.</td></tr>
+<tr><td>ID3.EncoderSettings</td><td>Encoder Settings</td><td>Software.</td></tr>
+<tr><td>ID3.EncodingTime</td><td>Encoding Time</td><td>Encoding time.</td></tr>
+<tr><td>ID3.Equalization</td><td>Equalization</td><td>Equalization.</td></tr>
+<tr><td>ID3.Equalization2</td><td>Equalization 2</td><td>Equalisation curve predifine within the audio file.</td></tr>
+<tr><td>ID3.EventTiming</td><td>Event Timing</td><td>Event timing codes.</td></tr>
+<tr><td>ID3.FileOwner</td><td>File Owner</td><td>File owner.</td></tr>
+<tr><td>ID3.FileType</td><td>File Type</td><td>File type.</td></tr>
+<tr><td>ID3.Frames</td><td>Frames</td><td>Number of frames.</td></tr>
+<tr><td>ID3.GeneralObject</td><td>General Object</td><td>General encapsulated object.</td></tr>
+<tr><td>ID3.Genre</td><td>Genre</td><td>Type of music classification for the track as defined in ID3 spec.</td></tr>
+<tr><td>ID3.GroupingReg</td><td>Grouping Registration</td><td>Group identification registration.</td></tr>
+<tr><td>ID3.ISRC</td><td>ISRC</td><td>ISRC (international standard recording code).</td></tr>
+<tr><td>ID3.InitialKey</td><td>Initial Key</td><td>Initial key.</td></tr>
+<tr><td>ID3.InvolvedPeople</td><td>Involved People</td><td>Involved people list.</td></tr>
+<tr><td>ID3.InvolvedPeople2</td><td>InvolvedPeople2</td><td>Involved people list.</td></tr>
+<tr><td>ID3.Language</td><td>Language</td><td>Language.</td></tr>
+<tr><td>ID3.LeadArtist</td><td>Lead Artist</td><td>Lead performer(s).</td></tr>
+<tr><td>ID3.LinkedInfo</td><td>Linked Info</td><td>Linked information.</td></tr>
+<tr><td>ID3.Lyricist</td><td>Lyricist</td><td>Lyricist.</td></tr>
+<tr><td>ID3.MPEG.Layer</td><td>Layer</td><td>MPEG layer.</td></tr>
+<tr><td>ID3.MPEG.Lookup</td><td>MPEG Lookup</td><td>MPEG location lookup table.</td></tr>
+<tr><td>ID3.MPEG.Version</td><td>MPEG Version</td><td>MPEG version.</td></tr>
+<tr><td>ID3.MediaType</td><td>Media Type</td><td>Media type.</td></tr>
+<tr><td>ID3.MixArtist</td><td>Mix Artist</td><td>Interpreted, remixed, or otherwise modified by.</td></tr>
+<tr><td>ID3.Mood</td><td>Mood</td><td>Mood.</td></tr>
+<tr><td>ID3.MusicianCreditList</td><td>Musician Credit List</td><td>Musician credits list.</td></tr>
+<tr><td>ID3.NetRadioOwner</td><td>Net Radio Owner</td><td>Internet radio station owner.</td></tr>
+<tr><td>ID3.NetRadiostation</td><td>Net Radiostation</td><td>Internet radio station name.</td></tr>
+<tr><td>ID3.OriginalAlbum</td><td>Original Album</td><td>Original album.</td></tr>
+<tr><td>ID3.OriginalArtist</td><td>Original Artist</td><td>Original artist.</td></tr>
+<tr><td>ID3.OriginalFileName</td><td>Original File Name</td><td>Original filename.</td></tr>
+<tr><td>ID3.OriginalLyricist</td><td>Original Lyricist</td><td>Original lyricist.</td></tr>
+<tr><td>ID3.OriginalReleaseTime</td><td>Original Release Time</td><td>Original release time.</td></tr>
+<tr><td>ID3.OriginalYear</td><td>Original Year</td><td>Original release year.</td></tr>
+<tr><td>ID3.Ownership</td><td>Ownership</td><td>Ownership frame.</td></tr>
+<tr><td>ID3.PartInSet</td><td>Part of a Set</td><td>Part of a set the audio came from.</td></tr>
+<tr><td>ID3.PerformerSortOrder</td><td>Performer Sort Order</td><td>Performer sort order.</td></tr>
+<tr><td>ID3.Picture</td><td>Picture</td><td>Attached picture.</td></tr>
+<tr><td>ID3.PlayCounter</td><td>Play Counter</td><td>Number of times a file has been played.</td></tr>
+<tr><td>ID3.PlaylistDelay</td><td>Playlist Delay</td><td>Playlist delay.</td></tr>
+<tr><td>ID3.Popularimeter</td><td>Popularimeter</td><td>Rating of the audio file.</td></tr>
+<tr><td>ID3.PositionSync</td><td>Position Sync</td><td>Position synchronisation frame.</td></tr>
+<tr><td>ID3.Private</td><td>Private</td><td>Private frame.</td></tr>
+<tr><td>ID3.ProducedNotice</td><td>Produced Notice</td><td>Produced notice.</td></tr>
+<tr><td>ID3.Publisher</td><td>Publisher</td><td>Publisher.</td></tr>
+<tr><td>ID3.RecordingDates</td><td>Recording Dates</td><td>Recording dates.</td></tr>
+<tr><td>ID3.RecordingTime</td><td>Recording Time</td><td>Recording time.</td></tr>
+<tr><td>ID3.ReleaseTime</td><td>Release Time</td><td>Release time.</td></tr>
+<tr><td>ID3.Reverb</td><td>Reverb</td><td>Reverb.</td></tr>
+<tr><td>ID3.SampleRate</td><td>Sample Rate</td><td>Sample rate in Hz.</td></tr>
+<tr><td>ID3.SetSubtitle</td><td>Set Subtitle</td><td>Subtitle of the part of a set this track belongs to.</td></tr>
+<tr><td>ID3.Signature</td><td>Signature</td><td>Signature frame.</td></tr>
+<tr><td>ID3.Size</td><td>Size</td><td>Size of the audio file in bytes, excluding the ID3 tag.</td></tr>
+<tr><td>ID3.SongLength</td><td>Song length</td><td>Length of the song in milliseconds.</td></tr>
+<tr><td>ID3.Subtitle</td><td>Subtitle</td><td>Subtitle.</td></tr>
+<tr><td>ID3.SyncedTempo</td><td>Synchronized Tempo</td><td>Synchronized tempo codes.</td></tr>
+<tr><td>ID3.Syncedlyrics</td><td>Syncedlyrics</td><td>Synchronized lyric.</td></tr>
+<tr><td>ID3.TaggingTime</td><td>Tagging Time</td><td>Tagging time.</td></tr>
+<tr><td>ID3.TermsOfUse</td><td>Terms Of Use</td><td>Terms of use.</td></tr>
+<tr><td>ID3.Time</td><td>Time</td><td>Time.</td></tr>
+<tr><td>ID3.Title</td><td>Title</td><td>Title of the track.</td></tr>
+<tr><td>ID3.Titlesortorder</td><td>Titlesortorder</td><td>Title sort order.</td></tr>
+<tr><td>ID3.TrackNo</td><td>Track number</td><td>Position of track on the album.</td></tr>
+<tr><td>ID3.UniqueFileID</td><td>Unique File ID</td><td>Unique file identifier.</td></tr>
+<tr><td>ID3.UnsyncedLyrics</td><td>Unsynchronized Lyrics</td><td>Unsynchronized lyric.</td></tr>
+<tr><td>ID3.UserText</td><td>User Text</td><td>User defined text information.</td></tr>
+<tr><td>ID3.VolumeAdj</td><td>Volume Adjustment</td><td>Relative volume adjustment.</td></tr>
+<tr><td>ID3.VolumeAdj2</td><td>Volume Adjustment 2</td><td>Relative volume adjustment.</td></tr>
+<tr><td>ID3.WWWArtist</td><td>WWW Artist</td><td>Official artist.</td></tr>
+<tr><td>ID3.WWWAudioFile</td><td>WWW Audio File</td><td>Official audio file webpage.</td></tr>
+<tr><td>ID3.WWWAudioSource</td><td>WWW Audio Source</td><td>Official audio source webpage.</td></tr>
+<tr><td>ID3.WWWCommercialInfo</td><td>WWW Commercial Info</td><td>URL pointing at a webpage containing commercial information.</td></tr>
+<tr><td>ID3.WWWCopyright</td><td>WWW Copyright</td><td>URL pointing at a webpage that holds copyright.</td></tr>
+<tr><td>ID3.WWWPayment</td><td>WWW Payment</td><td>URL pointing at a webpage that will handle the process of paying for this file.</td></tr>
+<tr><td>ID3.WWWPublisher</td><td>WWW Publisher</td><td>URL pointing at the official webpage for the publisher.</td></tr>
+<tr><td>ID3.WWWRadioPage</td><td>WWW Radio Page</td><td>Official internet radio station homepage.</td></tr>
+<tr><td>ID3.WWWUser</td><td>WWW User</td><td>User defined URL link.</td></tr>
+<tr><td>ID3.Year</td><td>Year</td><td>Year.</td></tr>
 </table>
 <p class="cntr"><a href="#topp">To top of page</a></p> 
 
