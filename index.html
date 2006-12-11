@@ -54,58 +54,41 @@ management, their work through special applications and running smart commands. 
 
 <h2 class="nh"><a name="news">Latest news:</a></h2>
 
-<h4 class="nh4">Call for SMB help! - Dec. 04 2006</h4>
-<h5>Update Dec 08.</h5>
-<p>Problem solved!<br> Piotr has now closed bug 349631 for v1.2.1 and the work in the 1.2.2 release 
-can continue as planned. Thanks to the feedback on this issue.</p>
-<p>Unfortunately we have to delay the launch of the planned 1.2.2 release. There is still a very irritating bug 
-concerning SMB networks, which we have a hard time to pinpoint, so we need some quality bugreports 
-and feedback on this. Our bugzilla is now stormed by  mostly ubuntu users reporting gcmd 
-<a href="http://bugzilla.gnome.org/show_bug.cgi?id=349631">crash when SMB browsing</a>. Any help 
-will be very welcome, since we cannot reproduce this bug. Please contact us on 
-<a href="mailto:gcmd-devel@nongnu.org?Subject=The SMB-bug.">gcmd-devel@nongnu.org</a> 
-(<a href="http://lists.nongnu.org/mailman/listinfo/gcmd-devel" 
-title="The page from wich you can sign up on our developer mailing list">our developer mailing list info page</a>) 
-if you are experiencing this bug and want to help us with info to track this down.</p>
+<h4 class="nh4">New release, version 1.2.2 - Dec. 11 2006</h4>
+<p>The GNOME Commander team is proud to announce the next stable release of
+GNOME Commander: 1.2.2.</p>
 
+<p>This release is mostly about bugfixes and not so much about new features, though the advanced 
+renaming tool now has got support for ID3 metags in advanced file rename templates.</p>
 
-<h4 class="nh4">Version 1.2.1 stable release - Okt. 17 2006</h4>
-<p>The GNOME Commander team is proud to announce the stable release of
-GNOME Commander: 1.2.1.</p>
-<p>There has now been some work done in the unstable 1.3 branch, where some things, like the 
-start of supporting metatags in the advanced renaming tool, has made its way into this 1.2.1 release. 
-Some bugs has of course also been fixed. You find tarballs at <a href="download.html">our downloadpage</a>.</p>
-
-
-<h5>What's new since 1.2.0:</h5>
+<h4>What's new since 1.2.1:</h4>
+<h5>Bugfixes</h5>
 <ul>
-<li>Support for archives (gz,bz2,zip,lha,rar,jar,7-zip,zoo,deb,rpm)
-via FileRoller plugin.</li>
-<li>New python-like indices for advanced file rename templates.</li>
-<li>Support for Exif and IPTC metags in advanced file rename templates (<code>$T(DataType.Tagname)</code>).</li>
-<li>Fast access to advrename template placeholders, like the above metatags.</li>
-<li>In-place file rename (SHIFT+F6).</li>
-<li>Revamped application menus.</li>
-<li>Saving window state across sessions.</li>
-<li>"Find" feature for internal viewer.</li>
-<li>New icon for internal viewer.</li>
-<li>Updated help docs.</li>
-<li>New or updated translations: ca, cs, de, el, en_GB, es, eu, fi,
-hu, it, ne, ru, sv, vi.</li>
-<li>New key binding: <code>CTRL+SHIFT+H</code>   Toggle hidden files on/off.</li>
+	<li>Fixed problem with symlink creation for multiple file selection</li>
+	<li>Fixed problem with grouping of file size digits</li>
+	<li>Fixed problem with SMB UNC handling</li>
+	<li>Fixed problem #367744 (filename not correctly displayed)</li>
+	<li>Fixed problem #374282 (searching with recursive symlinks)</li>
+	<li>Fixed problem #377706 (selecting files with SHIFT+PGDN)</li>
+</ul>
+<h5>New features:</h5>
+<ul>
+	<li>Support for ID3 metags in advanced file rename templates</li>
+	<li>Updated help docs</li>
+	<li>New or updated translations: ar, en_GB, es, fi, it, pl, sv</li>
+	<li>New key bindings:
+	<ul>
+	  <li>CTRL+SHIFT+= Set both panels equal</li>
+   </ul></li>
 </ul>
 
-<p>For a brief list of fixed bugs since last stable release, see the 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/NEWS?view=markup" title="View of the file /gnome-commander/NEWS">Release 
-news</a></p>
 
 <h4>The unstable 1.3 branch.</h4>
-<p>In the unstable branch the team behind GCMD are now experimenting with 
-meta-data. So far we have working code for extracting Exif, File and IPTC meta-data 
-in the advrename tool by a new "Template" placeholder <code>$T(meta.data)</code>. The plan is to add this 
-functionality to the searchtool, custom columns and the internal viewer. The 
-<a href="http://cvs.gnome.org/viewcvs/gnome-commander/TODO?sortby=date&amp;view=markup">TODO file</a> 
-gives a hint on what we are working on and maybe appreciate some community efforts on. 
+<p>In the unstable branch the team behind GCMD are now experimenting with python plugins 
+that users can drop in the ~/.gnome-commander/plugins directory. The work on supporting
+meta-data also continues. The plan is to add this functionality to the searchtool, custom columns and the internal viewer. 
+The <a href="http://cvs.gnome.org/viewcvs/gnome-commander/TODO?sortby=date&amp;view=markup">TODO file</a> 
+gives a hint on what we are working on, or like to work on, and maybe appreciate some community efforts on. 
 Users and developers are as usual welcome to contact us, ask questions and discuss the development 
 on <a href="dev.html#maillists">our mailinglists</a>.</p>
 
@@ -140,8 +123,9 @@ for just quick access to folders or otherwise automounted devices).</li>
 <li>Folder bookmarks.</li>
 <li>Plugin support under development.</li>
 <li>Fast file viewer for text, images and image meta data (Exif and IPTC)..</li>
-<li>Tools for advanced renaming of files, searching, quick file name search in current dir, 
-symlinking, comparing directories.</li>
+<li>Tools for searching, quick file name search in current dir, symlinking, comparing directories. ...</li>
+<li>A tool for advanced renaming of files <a href="tags.html" title="Supported types of meta-data">supporting 
+various types of meta-data</a>.</li>
 <li>Integrated command line.</li>
 </ul>
 
