@@ -40,7 +40,7 @@
 <li><a href="#team">The team</a></li>
 </ul>
 <p><a href="http://cia.navi.cx/stats/project/gnome/gnome-commander/.rss">RSS-feed 
-for the latest changes in cvs repository.</a></p>
+for the latest changes in svn repository.</a></p>
 </div>
 
 <p>This page contains information about hacking and contributing to the Gnome Commander project. 
@@ -56,13 +56,13 @@ will then get backported to the stable branch. The version numbers (major, minor
 usual standard of odd and even versioning, where odd minor versions stands for the unstable releases and 
 the even numbered branch eventually gets the thoroughly tested new functions backported. Remember this 
 when talking about GCMD or when sending patches.</p>
-<p>To check out the latest sources from CVS, following commands can be used:</p>
+<p>To check out the latest sources from SVN, following commands can be used:</p>
 
 <p class="cntr">The stable 1.2 branch:<br>
-<code>cvs -z3 -d:pserver:anonymous@anoncvs.gnome.org:/cvs/gnome co -rHEAD gnome-commander</code></p> 
+<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/trunk</code></p> 
 
 <p class="cntr">The 1.3 testing branch:<br>
-<code>cvs -z3 -d:pserver:anonymous@anoncvs.gnome.org:/cvs/gnome co -rgcmd-1-3 gnome-commander</code></p> 
+<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/branches/gcmd-1-3</code></p> 
 
 
 <h2><a name="contr">Contributing</a></h2>
@@ -70,7 +70,7 @@ when talking about GCMD or when sending patches.</p>
 good or bad, then you are welcome to contact us thrugh <a href="#maillists">our mailing lists</a> or 
 <a href="#authors">the authors</a> directly if you want to keep it more private.</p>
 <p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the 
-<a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/TODO">TODO file</a> first before sending  
+<a href="http://svn.gnome.org/viewcvs/*checkout*/gnome-commander/trunk/TODO">TODO file</a> first before sending  
 <a href="index.html#authors">email to the authors</a> or <a href="#maillists">the mailing lists</a>.</p>
 <p>If you want to submit a patch please do so.</p>
 <ul>
@@ -93,7 +93,7 @@ and rename it to LL.po (replace "LL" with your language code, see the complete l
 (replace "LL" with your language code, see the 
 <a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">complete list of language codes</a>). </p>
 <ol>
-<li>Get a fresh copy of the program source (either from cvs or snapshot)</li>
+<li>Get a fresh copy of the program source (either from SVN or snapshot)</li>
 <li>Unpack it and run <code>./autogen.sh</code>.</li>
 <li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory 
 and run <code>intltool-update LL</code>.</li>
@@ -119,10 +119,10 @@ mail application please send them as gzipped or bzipped attachments.</p>
 <h2><a name="doc">Hacking documents</a></h2>
 <p>Links to documents regarding Gnome Commander internals.</p>
 <ul>
-<li><a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>. 
+<li><a href="http://svn.gnome.org/viewcvs/*checkout*/gnome-commander/trunk/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>. 
 This document describes details of the 'libgviewer' library, which implements GnomeCommander's Internal-Viewer. 
 If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading 
-this document first (However note that <a href="http://cvs.gnome.org/viewcvs/gnome-commander/">the source files in CVS</a> 
+this document first (However note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a> 
 always are more updated than this document).</li>
 </ul>
 <hr>
@@ -198,8 +198,8 @@ for this website, admin for the mailing lists and also contributes with testing,
 <h3>Contributors</h3>
 <p>There are many small contributors that has contributed in many ways, it would be impossible to 
 mention them all, but most of them contributing with code or translations are mentioned in the 
-<a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/AUTHORS">AUTHORS file</a> or the 
-<a href="http://cvs.gnome.org/viewcvs/*checkout*/gnome-commander/po/ChangeLog">changelog of translations</a>.</p>
+<a href="http://svn.gnome.org/viewcvs/*checkout*/gnome-commander/trunk/AUTHORS">AUTHORS file</a> or the 
+<a href="http://svn.gnome.org/viewcvs/*checkout*/gnome-commander/trunk/po/ChangeLog">changelog of translations</a>.</p>
 
 <p>A big "thanks to" is also directed to the former maintainer of Gnome Commander, Marcus Bjurman hwo 
 where the one that initiaded this project publicly in 2001 and developed it up to version 1.1.6 in 2004. Without 
