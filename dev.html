@@ -137,7 +137,9 @@ always are more updated than this document).</li>
 <li>GnomeUI (2.0)</li>
 </ul>
 <p>If you have the libraries above, and of course their sub-dependencys, devel-packages and a sane build 
-environment, the usual "./configure  make make install" procedure should work like a charm.</p>
+environment, the usual "./configure  make make install" procedure should work like a charm. If you are building 
+the code checked out from SVN, use ./autogen.sh insted of configure, in the SVN case you also need to have 
+the gnome-common files installed.</p>
 
 <p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to 
 monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from 
