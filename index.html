@@ -37,8 +37,8 @@
 <li><a href="#contact" title="How to contact the authors">Contact</a></li>
 <li><a href="newsblurbs.html" title="News-blurbs about GCMD">NewsWatch</a></li>
 </ul>
-<p><a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.2/gnome-commander-1.2.3.tar.bz2" 
-title="Gnome Commander 1.2.3">Download latest version</a> from the gnome FTP, or visit the 
+<p><a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.2/gnome-commander-1.2.4.tar.bz2" 
+title="Gnome Commander 1.2.4">Download latest version</a> from the gnome FTP, or visit the 
 <a href="download.html">download page</a> for other versions, or information about downloading from SVN. 
 The download page also contains some links to binary packages not maintained by the authors of this project.</p>
 
@@ -54,6 +54,51 @@ management, their work through special applications and running smart commands. 
 
 <h2 class="nh"><a name="news">Latest news:</a></h2>
 
+<h4 class="nh4">New release, version 1.2.4 - Jun. 09 2007</h4>
+<p>The GNOME Commander team is proud to announce the next stable release of
+<a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.2/gnome-commander-1.2.4.tar.bz2" 
+title="Gnome Commander 1.2.4">GNOME Commander: 1.2.4.</a></p>
+<p>This release has some new features and some bugs have been fixed.</p>
+
+<h4>What's new since 1.2.3:</h4>
+<h5>New features:</h5>
+<ul>
+  <li>Support for python plugins</li>
+  <li>New python plugins:
+  <ul>
+    <li>Create MD5 (128-bit) checksum</li>
+    <li>Create SHA-1 (160-bit) checksum</li>
+  </ul></li>
+  <li>Support for OLE and ODF metags in advanced file rename templates</li>
+  <li>User defined shortcuts (via configuration file)</li>
+  <li>SMB authentication</li>
+  <li>Displaying total size of files in selected subirs</li>
+  <li>'cd -' for changing to the previous working directory</li>
+  <li>More intuitive usage of diff tool</li>
+  <li>Directory synchronizing</li>
+  <li>Creating directories 'mkdir -p' like</li>
+  <li>Updated help docs</li>
+  <li>New or updated translations: ar, bg, cs, dz, en_GB, fr, it, oc, pl, sl, sv</li>
+  <li>New key bindings:
+  <ul>
+    <li>CTRL+\ Go to the root directory</li>
+    <li>CTRL+` Go to the home directory</li>
+    <li>CTRL+5 Create MD5 (128-bit) checksum</li>
+    <li>CTRL+SHIFT+C Copy selected file names to clipboard</li>
+  </ul></li>
+</ul>
+<h5>Bugfixes</h5>
+<ul>
+  <li>Fixed problem with opening dirs by intviewer</li>
+  <li>Fixed problem with editing dirs by gcmd</li>
+  <li>Fixed problem #351952 (crash while doing a content search)</li>
+  <li>Fixed problem #352253 (scrolling behaviour of the viewer)</li>
+  <li>Fixed problem #360175 (crash while entering a dir with %)</li>
+  <li>Fixed problem #371948 and #388970 (file path not escaped)</li>
+  <li>Fixed problem #412162 (build with --enable-python=no)</li>
+  <li>Build fixes</li>
+</ul>
+
 <h4 class="nh4">GCMD goes C++ - Feb. 26 2007</h4>
 <p>The Gnome Commander code has now begun a migration from C to C++. Both the HEAD and 1.3 devel branch are 
 now initially migrated and seemes to be working quite allright. Seen from a user perspective this migration is not supposed 
@@ -62,18 +107,6 @@ to change anything, the change is done due to coding reasons. Tests and bugrepor
 Further info on how to download the source from SVN  can be found on our <a href="dev.html">Development page</a>, 
 but remember that this unreleased SVN code is to be considered unstable and only for testing purposes.</p>
 
-
-<h4 class="nh4">GCMD in Fedora - Jan. 03 2007</h4>
-<p>Gnome Commander has now found its way into <a href="http://fedoraproject.org/extras/">the Fedora "Extras" repositry</a>.  
-Users of Fedora 5 and 6 has now got convienient official binary Fedora packages to install from, available for the architechtures i386, 
-x86_64 and ppc. The authors of Gnome Commander thanks the team behind Fedora, and wish them a happy 2007.</p>
-
-
-<h4 class="nh4">New release, version 1.2.3 - Dec. 12 2006</h4>
-<p>Fastest new release so far ... This is a bug fix to the problem introduced in the yeasterday release 1.2.2. Please
-upgrade to this latest one where this bug <a href="http://bugzilla.gnome.org/show_bug.cgi?id=384752">384752 
-- Permissions for new dirs</a> is fixed (we hope that not too many of you had time to upgrade to 1.2.2, sorry for the 
-inconvenience).</p>
 
 
 <h4>The unstable 1.3 branch.</h4>
