@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 <title>GNOME Commander - News history</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="KeyWords" content="gnome,commander,filemanager">   
 <meta name="Description" content="News history for the Gnome commander projekt">
+<meta name="author" content="Magnus Stålnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<!--[if IE 6]>
+<style>
+#menu {position:absolute; left:0px; top:8.5em; width:10.5em; font-weight:bold;}
+</style>
+<![endif]-->
 </head>
 <body>
 
@@ -15,18 +21,25 @@
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
 
 <div id="menu">
-<span>[<a href="index.html">Home</a>]</span>
-<span>[<a href="shots.html">Screenshots</a>]</span>
-<span>[<a href="download.html">Download</a>]</span>
-<span>[<a href="doc.html">Documentation</a>]</span>
-<span>[<a href="dev.html">Development</a>]</span>
+<a href="index.html" title="The home page">[Home]<img src="img/home.png" alt=""></a>
+<a href="shots.html" title="Images tell a lot..">[Screenshots]<img src="img/screenshot.png" alt=""></a>
+<a href="download.html" title="Links to downloads">[Download]<img src="img/download.png" alt=""></a>
+<a href="doc.html" title="Tips, tricks, help...">[Documentation]<img src="img/doc.png" alt=""></a>
+<a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]<img src="img/dev.png" alt=""></a>
 </div>
 
 <div id="cont" class="stil">
 <h2>Historical news</h2> 
+
+<h4 class="nh4">GCMD goes C++ - Feb. 26 2007</h4>
+<p>The Gnome Commander code has now begun a migration from C to C++. Both the HEAD and 1.3 devel branch are 
+now initially migrated and seemes to be working quite allright. Seen from a user perspective this migration is not supposed 
+to change anything, the change is done due to coding reasons. Tests and bugreports on the 
+<a href="http://svn.gnome.org/viewcvs/gnome-commander/">GCMD SVN code</a> are of course, as usual, much appreciated. 
+Further info on how to download the source from SVN  can be found on our <a href="dev.html">Development page</a>, 
+but remember that this unreleased SVN code is to be considered unstable and only for testing purposes.</p>
 
 <h4 class="nh4">GCMD in Fedora - Jan. 03 2007</h4>
 <p>Gnome Commander has now found its way into <a href="http://fedoraproject.org/extras/">the Fedora "Extras" repositry</a>.  
@@ -389,5 +402,7 @@ get excited about.</p>
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
+
+</div>
 </body>
 </html>

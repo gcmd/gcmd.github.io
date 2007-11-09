@@ -2,33 +2,43 @@
 <html lang="en">
 <head>
 <title>The GNOME Commander homepage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="KeyWords" content="gnome,commander,filemanager">   
 <meta name="Description" content="A powerful two pane filemanager for the Gnome desktop">
+<meta name="author" content="Magnus Stålnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<!--[if lt IE 7]>
+<style>
+#menu {position:absolute; left:0px; top:8.5em; width:10.5em; font-weight:bold;}
+#toocool {position:absolute; left:0px; top:0px;}
+</style>
+<![endif]-->
 </head>
 <body>
 
 <div class="stil" id="topp">
+<!--[if lt IE 7]>
+<a id="toocool" href="http://www.w3junkies.com/toocool/"><img src="img/too_cool.png" width="80" height="80" alt="" border="0"></a>
+<![endif]-->
+
 <img src="img/logo.png" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
 
 <div id="menu">
-<span>[<a href="index.html" title="This page">Home</a>]</span>
-<span>[<a href="shots.html" title="Images tell a lot..">Screenshots</a>]</span>
-<span>[<a href="download.html" title="Links to downloads">Download</a>]</span>
-<span>[<a href="doc.html" title="Tips, tricks, help...">Documentation</a>]</span>
-<span>[<a href="dev.html" title="How to contribute, reporting bugs, submit translations...">Development</a>]</span>
+<a href="index.html" title="The home page">[Home]<img src="img/home.png" alt=""></a>
+<a href="shots.html" title="Images tell a lot..">[Screenshots]<img src="img/screenshot.png" alt=""></a>
+<a href="download.html" title="Links to downloads">[Download]<img src="img/download.png" alt=""></a>
+<a href="doc.html" title="Tips, tricks, help...">[Documentation]<img src="img/doc.png" alt=""></a>
+<a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]<img src="img/dev.png" alt=""></a>
 </div>
 
 <div id="cont" class="stil">
 <h2>Information<a name="information">&nbsp;</a></h2> 
 
-<div id="infor"><a href="ss/shot_1.1.7_sv.png" title="Click for full size screen shot of GCMD main window" class="shot">
+<div id="infor"><a href="ss/shot_1.2.4.png" title="Click for full size screen shot of GCMD main window" class="shot">
 <img src="img/shot.png" width="204" height="148" alt=""></a>
 <h5>1.2.4 Released June. 09 2007</h5>
 <ul>
@@ -42,7 +52,7 @@ title="Gnome Commander 1.2.4">Download latest version</a> from the gnome FTP, or
 <a href="download.html">download page</a> for other versions, or information about downloading from SVN. 
 The download page also contains some links to binary packages not maintained by the authors of this project.</p>
 
-<p>Gnome Commander is a free program, released under the <a href="http://www.gnu.org/copyleft/gpl.html">GPL 
+<p><abbr title="Gnome Commander">GCMD</abbr> is a free program, released under the GNU <a href="http://www.gnu.org/copyleft/gpl.html">GPL 
 licence</a>.</p> 
 <hr>
 <div class="cntr">
@@ -56,11 +66,22 @@ licence</a>.</p>
 GNOME Commander aims to fulfill the demands of more advanced users who like to focus on file 
 management, their work through special applications and running smart commands. Take a look at 
 <a href="shots.html">the screenshots</a>, images tell a lot.</p>
-<p>Read more <a href="#about">About Gnome Commander</a> below.</p> 
+<p>Read more <a href="#about">About Gnome Commander</a> and its features below.</p> 
 
 <h2 class="nh"><a name="news">Latest news:</a></h2>
 
-<h4 class="nh4">New release, version 1.2.4 - Jun. 09 2007</h4>
+<h4 class="nh4">
+<img class="info" src="img/info.png" width="32" height="32" alt="">New website design Nov. 09 2007</h4>
+<p>A major update to this homepage. The website has had the same look since 2004 and we 
+had grown a little tired of it. We hope you like our new face to the world, though most 
+of the content are the same as before, just some updated screenshots.</p> 
+<p>As for the program itself, development goes on, 90-something changes in 
+<a href="http://svn.gnome.org/viewvc/gnome-commander/trunk/ChangeLog?view=log">the changelog 
+</a> since the release of version 1.2.4. We do not have a timetable for the next release, but 
+it is getting closer as the code matures and some more glitches are beeing worked out.</p>
+
+<h4 class="nh4">
+<img class="info" src="img/info.png" width="32" height="32" alt="">New release, version 1.2.4 - Jun. 09 2007</h4>
 <p>The GNOME Commander team is proud to announce the next stable release of
 <a href="http://ftp.gnome.org/pub/GNOME/sources/gnome-commander/1.2/gnome-commander-1.2.4.tar.bz2" 
 title="Gnome Commander 1.2.4">GNOME Commander: 1.2.4.</a></p>
@@ -104,19 +125,16 @@ title="Gnome Commander 1.2.4">GNOME Commander: 1.2.4.</a></p>
   <li>Fixed problem #412162 (build with --enable-python=no)</li>
   <li>Build fixes</li>
 </ul>
+<hr class="sruler">
 
-<h4 class="nh4">GCMD goes C++ - Feb. 26 2007</h4>
-<p>The Gnome Commander code has now begun a migration from C to C++. Both the HEAD and 1.3 devel branch are 
-now initially migrated and seemes to be working quite allright. Seen from a user perspective this migration is not supposed 
-to change anything, the change is done due to coding reasons. Tests and bugreports on the 
-<a href="http://svn.gnome.org/viewcvs/gnome-commander/">GCMD SVN code</a> are of course, as usual, much appreciated. 
-Further info on how to download the source from SVN  can be found on our <a href="dev.html">Development page</a>, 
-but remember that this unreleased SVN code is to be considered unstable and only for testing purposes.</p>
-
-
+<p class="cntr">
+<a href="oldnews.html" title="Old news at this site">Old news</a> ||
+<a href="http://epiotr.rootnode.pl/gcmd/trunk/NEWS" title="View of the file /gnome-commander/NEWS">Release 
+news</a></p>
+<hr>
 
 <h4>The unstable 1.3 branch.</h4>
-<p>In the unstable branch the team behind GCMD are now experimenting with python plugins 
+<p>In the unstable branch the team behind <abbr title="Gnome Commander">GCMD</abbr> are now experimenting with python plugins 
 that users can drop in the ~/.gnome-commander/plugins directory. The work on supporting
 meta-data also continues. The plan is to add this functionality to the searchtool, custom columns and the internal viewer. 
 The <a href="http://epiotr.rootnode.pl/gcmd/trunk/TODO">TODO file</a> 
@@ -125,12 +143,7 @@ Users and developers are as usual welcome to contact us, ask questions and discu
 on <a href="dev.html#maillists">our mailinglists</a>.</p>
 
 
-<p class="cntr">
-<a href="oldnews.html" title="Old news at this site">Old news</a> ||
-<a href="http://epiotr.rootnode.pl/gcmd/trunk/NEWS" title="View of the file /gnome-commander/NEWS">Release 
-news</a></p>
 
-<hr>
 <h2><a name="about">About GCMD</a></h2> 
 
 <p>Gnome Commander is a free two pane filemanager in the tradition of Norton and Midnight Commander, 
@@ -161,18 +174,20 @@ various types of meta-data</a>.</li>
 <li>Integrated command line.</li>
 </ul>
 
-<h3><a name="authors">Authors</a></h3> 
+<h2><a name="authors">Authors</a></h2> 
 <p>The authors of the GNOME Commander project.</p>
 <ul>
-<li><b>Piotr Eljasiak</b>, Project manager/Developer<br>
-Mail: epiotr at use.pl</li>
-<li><b>Assaf Gordon</b>, Developer<br>
-Mail: agordon88 at gmail.com</li>
-<li><b>Magnus St&aring;lnacke</b>, Webpages only<br>
-Mail: jemamo at telia.com</li>
-<li><b>Marcus Bjurman</b>, Former project manager/Developer<br>
-Mail: no mail</li>
+<li><b>Piotr Eljasiak</b>, Project manager and main developer.<br>
+Mail: epiotr "at the domain" use.pl</li>
+<li><b>Assaf Gordon</b>, Developer (The internal viever).<br>
+Mail: agordon88 "at the domain" gmail.com</li>
+<li><b>Magnus St&aring;lnacke</b>, Webmaster.<br>
+Mail: jemamo "at the domain" telia.com</li>
 </ul>
+<p>A special "thanks" goes to <b>Marcus Bjurman</b> who where the original creator and 
+former manager/developer. Marcus initiaded this project publicly in 2001 and developed 
+it up to version 1.1.6 in 2004. Without him there would not have been any Gnome Commander. 
+Thank you Marcus.</p>
 
 <h3><a name="contact">Contact</a></h3>
 <p>If you like to get in contact with us behind the project, then you can drop a mail to one of 
@@ -191,6 +206,8 @@ also a <a href="http://freshmeat.net/projects/gnome-commander/">GNOME Commander 
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
+</div>
+
 </body>
 </html>
 

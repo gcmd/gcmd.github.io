@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
 <title>GNOME Commander - Options slideshow</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="KeyWords" content="gnome,commander,filemanager, screenshots">   
 <meta name="Description" content="Interactive screenshots of the Gnome commander filemanager properties">
+<meta name="author" content="Magnus Stålnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
 <style type="text/css"><!--
 div img {margin-left:4%; border:0;}
-.karta {position:absolute; top:20em; margin-left:5%;}
+.karta {position:absolute; top:19em; margin-left:5%;}
 .opt {border:3px dotted #079;}
 #general {visibility:visible;}
-#pres {visibility:hidden;}
+#form {visibility:hidden;}
 #layo {visibility:hidden;}
-#color {visibility:hidden;}
+#conf {visibility:hidden;}
 #filt {visibility:hidden;}
 #prog {visibility:hidden;}
 #devi {visibility:hidden;}
 --></style>
 <script src="script.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<style>
+#menu {position:absolute; left:0px; top:8.5em; width:10.5em; font-weight:bold;}
+</style>
+<![endif]-->
 </head>
 <body>
 
@@ -28,39 +34,41 @@ div img {margin-left:4%; border:0;}
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
 
 <div id="menu">
-<span>[<a href="index.html">Home</a>]</span>
-<span>[<a href="shots.html">Screenshots</a>]</span>
-<span>[<a href="download.html">Download</a>]</span>
-<span>[<a href="doc.html">Documentation</a>]</span>
-<span>[<a href="dev.html">Development</a>]</span>
+<a href="index.html" title="The home page">[Home]<img src="img/home.png" alt=""></a>
+<a href="shots.html" title="Images tell a lot..">[Screenshots]<img src="img/screenshot.png" alt=""></a>
+<a href="download.html" title="Links to downloads">[Download]<img src="img/download.png" alt=""></a>
+<a href="doc.html" title="Tips, tricks, help...">[Documentation]<img src="img/doc.png" alt=""></a>
+<a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]<img src="img/dev.png" alt=""></a>
 </div>
 
 <div id="cont" class="stil">
 <h2>Options slideshow</h2> 
-<p>This is a kind of slideshow of the GNOME Commander options (shots from v1.173), click on the option tabs like you would 
-do in the program itself (requires javascript).</p>
+<p>This is an interactive slideshow of the GNOME Commander options (shots from v1.2.4), click on the option tabs like you would do in the program itself.</p>
 <map name="kartan" id="kartan">  
-<area shape="rect" coords="15,38,75,64" href="javascript:titta('general');" title="General" alt="">  
-<area shape="rect" coords="76,38,126,64" href="javascript:titta('pres');" title="Data" alt="">  
-<area shape="rect" coords="127,38,174,64" href="javascript:titta('layo');" title="Layout" alt="">  
-<area shape="rect" coords="175,38,218,64" href="javascript:titta('filt');" title="Filters" alt="">  
-<area shape="rect" coords="219,38,281,64" href="javascript:titta('prog');" title="Programs" alt="">  
-<area shape="rect" coords="282,38,339,64" href="javascript:titta('devi');" title="Devices" alt="">  
+<area shape="rect" coords="15,38,73,64" href="javascript:titta('general');" title="General" alt="">  
+<area shape="rect" coords="74,38,121,64" href="javascript:titta('form');" title="Format" alt="">  
+<area shape="rect" coords="122,38,168,64" href="javascript:titta('layo');" title="Layout" alt="">  
+<area shape="rect" coords="169,38,247,64" href="javascript:titta('conf');" title="Confirmation" alt="">  
+<area shape="rect" coords="248,38,293,64" href="javascript:titta('filt');" title="Filters" alt="">  
+<area shape="rect" coords="294,38,353,64" href="javascript:titta('prog');" title="Programs" alt="">  
+<area shape="rect" coords="354,38,411,64" href="javascript:titta('devi');" title="Devices" alt="">  
 </map>  
-<div id="general" class="karta"><img src="ss/opt_general.png" width="487" height="584" class="opt" alt=""></div>
-<div id="pres" class="karta"><img src="ss/opt_data.png" width="487" height="584" class="opt" alt=""></div>
-<div id="layo" class="karta"><img src="ss/opt_layout.png" width="487" height="584" class="opt" alt=""></div>
-<div id="filt" class="karta"><img src="ss/opt_filter.png" width="487" height="584" class="opt" alt=""></div>
-<div id="prog" class="karta"><img src="ss/opt_prog.png" width="487" height="584" class="opt" alt=""></div>
-<div id="devi" class="karta"><img src="ss/opt_dev.png" width="487" height="584" class="opt" alt=""></div>
-<div class="karta"><img src="img/dot.png" width="487" height="68" usemap="#kartan" alt=""></div>
+<div id="general" class="karta"><img src="ss/opt_general.png" width="475" height="580" class="opt" alt=""></div>
+<div id="form" class="karta"><img src="ss/opt_format.png" width="475" height="580" class="opt" alt=""></div>
+<div id="layo" class="karta"><img src="ss/opt_layout.png" width="475" height="580" class="opt" alt=""></div>
+<div id="conf" class="karta"><img src="ss/opt_conf.png" width="475" height="580" class="opt" alt=""></div>
+<div id="filt" class="karta"><img src="ss/opt_filter.png" width="475" height="580" class="opt" alt=""></div>
+<div id="prog" class="karta"><img src="ss/opt_prog.png" width="475" height="580" class="opt" alt=""></div>
+<div id="devi" class="karta"><img src="ss/opt_dev.png" width="475" height="580" class="opt" alt=""></div>
+<div class="karta"><img src="img/dot.png" width="475" height="68" usemap="#kartan" alt=""></div>
 <img src="img/dot.png" width="2" height="700" alt="">
 
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
+
+</div>
 </body>
 </html>

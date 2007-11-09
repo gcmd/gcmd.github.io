@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 <title>GNOME Commander - Development</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="KeyWords" content="gnome,commander,filemanager,documantation,faq,contributing">   
 <meta name="Description" content="Documentation for the Gnome commander filemanager">
+<meta name="author" content="Magnus Stålnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<!--[if IE 6]>
+<style>
+#menu {position:absolute; left:0px; top:8.5em; width:10.5em; font-weight:bold;}
+</style>
+<![endif]-->
 </head>
 <body>
 
@@ -15,14 +21,13 @@
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
 
 <div id="menu">
-<span>[<a href="index.html">Home</a>]</span>
-<span>[<a href="shots.html">Screenshots</a>]</span>
-<span>[<a href="download.html">Download</a>]</span>
-<span>[<a href="doc.html">Documentation</a>]</span>
-<span>[<a href="dev.html">Development</a>]</span>
+<a href="index.html" title="The home page">[Home]<img src="img/home.png" alt=""></a>
+<a href="shots.html" title="Images tell a lot..">[Screenshots]<img src="img/screenshot.png" alt=""></a>
+<a href="download.html" title="Links to downloads">[Download]<img src="img/download.png" alt=""></a>
+<a href="doc.html" title="Tips, tricks, help...">[Documentation]<img src="img/doc.png" alt=""></a>
+<a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]<img src="img/dev.png" alt=""></a>
 </div>
 
 <div id="cont" class="stil">
@@ -37,7 +42,6 @@
 <li><a href="#build">Build sources</a></li>
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#maillists">Mailing lists</a></li>
-<li><a href="#team">The team</a></li>
 </ul>
 <p><a href="http://cia.navi.cx/stats/project/gnome/gnome-commander/.rss">RSS-feed 
 for the latest changes in svn repository.</a></p>
@@ -55,7 +59,7 @@ stable and a testing branch, where the test releases fills the purpose of testin
 will then get backported to the stable branch. The version numbers (major, minor and micro) follows the quite 
 usual standard of odd and even versioning, where odd minor versions stands for the unstable releases and 
 the even numbered branch eventually gets the thoroughly tested new functions backported. Remember this 
-when talking about GCMD or when sending patches.</p>
+when talking about <abbr title="Gnome Commander">GCMD</abbr> or when sending patches.</p>
 <p>To check out the latest sources from SVN, following commands can be used:</p>
 
 <p class="cntr">The stable 1.2 branch:<br>
@@ -130,7 +134,6 @@ If you plan to hack the internal viewer, add features or just browse the source 
 this document first (However note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a> 
 always are more updated than this document).</li>
 </ul>
-<hr>
 
 <h2><a name="build">Building from source</a></h2>
 <h4>Required libraries:</h4>
@@ -159,7 +162,6 @@ installed, this is optional though.</p>
 <p>For our FreeBSD users here is a page describing 
 <a href="http://www.math.colostate.edu/~reinholz/freebsd/apps_tools.html#gnomecommander">how 
 to build GNOME Commander on FreeBSD</a> in order to get full functionality out of it.</p>
-<hr>
 
 <h2><a name="bugs">Bugs</a></h2>
 <h3>Discovered a bug?</h3>
@@ -176,9 +178,6 @@ Testing of new releases and bugreporting is the best way users without programmi
 out in the development of a program, and those with programming knowledge are very welcome to suggest 
 fixes and/or send patches to the developers, all in the spirit of free and open source software.</p>
 <p class="right"><i>Given enough eyeballs, all bugs are shallow.</i><br>//Linus law.</p>
-<hr>
-<p class="cntr"><a href="#topp">To top of page</a></p>
-
 
 <h2><a name="maillists">Mailing lists</a></h2>
 <p>There are two mailing lists regarding Gnome Commander.</p> 
@@ -187,35 +186,20 @@ The devel list is where the developers of this project are discussing topics abo
 For the moment, all posts from non members of these lists are beeing held for approval due to 
 spam reasons, but anyone are welcome to sign up on the lists and post unmoderated. So, if you 
 post without beeing signed up on the list, your mail will be moderated before it is sent to the list, 
-and remember that you should note in the email that people should CC their replies to you.</p>
+and remember that you should make a note in the email that people should CC their replies to you 
+if you not are on the list.</p>
 <ul> 
 <li>The user list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-users">gcmd-users</a> (gcmd-users at nongnu.org)</li> 
 <li>The developer list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-devel">gcmd-devel</a> (gcmd-devel at nongnu.org)</li>
 </ul> 
-
-<h2><a name="team">The team</a></h2>
-<h3><a name="authors">Authors</a></h3>
-<p>For the moment this project has two authors committing code:</p>
-<ul>
-<li><a href="mailto:epiotr_takeawaythis_use.pl">Piotr Eljasiak</a> - The project manager and main developer.</li>
-<li><a href="mailto:agordon88_takeawaythis_gmail.com">Assaf Gordon</a> - Developer and the man behind the internal viewer.</li>
-<li><a href="mailto:jemamo_takeawaythis_telia.com">Magnus St&aring;lnacke</a> is also part of the team as responsible 
-for this website, admin for the mailing lists and also contributes with testing, feedback, ideas and so on..</li>
-</ul>
-<h3>Contributors</h3>
-<p>There are many small contributors that has contributed in many ways, it would be impossible to 
-mention them all, but most of them contributing with code or translations are mentioned in the 
-<a href="http://epiotr.rootnode.pl/gcmd/trunk/AUTHORS">AUTHORS file</a> or the 
-<a href="http://epiotr.rootnode.pl/gcmd/trunk/po/ChangeLog">changelog of translations</a>.</p>
-
-<p>A big "thanks to" is also directed to the former maintainer of Gnome Commander, Marcus Bjurman hwo 
-where the one that initiaded this project publicly in 2001 and developed it up to version 1.1.6 in 2004. Without 
-him there would not have been any Gnome Commander. Thank you Marcus.</p>
+<hr>
 
 <p class="cntr"><a href="#topp">To top of page</a></p>
 </div>
 
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
+
+</div>
 </body>
 </html>

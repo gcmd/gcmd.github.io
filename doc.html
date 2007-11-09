@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 <title>GNOME Commander - Documentation</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 <meta name="KeyWords" content="gnome,commander,filemanager,documantation,faq,contributing">   
 <meta name="Description" content="Documentation for the Gnome commander filemanager">
+<meta name="author" content="Magnus Stålnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<!--[if IE 6]>
+<style>
+#menu {position:absolute; left:0px; top:8.5em; width:10.5em; font-weight:bold;}
+</style>
+<![endif]-->
 </head>
 <body>
 
@@ -15,14 +21,13 @@
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h2 id="urub">A powerful filemanager for the Gnome desktop environment</h2>
-</div>
 
 <div id="menu">
-<span>[<a href="index.html">Home</a>]</span>
-<span>[<a href="shots.html">Screenshots</a>]</span>
-<span>[<a href="download.html">Download</a>]</span>
-<span>[<a href="doc.html">Documentation</a>]</span>
-<span>[<a href="dev.html">Development</a>]</span>
+<a href="index.html" title="The home page">[Home]<img src="img/home.png" alt=""></a>
+<a href="shots.html" title="Images tell a lot..">[Screenshots]<img src="img/screenshot.png" alt=""></a>
+<a href="download.html" title="Links to downloads">[Download]<img src="img/download.png" alt=""></a>
+<a href="doc.html" title="Tips, tricks, help...">[Documentation]<img src="img/doc.png" alt=""></a>
+<a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]<img src="img/dev.png" alt=""></a>
 </div>
 
 <div id="cont" class="stil">
@@ -40,16 +45,16 @@ under the username jemamo and suggest/contribute with some content of this part 
 <li><a href="tags.html">Metadata tags</a> (New features from version 1.2.1)</li>
 </ul>
 
-<h2><a name="#mime">Mime types</a></h2>
+<h2><a name="mime">Mime types</a></h2>
 <p>Since Gnome has changed to follow <a href="http://www.freedesktop.org/">the freedesktop.org</a> 
 standard of handling mimetypes, the editing of preferred programs in Gnome Commander is currently 
 broken (v 1.1.7). We do have this in our 
 <a href="http://epiotr.rootnode.pl/gcmd/trunk/TODO">TODO file</a>, 
-but until GCMD can handle edititing of preferred programs, there are two other ways of managing 
-this on user basis; use nautilus or manually edit the configuration files that controls mime types in 
-your home directory. Using Nautilus for doing this can feel quite awkward for Gnome Commander 
-users, we usually do not use Gnome Commander because we like using Nautilus.. Anyway, here is 
-how to do it the manual way:</p>
+but until <abbr title="Gnome Commander">GCMD</abbr> can handle edititing of preferred programs, there 
+are two other ways of managing this on user basis; use nautilus or manually edit the configuration 
+files that controls mime types in your home directory. Using Nautilus for doing this can feel quite 
+awkward for Gnome Commander users, we usually do not use Gnome Commander because we like using Nautilus.. 
+Anyway, here is how to do it the manual way:</p>
 <p>These configuration files  usually lives in <code>~/.local/share/applications</code>. 
 There are three types of files here:</p>
 <ul>
@@ -89,5 +94,7 @@ of choise for further details.</p>
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">
 <img src="img/valid401.png" width="88" height="31" class="nobord" alt="Valid html 4.01 Strict!"></a></div>
+
+</div>
 </body>
 </html>
