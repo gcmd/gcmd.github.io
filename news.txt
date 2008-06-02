@@ -1,45 +1,25 @@
-gnome-commander 1.2.5
+gnome-commander 1.2.6
 ---------------
 
 Bug fixes:
- * Fixed problem #345314 (cursor not staying on file while renaming)
- * Fixed problem #353889 (disappearing files after failed move (F6))
- * Fixed problems #346286, #424447, #447882, #467058 (crash when using regex in renaming tool)
- * Fixed problems #365227 and #446361 (build issues on Solaris)
- * Fixed problem #424159 (column sort problem)
- * Fixed problem #434545 (Debian bug #421480: HUGE icons for device icons)
- * Fixed problem #447415 (inability to launch executables)
- * Fixed problem #448942 (SHIFT+ENTER: running a command in a separate terminal)
- * Fixed problem #449137 (renamed directories not accessed by name)
- * Fixed problem #468685 (crash in python module)
- * Fixed problem #490431 (view files with name containing '%')
- * Fixed problem #508565 (improper utf-8 handling in advanced file rename tool)
- * Fixed problem #510567 (failed assert when deleting dir)
- * Fixed problem when creating ~/dir
- * Fixed problem with updating of internal viewer status bar
- * Fixed crash when creating dir with absolute path on SMB share
- * Fixed crash when moving file with % in the name
- * Fixed problem with sporadically lost cursor in file pane
- * Fixed problem with mounting of devices with spaces in the name
- * Fixed problem with history of advrename templates
- * Build fixes
+ * Fixed problem #392959 (dynamically changing user to root)
+ * Fixed problem #496150 (scrolling with mouse wheel)
+ * Fixed problem #499761 (search window cleared when column sorted)
+ * Fixed problem #499764 (multiple selection problem)
+ * Fixed problem with sorting of UTF-8 encoded file names
+ * Fixed problem with copying files to symlinked directories
+ * Fixed problem with full file path  while copying/moving to mounted devices
 
 New features:
- * Support for APE, FLAC and Vorbis metags in advanced file rename templates
- * Support for Exif makernotes metags in advanced file rename templates
- * Support for file metags in advanced file rename templates
- * Metadata tags in file properties dialog
- * Use the GNOME authentication manager for user's security credentials
- * Open terminal in the current directory
- * Default GNOME theme icons for home, SMB and FTP locations
- * User defined shortcuts to bookmarks
- * Send files via email or instant messenger (using nautilus-sendto)
+ * Root Mode for starting GNOME Commander with administrator privileges
+ * GUI for keyboard shortcuts management
+ * Open the current location in Nautilus file manager
+ * Multi-Rename-Tool - new $x and $X placeholders for random hexadecimal numbers
+ * Revamped search dialog
+ * Support for <super>, <hyper> and <meta> modifiers (since GTK+ 2.10)
  * Updated help docs
- * New or updated translations: ar, bg, cs, de, dz, eo, es, eu, fr, oc, pl, pt_BR, ro, sl, sv
+ * New or updated translations: cs, de, en_GB, es, eu, fi, fr, hu, it, oc, pl, sl
  * New key bindings:
-      CTRL+LEFT/RIGHT Copying the current working directory from the active
-                      filelist to the inactive one
-      CTRL+N          Open new connection to remote server (replaces the old CTRL+G)
-
+      SUPER+F        Search files
 
 
