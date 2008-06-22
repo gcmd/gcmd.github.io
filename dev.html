@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <title>GNOME Commander - Development</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-<meta name="KeyWords" content="gnome,commander,filemanager,documantation,faq,contributing">   
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="KeyWords" content="gnome,commander,filemanager,documantation,faq,contributing">
 <meta name="Description" content="Documentation for the Gnome commander filemanager">
 <meta name="author" content="Magnus St&aring;lnacke">
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
@@ -31,7 +31,7 @@
 </div>
 
 <div id="cont" class="stil">
-<h2>Development</h2> 
+<h2>Development</h2>
 
 <div id="infor">
 <h4>GCMD hacking</h4>
@@ -43,41 +43,41 @@
 <li><a href="#bugs">Bugs</a></li>
 <li><a href="#maillists">Mailing lists</a></li>
 </ul>
-<p><a href="http://cia.navi.cx/stats/project/gnome/gnome-commander/.rss">RSS-feed 
+<p><a href="http://cia.navi.cx/stats/project/gnome/gnome-commander/.rss">RSS-feed
 for the latest changes in svn repository.</a></p>
 </div>
 
-<p>This page contains information about hacking and contributing to the Gnome Commander project. 
-We encourage anyone hwo wants to contribute with code, translations, bugreporting, boil up 
-new useful ideas, or just give some quality feedback that also is quite important. You are all welcome to 
+<p>This page contains information about hacking and contributing to the Gnome Commander project.
+We encourage anyone who wants to contribute with code, translations, bugreporting, boil up
+new useful ideas, or just give some quality feedback that also is quite important. You are all welcome to
 sign up on our mailing lists and take part in discussions and development.</p>
 
 <h3>Versions</h3>
 <p>Some words about versions and version numbering.</p>
-<p>Gnome Commander is being developed in a 
-stable and a testing branch, where the test releases fills the purpose of testing new ideas. Successful ones 
-will then get backported to the stable branch. The version numbers (major, minor and micro) follows the quite 
-usual standard of odd and even versioning, where odd minor versions stands for the unstable releases and 
-the even numbered branch eventually gets the thoroughly tested new functions backported. Remember this 
+<p>Gnome Commander is being developed in a
+stable and a testing branch, where the test releases fills the purpose of testing new ideas. Successful ones
+will then get backported to the stable branch. The version numbers (major, minor and micro) follows the quite
+usual standard of odd and even versioning, where odd minor versions stands for the unstable releases and
+the even numbered branch eventually gets the thoroughly tested new functions backported. Remember this
 when talking about <abbr title="Gnome Commander">GCMD</abbr> or when sending patches.</p>
 <p>To check out the latest sources from SVN, following commands can be used:</p>
 
 <p class="cntr">The stable 1.2 branch:<br>
-<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/trunk</code></p> 
+<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/trunk</code></p>
 
 <p class="cntr">The 1.3 testing branch:<br>
-<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/branches/gcmd-1-3</code></p> 
+<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/branches/gcmd-1-3</code></p>
 
 <p>Gentoo users can also make use of the
 <a href="http://svn.gnome.org/viewvc/gnome-commander/branches/gcmd-1-3/data/gnome-commander.ebuild?view=markup">
 ebuild in our source tree</a>.</p>
 
 <h2><a name="contr">Contributing</a></h2>
-<p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback, 
-good or bad, then you are welcome to contact us thrugh <a href="#maillists">our mailing lists</a> or 
+<p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback,
+good or bad, then you are welcome to contact us thrugh <a href="#maillists">our mailing lists</a> or
 <a href="#authors">the authors</a> directly if you want to keep it more private.</p>
-<p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the 
-<a href="http://epiotr.rootnode.pl/gcmd/trunk/TODO">TODO file</a> first before sending  
+<p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the
+<a href="http://epiotr.rootnode.pl/gcmd/trunk/TODO">TODO file</a> first before sending
 <a href="index.html#authors">email to the authors</a> or <a href="#maillists">the mailing lists</a>.</p>
 <p>If you want to submit a patch please do so.</p>
 <ul>
@@ -88,25 +88,25 @@ good or bad, then you are welcome to contact us thrugh <a href="#maillists">our 
 <h4><a name="trnsl">Special note for translators:</a></h4>
 
 
-<p>Although GNOME Commander is currently available in over 30 languages, there are still many missing 
+<p>Although GNOME Commander is currently available in over 30 languages, there are still many missing
 and those to improve. The current status of all project translations can be found at
 <a href="http://progress.gnome.org/module/gnome-commander">http://progress.gnome.org/module/gnome-commander</a>. </p>
 
 <p>For adding a new translation simply download
-<a href="http://progress.gnome.org/POT/gnome-commander.HEAD/po.HEAD.pot">the head potfile</a> 
-and rename it to LL.po (replace "LL" with your language code, see the complete list of language codes).</p> 
+<a href="http://progress.gnome.org/POT/gnome-commander.HEAD/po.HEAD.pot">the head potfile</a>
+and rename it to LL.po (replace "LL" with your language code, see the complete list of language codes).</p>
 
-<p>Here you will find the recipe on how to contribute your new or updated translation 
-(replace "LL" with your language code, see the 
+<p>Here you will find the recipe on how to contribute your new or updated translation
+(replace "LL" with your language code, see the
 <a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">complete list of language codes</a>). </p>
 <ol>
 <li>Get a fresh copy of the program source (either from SVN or snapshot)</li>
 <li>Unpack it and run <code>./autogen.sh</code>.</li>
-<li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory 
+<li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory
 and run <code>intltool-update LL</code>.</li>
 </ol>
-        
-<p>You may find translation compedia to be quite handy as a reference. To create such a compedium 
+
+<p>You may find translation compedia to be quite handy as a reference. To create such a compedium
 from all LL GNOME translations it is required to:</p>
 
 <pre>
@@ -117,24 +117,24 @@ msgcat -o compendium-LL.po *.po
 </pre>
 
 <p>Our recommended translation tools are: Poedit (<a href="http://www.poedit.org">http://www.poedit.org</a>/)
-and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). KBabel could 
+and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). KBabel could
 also be a good tool if you also have the neccesary KDE libs installed..</p>
 
 <p>All translation files (LL.po) MUST be UTF-8 and to avoid corruption by
 mail application please send them as gzipped or bzipped attachments.</p>
 
-<p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful 
-(not only european languages). It offers an easy access to the translations of open source projects. It acts as a kind 
-of a central Memory Translation database where you can look up a translation suggestion or submit a whole .po file 
+<p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful
+(not only european languages). It offers an easy access to the translations of open source projects. It acts as a kind
+of a central Memory Translation database where you can look up a translation suggestion or submit a whole .po file
 to the server.</p>
 
 <h2><a name="doc">Hacking documents</a></h2>
 <p>Links to documents regarding Gnome Commander internals.</p>
 <ul>
-<li><a href="http://epiotr.rootnode.pl/gcmd/trunk/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>. 
-This document describes details of the 'libgviewer' library, which implements GnomeCommander's Internal-Viewer. 
-If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading 
-this document first (However note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a> 
+<li><a href="http://epiotr.rootnode.pl/gcmd/trunk/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
+This document describes details of the 'libgviewer' library, which implements GnomeCommander's Internal-Viewer.
+If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading
+this document first (However note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a>
 always are more updated than this document).</li>
 </ul>
 
@@ -147,54 +147,54 @@ always are more updated than this document).</li>
 <li>Gnome (2.0)</li>
 <li>GnomeUI (2.0)</li>
 </ul>
-<p>If you have the libraries above, and of course their sub-dependencys, devel-packages and a sane build 
-environment, the usual "./configure  make make install" procedure should work like a charm. If you are building 
-the code checked out from SVN, use ./autogen.sh insted of configure, in the SVN case you also need to have 
+<p>If you have the libraries above, and of course their sub-dependencys, devel-packages and a sane build
+environment, the usual "./configure  make make install" procedure should work like a charm. If you are building
+the code checked out from SVN, use ./autogen.sh insted of configure, in the SVN case you also need to have
 the gnome-common files installed.</p>
 
-<p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to 
-monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from 
+<p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to
+monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from
 FAM so it can update it's directory views on the fly.<br>
 <strong>Update: from 0.9.8 and on, files modified within GC should update without FAM</strong>.</p>
 
-<p>For the internal viewer to be able to show exif and IPTC data you also need to have 
-<a href="http://libexif.sourceforge.net/">libexif</a> and <a href="http://libiptcdata.sourceforge.net/">libiptcdata</a> 
+<p>For the internal viewer to be able to show exif and IPTC data you also need to have
+<a href="http://libexif.sourceforge.net/">libexif</a> and <a href="http://libiptcdata.sourceforge.net/">libiptcdata</a>
 installed, this is optional though.</p>
 
 <h4>Build on FreeBSD</h4>
-<p>For our FreeBSD users here is a page describing 
-<a href="http://www.math.colostate.edu/~reinholz/freebsd/apps_tools.html#gnomecommander">how 
+<p>For our FreeBSD users here is a page describing
+<a href="http://www.math.colostate.edu/~reinholz/freebsd/apps_tools.html#gnomecommander">how
 to build GNOME Commander on FreeBSD</a> in order to get full functionality out of it.</p>
 
 <h2><a name="bugs">Bugs</a></h2>
 <h3>Discovered a bug?</h3>
-<p>You can report or view Gnome Commander bugs at 
-<a href="http://bugzilla.gnome.org/browse.cgi?product=gnome-commander" title="Please report bugs here">the 
+<p>You can report or view Gnome Commander bugs at
+<a href="http://bugzilla.gnome.org/browse.cgi?product=gnome-commander" title="Please report bugs here">the
 gnome.org Bugzilla</a>.</p>
 
-<p>Though Gnome Commander is relatively free from bugs and is a quite mature program, no programs will 
-ever be totally bugfree. New bugs can be introduced with new features, or through other programs and 
-libraries it depends on, this goes especially for development and testing versions. Quality bugreporting 
-is very important and can be a very good help for the developers to make a better program. Bugreporting 
-is not an act of dissatisfaction, so you are very welcome to help us find, hunt down and kill the bugs. 
-Testing of new releases and bugreporting is the best way users without programming knowledge can help 
-out in the development of a program, and those with programming knowledge are very welcome to suggest 
+<p>Though Gnome Commander is relatively free from bugs and is a quite mature program, no programs will
+ever be totally bugfree. New bugs can be introduced with new features, or through other programs and
+libraries it depends on, this goes especially for development and testing versions. Quality bugreporting
+is very important and can be a very good help for the developers to make a better program. Bugreporting
+is not an act of dissatisfaction, so you are very welcome to help us find, hunt down and kill the bugs.
+Testing of new releases and bugreporting is the best way users without programming knowledge can help
+out in the development of a program, and those with programming knowledge are very welcome to suggest
 fixes and/or send patches to the developers, all in the spirit of free and open source software.</p>
 <p class="right"><i>Given enough eyeballs, all bugs are shallow.</i><br>//Linus law.</p>
 
 <h2><a name="maillists">Mailing lists</a></h2>
-<p>There are two mailing lists regarding Gnome Commander.</p> 
-<p>The user list is mostly for topics about using Gnome Commander, a kind of support list. 
-The devel list is where the developers of this project are discussing topics about the development. 
-For the moment, all posts from non members of these lists are beeing held for approval due to 
-spam reasons, but anyone are welcome to sign up on the lists and post unmoderated. So, if you 
-post without beeing signed up on the list, your mail will be moderated before it is sent to the list, 
-and remember that you should make a note in the email that people should CC their replies to you 
+<p>There are two mailing lists regarding Gnome Commander.</p>
+<p>The user list is mostly for topics about using Gnome Commander, a kind of support list.
+The devel list is where the developers of this project are discussing topics about the development.
+For the moment, all posts from non members of these lists are beeing held for approval due to
+spam reasons, but anyone are welcome to sign up on the lists and post unmoderated. So, if you
+post without beeing signed up on the list, your mail will be moderated before it is sent to the list,
+and remember that you should make a note in the email that people should CC their replies to you
 if you not are on the list.</p>
-<ul> 
-<li>The user list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-users">gcmd-users</a> (gcmd-users at nongnu.org)</li> 
+<ul>
+<li>The user list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-users">gcmd-users</a> (gcmd-users at nongnu.org)</li>
 <li>The developer list: <a href="http://lists.nongnu.org/mailman/listinfo/gcmd-devel">gcmd-devel</a> (gcmd-devel at nongnu.org)</li>
-</ul> 
+</ul>
 <hr>
 
 <p class="cntr"><a href="#topp">To top of page</a></p>
