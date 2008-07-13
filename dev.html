@@ -132,30 +132,30 @@ to the server.</p>
 <p>Links to documents regarding GNOME Commander internals.</p>
 <ul>
 <li><a href="http://gcmd.rootnode.net/trunk/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
-This document describes details of the 'libgviewer' library, which implements GnomeCommander's Internal-Viewer.
+This document describes details of the 'intgviewer' library, which implements GNOME Commander's Internal-Viewer.
 If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading
-this document first (However note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a>
+this document first (However, note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a>
 always are more updated than this document).</li>
 </ul>
 
 <h2><a name="build">Building from source</a></h2>
 <h4>Required libraries:</h4>
 <ul>
-<li>GTK+2 (2.6.0) or above for latest version.</li>
+<li>GTK+ (2.8.0) or above for latest version.</li>
 <li>GnomeVFS (2.0) Used for most of the file handling. </li>
-<li>Glib (2.0.0)</li>
+<li>Glib (2.6.0)</li>
 <li>GNOME (2.0)</li>
-<li>GnomeUI (2.0)</li>
+<li>GnomeUI (2.4)</li>
 </ul>
-<p>If you have the libraries above, and of course their sub-dependencys, devel-packages and a sane build
-environment, the usual "./configure  make make install" procedure should work like a charm. If you are building
-the code checked out from SVN, use ./autogen.sh insted of configure, in the SVN case you also need to have
+<p>If you have the libraries above, and of course their sub-dependencies, devel-packages and a sane build
+environment, the usual "./configure make make install" procedure should work like a charm. If you are building
+the code checked out from SVN, use ./autogen.sh instead of configure, in the SVN case you also need to have
 the gnome-common files installed.</p>
 
 <p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to
 monitoring file alterations, which means that when you create/delete/modify a file this program gets a message from
 FAM so it can update it's directory views on the fly.<br>
-<strong>Update: from 0.9.8 and on, files modified within GC should update without FAM</strong>.</p>
+<strong>Update: since 0.9.8 and on, files modified within GNOME Commander should update without FAM</strong>.</p>
 
 <p>For the internal viewer to be able to show exif and IPTC data you also need to have
 <a href="http://libexif.sourceforge.net/">libexif</a> and <a href="http://libiptcdata.sourceforge.net/">libiptcdata</a>
@@ -174,10 +174,10 @@ gnome.org Bugzilla</a>.</p>
 
 <p>Though GNOME Commander is relatively free from bugs and is a quite mature program, no programs will
 ever be totally bugfree. New bugs can be introduced with new features, or through other programs and
-libraries it depends on, this goes especially for development and testing versions. Quality bugreporting
-is very important and can be a very good help for the developers to make a better program. Bugreporting
+libraries it depends on, this goes especially for development and testing versions. Quality bug reporting
+is very important and can be a very good help for the developers to make a better program. Bug reporting
 is not an act of dissatisfaction, so you are very welcome to help us find, hunt down and kill the bugs.
-Testing of new releases and bugreporting is the best way users without programming knowledge can help
+Testing of new releases and bug reporting is the best way users without programming knowledge can help
 out in the development of a program, and those with programming knowledge are very welcome to suggest
 fixes and/or send patches to the developers, all in the spirit of free and open source software.</p>
 <p class="right"><i>Given enough eyeballs, all bugs are shallow.</i><br>//Linus law.</p>
