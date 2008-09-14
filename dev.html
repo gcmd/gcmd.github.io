@@ -87,8 +87,7 @@ good or bad, then you are welcome to contact us thrugh <a href="#maillists">our 
 </ul>
 <h4><a name="trnsl">Special note for translators:</a></h4>
 
-
-<p>Although GNOME Commander is currently available in over 30 languages, there are still many missing
+<p>Although GNOME Commander is currently available in over 40 languages, there are still many missing
 and those to improve. The current status of all project translations can be found at
 <a href="http://progress.gnome.org/module/gnome-commander">http://progress.gnome.org/module/gnome-commander</a>. </p>
 
@@ -110,21 +109,24 @@ and run <code>intltool-update LL</code>.</li>
 from all LL GNOME translations it is required to:</p>
 
 <pre>
-wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/extras/
-wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/office/
-wget -r -l1 -nd -A.po -b http://l10n-status.gnome.org/HEAD/LL/fifth-toe/
+wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/extras/
+wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/office/
+wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/fifth-toe/
 msgcat -o compendium-LL.po *.po
 </pre>
 
+<p>Alternatively you can use pre-built <a href="http://gcmd.rootnode.net/i18n/">compendia</a> for every language available for GNOME Commander.
+Compendia are built from available translations of Inkscape, exiv2 and all apps found in GNOME, KDE and OpenSUSE.</p>
+
 <p>Our recommended translation tools are: Poedit (<a href="http://www.poedit.org">http://www.poedit.org</a>/)
 and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). KBabel could
-also be a good tool if you also have the neccesary KDE libs installed..</p>
+also be a good tool if you also have the neccesary KDE libs installed.</p>
 
 <p>All translation files (LL.po) MUST be UTF-8 and to avoid corruption by
 mail application please send them as gzipped or bzipped attachments.</p>
 
-<p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful
-(not only european languages). It offers an easy access to the translations of open source projects. It acts as a kind
+<p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful,
+(not only European languages). It offers an easy access to the translations of open source projects. It acts as a kind
 of a central Memory Translation database where you can look up a translation suggestion or submit a whole .po file
 to the server.</p>
 
@@ -132,7 +134,7 @@ to the server.</p>
 <p>Links to documents regarding GNOME Commander internals.</p>
 <ul>
 <li><a href="http://gcmd.rootnode.net/trunk/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
-This document describes details of the 'intgviewer' library, which implements GNOME Commander's Internal-Viewer.
+This document describes details of the 'intviewer' library, which implements GNOME Commander's Internal-Viewer.
 If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading
 this document first (However, note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a>
 always are more updated than this document).</li>
