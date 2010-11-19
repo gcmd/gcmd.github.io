@@ -64,29 +64,26 @@ Links to the latest releases of the stable and development versions can be found
 (3.3 MB)</li>
 </ul>
 
-<p>All releases from 1.2.x contains a Gentoo ebuild file in the source tarball. You can
-<a href="http://git.gnome.org/cgit/gnome-commander/plain/data/gnome-commander.ebuild">download
-the ebuild with this link</a> that checks it out from git repository.</p>
+<p>All releases from 1.2.x contains a Gentoo ebuild file in the source tarball.</p>
 
 <p class="cntr"><a href="http://git.gnome.org/cgit/gnome-commander/plain/NEWS">View the version changelog</a></p>
 
 <h3><a name="testing">The latest developing snapshots</a></h3>
 <div class="ram">
 <h4>Snapshots</h4>
-<p>For testing purposes only. Development snapshots of both the stable 
-and testing branch of GNOME Commander can be downloaded below.</p> 
+<p>For testing purposes only. Development snapshots can be downloaded below.</p> 
 <p class="warning"><em>These may be unstable and are for testing purposes only, do not handle important
 data with these releases.</em></p>
 <p>The latest snapshot packages:</p>
 <ul>
-<li><a href="http://gcmd.rootnode.net/cgi-bin/cgit.cgi?url=gnome-commander/snapshot/gnome-commander-trunk.tar.bz2&h=master">Snapshot of the stable branch</a></li>
-<li><a href="http://gcmd.rootnode.net/cgi-bin/cgit.cgi?url=gnome-commander/snapshot/gnome-commander-devel.tar.bz2&h=gcmd-1-3">Snapshot of the testing branch</a></li>
+<li><a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-master.tar.bz2?h=master">Snapshot of the master branch</a></li>
+<li><a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-bugfix.tar.bz2?h=gcmd-1-2-8">Snapshot of the current stable branch</a> (mostly bug fixes since the latest stable version)</li>
 </ul>
-<p>To check out the 1.3 testing branch sources from the repository, following command can be used:</p>
+<p>To check out from the Git repository, the following command can be used:</p>
 <p class="cntr"><code>git clone git://git.gnome.org/gnome-commander</code></p>
-<p>and then</p>
-<p class="cntr"><code>git checkout gcmd-1-3</code></p>
-<p>Gentoo users can also use the ebuild in the sources</p>
+<p>If you wish to use the current stable branch, you can then run:</p>
+<p class="cntr"><code>git checkout gcmd-1-2-8</code></p>
+<p>Gentoo users can also use the ebuild in the sources.</p>
 
 </div>
 
@@ -126,11 +123,10 @@ when compiling). But be ware that there can be serious bugs in code from
 git, this code is for hacking, development and testing purposes.</p> 
 
 <p>GNOME Commander has its <a href="http://git.gnome.org/browse/gnome-commander/">source tree hosted at gnome.org</a>.
-To check out the latest code from the git repostory, for the stable 1.2 branch,
-following command below can be used. See our <a href="dev.html">development page</a> regarding
-git sources for the 1.3 testing branch.</p>
+To check out the latest code from the git repostory, for the (potentially unstable) master branch,
+the following command below can be used. See our <a href="dev.html">development page</a> for more details.</p>
 
-<p class="cntr"><code>git clone http://git.gnome.org/browse/gnome-commander/</code></p>
+<p class="cntr"><code>git clone git://git.gnome.org/gnome-commander/</code></p>
 
 <p>The above works only to do a first time download and not for updating the code, if you already
 have a version of the code you can just cd into the folder "gnome-commander" and run "git pull" to get the
@@ -171,7 +167,7 @@ these links may point to quite old versions.</p>
 <li><img src="img/pclinuxos.png" width="32" height="32" alt=""><a href="ftp://ftp.pbone.net/mirror/www.pclinuxos.com/apt/pclinuxos/2004/RPMS.updates/gnome-commander-1.2.0-1tex.i586.rpm">PCLinuxOS</a></li>
 <li><img src="img/t2.png" width="32" height="32" alt=""><a href="http://www.t2-project.org/packages/gnome-commander.html">T2 package matrix</a></li>
 <li><img src="img/paldo.png" width="32" height="32" alt=""><a href="http://www.paldo.org/index.php?section=packages&page=main&query=gnome-commander">Paldo</a></li>
-<li><img src="img/arch.png" width="32" height="32" alt=""><a href="http://aur.archlinux.org/packages.php?ID=9057">Arch Linux packages</a></li>
+<li><img src="img/arch.png" width="32" height="32" alt=""><a href="http://www.archlinux.org/packages/?q=gnome-commander">Arch Linux packages</a></li>
 <li><img src="img/zenwalk.png" width="32" height="32" alt=""><a href="http://zur.zenwalk.org/view/package/name/gnome-commander">Zenwalk packages</a></li>
 <li><img src="img/fink.jpeg" width="35" height="32" alt=""><a href="http://pdb.finkproject.org/pdb/package.php/gnome-commander">FINK packages</a></li>
 <li><img src="img/slackintosh.png" width="32" height="32" alt=""><a href="http://workaround.ch/pub/contrib/thorsten/gnome-2.14.x/extras/gnome-commander-1.2.0-powerpc-1Jvb_6.tgz">Slackintosh</a></li>

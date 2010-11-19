@@ -45,7 +45,7 @@
 <li><a href="#maillists">Mailing lists</a></li>
 </ul>
 <p><a href="http://cia.navi.cx/stats/project/gnome/gnome-commander/.rss">RSS-feed
-for the latest changes in svn repository.</a></p>
+for the latest changes in Git repository.</a></p>
 </div>
 
 <p>This page contains information about hacking and contributing to the GNOME Commander project.
@@ -55,23 +55,35 @@ sign up on our mailing lists and take part in discussions and development.</p>
 
 <h3>Versions</h3>
 <p>Some words about versions and version numbering.</p>
-<p>GNOME Commander is being developed in a
-stable and a testing branch, where the test releases fills the purpose of testing new ideas. Successful ones
-will then get backported to the stable branch. The version numbers (major, minor and micro) follows the quite
-usual standard of odd and even versioning, where odd minor versions stands for the unstable releases and
-the even numbered branch eventually gets the thoroughly tested new functions backported. Remember this
-when talking about <abbr title="GNOME Commander">GCMD</abbr> or when sending patches.</p>
-<p>To check out the latest sources from SVN, following commands can be used:</p>
+<p>GNOME Commander is being developed in several branches:<ul>
+<li>the <em>master</em> branch, where all the normal development takes place;</li>
+<li>a <em>stable</em> branch, named after the current stable release, which only
+includes bugfixes, doc updates, translation updates, but no new features;</li>
+<li>optionally, some <em>feature branches</em>, where new ideas or big features
+are cooked until they are ready to be merged in the <em>master</em>
+branch.</li>
+</ul></p>
 
-<p class="cntr">The stable 1.2 branch:<br>
-<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/trunk</code></p>
+<p>The version numbers (major, minor and micro) follows the quite usual standard
+of odd and even versioning, where odd minor versions stands for the unstable
+releases and the even numbered branch eventually gets the thoroughly tested new
+functions backported. Remember this when talking about <abbr title="GNOME
+Commander">GCMD</abbr> or when sending patches.</p>
+
+<p>To check out the latest sources from Git, following commands can be used:</p>
+
+<p class="cntr">The master branch:<br>
+<code>git clone git://git.gnome.org/gnome-commander</code></p>
 
 <p class="cntr">The 1.3 testing branch:<br>
-<code>svn checkout svn://svn.gnome.org/svn/gnome-commander/branches/gcmd-1-3</code></p>
+<code>git clone -b gcmd-1-2-8 git://git.gnome.org/gnome-commander</code></p>
+
+<p>You can also <a href="http://git.gnome.org/browse/gnome-commander/">browse
+the repository</a> in your web browser.</p>
 
 <p>Gentoo users can also make use of the
-<a href="http://svn.gnome.org/viewvc/gnome-commander/branches/gcmd-1-3/data/gnome-commander.ebuild?view=markup">
-ebuild in our source tree</a>.</p>
+<a href="http://git.gnome.org/browse/gnome-commander/tree/data/gnome-commander.ebuild.in">ebuild
+template in our source tree</a>.</p>
 
 <h2><a name="contr">Contributing</a></h2>
 <p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback,
@@ -85,6 +97,7 @@ good or bad, then you are welcome to contact us thrugh <a href="#maillists">our 
 <li>Send an email with the patch to the developers or the developer list.</li>
 <li>Please use the -u flag when generating a patch.</li>
 <li>Include it as text together with a good explanation of what the patch does or what problem/bug it solves.</li>
+<li>You can also do all of that directly from Git using <code>git format-patch</code> and <code>git send-email</code>.</li>
 </ul>
 <h4><a name="trnsl">Special note for translators:</a></h4>
 
@@ -100,7 +113,7 @@ and rename it to LL.po (replace "LL" with your language code, see the complete l
 (replace "LL" with your language code, see the
 <a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">complete list of language codes</a>). </p>
 <ol>
-<li>Get a fresh copy of the program source (either from SVN or snapshot)</li>
+<li>Get a fresh copy of the program source (either from Git or snapshot)</li>
 <li>Unpack it and run <code>./autogen.sh</code>.</li>
 <li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory
 and run <code>intltool-update LL</code>.</li>
@@ -137,7 +150,7 @@ to the server.</p>
 <li><a href="http://git.gnome.org/cgit/gnome-commander/plain/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
 This document describes details of the 'intviewer' library, which implements GNOME Commander's Internal-Viewer.
 If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading
-this document first (However, note that <a href="http://svn.gnome.org/viewcvs/gnome-commander/trunk/">the source files in SVN</a>
+this document first (However, note that <a href="http://git.gnome.org/browse/gnome-commander/tree/src/intviewer">the source files in Git</a>
 always are more updated than this document).</li>
 </ul>
 
@@ -152,7 +165,7 @@ always are more updated than this document).</li>
 </ul>
 <p>If you have the libraries above, and of course their sub-dependencies, devel-packages and a sane build
 environment, the usual "./configure make make install" procedure should work like a charm. If you are building
-the code checked out from SVN, use ./autogen.sh instead of configure, in the SVN case you also need to have
+the code checked out from Git, use ./autogen.sh instead of configure, in the Git case you also need to have
 the gnome-common files installed.</p>
 
 <p><a href="http://oss.sgi.com/projects/fam/index.html">FAM</a> is an optional library, it is used to
