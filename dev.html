@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="KeyWords" content="gnome,commander,file manager,documentation,faq,contributing">
 <meta name="Description" content="Documentation for the GNOME commander file manager">
-<meta name="author" content="Magnus St&aring;lnacke">
+<meta name="author" content="Unknown" >
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
 <!--<script type="text/javascript" src="script/snowstorm.js"></script>-->
@@ -70,7 +70,10 @@ releases and the even numbered branch eventually gets the thoroughly tested new
 functions backported. Remember this when talking about <abbr title="GNOME
 Commander">GCMD</abbr> or when sending patches.</p>
 
-<p>To check out the latest sources from Git, following commands can be used:</p>
+<h2><a name="contr">Current Git Repositories</a></h2>
+
+<p>There exists an official Git repository of GNOME commander on the servers of the GNOME project.
+It was maintained by Piotr until the beginning of 2012. You can check it out by the following commands:</p>
 
 <p class="cntr">The master branch:<br>
 <code>git clone git://git.gnome.org/gnome-commander</code></p>
@@ -84,6 +87,19 @@ the repository</a> in your web browser.</p>
 <p>Gentoo users can also make use of the
 <a href="http://git.gnome.org/browse/gnome-commander/tree/data/gnome-commander.ebuild.in">ebuild
 template in our source tree</a>.</p>
+
+<hr>
+<br>
+<p>Up to now, after the death of Piotr, there exists no new main developer who has access the GNOME 
+repository. Therefore, Uwe Scholz (a user of GNOME commander for many years) and Thomas Jost 
+(who helped in fixing gcmd bugs some years ago) created a fork of the GNOME Git repository at GitHub. They set up the 
+"gcmd" organization at GitHub, where the web page and the fork is located. Uwe already mady small improvements 
+of the GNOME commander source code.</p>
+
+<p class="cntr">To checkout the GitHub sources, where the current developement takes place, do:<br> 
+<code>git clone https://github.com/gcmd/gnome-commander</code></p>
+
+<p>In the future, when a new main developer is found, this repository might be merged with the one of the GNOME servers.</p>
 
 <h2><a name="contr">Contributing</a></h2>
 <p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback,
