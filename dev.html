@@ -124,15 +124,13 @@ good or bad, then you are welcome to contact us thrugh <a href="#maillists">our 
 
 <p>Although GNOME Commander is currently available in over 40 languages, there are still many missing
 and those to improve. The current status of all project translations can be found at
-<a href="http://progress.gnome.org/module/gnome-commander">http://progress.gnome.org/module/gnome-commander</a>. </p>
+<a href="https://l10n.gnome.org/module/gnome-commander/">https://l10n.gnome.org/module/gnome-commander/</a>. </p>
 
-<p>For adding a new translation simply download
-<a href="http://progress.gnome.org/POT/gnome-commander.HEAD/po.HEAD.pot">the head potfile</a>
-and rename it to LL.po (replace "LL" with your language code, see the complete list of language codes).</p>
+<p>For adding a new translation simply download the potfile(s) from that page
+and rename it to LL.po (replace "LL" with your language code, see the complete list 
+of <a href="https://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#Language-Codes">language codes</a>).</p>
 
-<p>Here you will find the recipe on how to contribute your new or updated translation
-(replace "LL" with your language code, see the
-<a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">complete list of language codes</a>). </p>
+<p>Here you will find the recipe on how to contribute your new or updated translation:</p>
 <ol>
 <li>Get a fresh copy of the program source (either from Git or snapshot)</li>
 <li>Unpack it and run <code>./autogen.sh</code>.</li>
@@ -140,25 +138,24 @@ and rename it to LL.po (replace "LL" with your language code, see the complete l
 and run <code>intltool-update LL</code>.</li>
 </ol>
 
-<p>You may find translation compedia to be quite handy as a reference. To create such a compedium
-from all LL GNOME translations it is required to:</p>
+<p>You may find translation compedia to be quite handy as a reference. You can download some <code>po</code> files 
+from other projects and <a href="https://www.gnu.org/software/gettext/manual/html_node/Creating-Compendia.html">create</a> 
+such a compedium by:</p>
 
 <pre>
-wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/extras/
-wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/office/
-wget -r -l1 -nd -A.po -b http://i18n-status.gnome.org/HEAD/LL/fifth-toe/
 msgcat -o compendium-LL.po *.po
 </pre>
 
-<p>Alternatively you can use pre-built <a href="http://gcmd.rootnode.net/i18n/">compendia</a> for every language available for GNOME Commander.
-Compendia are built from available translations of Inkscape, exiv2 and all apps found in GNOME, KDE and OpenSUSE.</p>
-
-<p>Our recommended translation tools are: Poedit (<a href="http://www.poedit.org">http://www.poedit.org</a>/)
-and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). KBabel could
-also be a good tool if you also have the neccesary KDE libs installed.</p>
+<p>There are several translation tools available. Some of them are: Poedit 
+(<a href="http://www.poedit.net">http://www.poedit.net</a>/)
+and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). 
+KBabel could also be a good tool if you also have the neccesary KDE libs installed.</p>
 
 <p>All translation files (LL.po) MUST be UTF-8 and to avoid corruption by
 mail application please send them as gzipped or bzipped attachments.</p>
+
+<p>Alternatively have look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
+to start translating for more projects than just GCMD.</p>
 
 <p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful,
 (not only European languages). It offers an easy access to the translations of open source projects. It acts as a kind
