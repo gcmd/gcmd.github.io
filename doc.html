@@ -38,7 +38,7 @@
 <h4>Index</h4>
 <ul>
 <li><a href="#tips">Tips and tricks</a></li>
-<li><a href="#mime">Handling mime types</a></li>
+<li><a href="#mime">Handling MIME types</a></li>
 <li><a href="keys.html">Keyboard shortcuts</a></li>
 <li><a href="#internal">The internal file viewer</a></li>
 <li><a href="#tags">Metadata tags</a></li>
@@ -126,21 +126,21 @@ command line and hit SHIFT ENTER - there you have it.</p>
 <p class="cntr"><a href="doc.html#topp">To top of page</a></p>
 
 
-<h2><a name="mime">Handling mime types</a></h2>
+<h2><a name="mime">Handling MIME types</a></h2>
 <p>Since GNOME has changed to follow <a href="http://www.freedesktop.org/">the freedesktop.org</a> 
-standard of handling mimetypes, the editing of preferred programs in GNOME Commander is currently 
+standard of handling MIME types, the editing of preferred programs in GNOME Commander is currently 
 broken (v 1.1.7). We do have this in our 
 <a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO file</a>, 
 but until <abbr title="GNOME Commander">GCMD</abbr> can handle edititing of preferred programs, there 
 are two other ways of managing this on user basis; use nautilus or manually edit the configuration 
-files that controls mime types in your home directory. Using Nautilus for doing this can feel quite 
+files that controls MIME types in your home directory. Using Nautilus for doing this can feel quite 
 awkward for GNOME Commander users, we usually do not use GNOME Commander because we like using Nautilus.. 
 Anyway, here is how to do it the manual way:</p>
 <p>These configuration files  usually lives in <code>~/.local/share/applications</code>. 
 There are three types of files here:</p>
 <ul>
 <li><span>XXX-usercreated.desktop</span> Where "XXX" stands for the application in question. 
-These files contain information about which mime types the application can handle, what command 
+These files contain information about which MIME types the application can handle, what command 
 will be used for launching it, if it shall run in terminal, and language localization.<br>Example:
 <pre>
 [Desktop Entry]
@@ -151,10 +151,10 @@ Exec='/usr/bin/display'
 Type=Application
 Terminal=false
 NoDisplay=true</pre></li>
-<li><span>mimeinfo.cache</span> This single file assigns every mimetype a list of applications. 
+<li><span>mimeinfo.cache</span> This single file assigns every MIME type a list of applications. 
 These are the entries you will see via "Open with" in GCMD. However, instead of application commands, 
 each entry points to the .desktop files, like the XXX-usercreated.desktop from above. There can be 
-several possible targets for a single mime-type entry, separated by semicolon.<br>Example:
+several possible targets for a single MIME type entry, separated by semicolon.<br>Example:
 <pre>
 [MIME Cache]
 audio/mpeg=xmms-usercreated.desktop;mpg123-usercreated.desktop;
