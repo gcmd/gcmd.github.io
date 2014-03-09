@@ -10,11 +10,12 @@
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
 <style type="text/css"><!--
 div img {margin-left:4%; border:0;}
-.karta {position:absolute; top:19em; margin-left:5%;}
-.opt {border:3px dotted #079;}
+.karta {position:absolute; top:17em; margin-left:2%;}
+#.opt {border:3px dotted #079;}
 #general {visibility:visible;}
 #form {visibility:hidden;}
 #layo {visibility:hidden;}
+#tabs {visibility:hidden;}
 #conf {visibility:hidden;}
 #filt {visibility:hidden;}
 #prog {visibility:hidden;}
@@ -45,25 +46,29 @@ div img {margin-left:4%; border:0;}
 
 <div id="cont" class="stil">
 <h2>Options slideshow</h2> 
-<p>This is an interactive slideshow of the GNOME Commander options (shots from v1.2.4), click on the option tabs like you would do in the program itself.</p>
+<p>This is an interactive slideshow of the GNOME Commander options
+  (shots from v1.4).<br> 
+  <i>Click on the option tabs</i> (or use TAB and ENTER) to switch between them.</p>
 <map name="kartan" id="kartan">  
-<area shape="rect" coords="15,38,73,64" href="javascript:titta('general');" title="General" alt="">  
-<area shape="rect" coords="74,38,121,64" href="javascript:titta('form');" title="Format" alt="">  
-<area shape="rect" coords="122,38,168,64" href="javascript:titta('layo');" title="Layout" alt="">  
-<area shape="rect" coords="169,38,247,64" href="javascript:titta('conf');" title="Confirmation" alt="">  
-<area shape="rect" coords="248,38,293,64" href="javascript:titta('filt');" title="Filters" alt="">  
-<area shape="rect" coords="294,38,353,64" href="javascript:titta('prog');" title="Programs" alt="">  
-<area shape="rect" coords="354,38,411,64" href="javascript:titta('devi');" title="Devices" alt="">  
+<area shape="rect" coords="12,28,70,50" href="javascript:titta('general');" tabindex="1" title="General" alt="General">  
+<area shape="rect" coords="71,28,118,50" href="javascript:titta('form');" tabindex="2" title="Format" alt="Format">  
+<area shape="rect" coords="119,28,166,50" href="javascript:titta('layo');" tabindex="3" title="Layout" alt="Layout">  
+<area shape="rect" coords="167,28,202,50" href="javascript:titta('tabs');" tabindex="4" title="Tabs" alt="Tabs">  
+<area shape="rect" coords="203,28,284,50" href="javascript:titta('conf');" tabindex="5" title="Confirmation" alt="Confirmation">  
+<area shape="rect" coords="285,28,329,50" href="javascript:titta('filt');" tabindex="6" title="Filters" alt="Filters">  
+<area shape="rect" coords="330,28,391,50" href="javascript:titta('prog');" tabindex="7" title="Programs" alt="Programs">  
+<area shape="rect" coords="392,28,448,50" href="javascript:titta('devi');" tabindex="8" title="Devices" alt="Devices">  
 </map>  
-<div id="general" class="karta"><img src="ss/opt_general.png" width="475" height="580" class="opt" alt=""></div>
-<div id="form" class="karta"><img src="ss/opt_format.png" width="475" height="580" class="opt" alt=""></div>
-<div id="layo" class="karta"><img src="ss/opt_layout.png" width="475" height="580" class="opt" alt=""></div>
-<div id="conf" class="karta"><img src="ss/opt_conf.png" width="475" height="580" class="opt" alt=""></div>
-<div id="filt" class="karta"><img src="ss/opt_filter.png" width="475" height="580" class="opt" alt=""></div>
-<div id="prog" class="karta"><img src="ss/opt_prog.png" width="475" height="580" class="opt" alt=""></div>
-<div id="devi" class="karta"><img src="ss/opt_dev.png" width="475" height="580" class="opt" alt=""></div>
-<div class="karta"><img src="img/dot.png" width="475" height="68" usemap="#kartan" alt=""></div>
-<img src="img/dot.png" width="2" height="700" alt="">
+<div id="general" class="karta"><img src="ss/opt_general.png" width="540" height="694" class="opt" alt=""></div>
+<div id="form" class="karta"><img src="ss/opt_format.png" width="540" height="694" class="opt" alt=""></div>
+<div id="layo" class="karta"><img src="ss/opt_layout.png" width="540" height="694" class="opt" alt=""></div>
+<div id="tabs" class="karta"><img src="ss/opt_tabs.png" width="540" height="694" class="opt" alt=""></div>
+<div id="conf" class="karta"><img src="ss/opt_conf.png" width="540" height="694" class="opt" alt=""></div>
+<div id="filt" class="karta"><img src="ss/opt_filter.png" width="540" height="694" class="opt" alt=""></div>
+<div id="prog" class="karta"><img src="ss/opt_prog.png" width="540" height="694" class="opt" alt=""></div>
+<div id="devi" class="karta"><img src="ss/opt_dev.png" width="540" height="694" class="opt" alt=""></div>
+<div class="karta"><img src="img/dot.png" width="540" height="68" usemap="#kartan" alt=""></div>
+<img src="img/dot.png" width="2" height="720" alt="">
 
 </div>
 <div>&nbsp;<br><a href="http://validator.w3.org/check/referer">

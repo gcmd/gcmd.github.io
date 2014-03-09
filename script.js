@@ -13,6 +13,7 @@ function titta(lager){
 eval(dl + "('general')" + vi + bort);
 eval(dl + "('form')" + vi + bort);
 eval(dl + "('layo')" + vi + bort);
+eval(dl + "('tabs')" + vi + bort);
 eval(dl + "('conf')" + vi + bort);
 eval(dl + "('filt')" + vi + bort);
 eval(dl + "('prog')" + vi + bort);
