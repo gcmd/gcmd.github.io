@@ -187,10 +187,9 @@ of choise for further details.</p>
 <h3>Main features include:</h3>
 
 <ul>
-<li>Two input modes:
+<li>Several input modes, including
    <ul>
-      <li>ASCII, with several codepage encodings (including 
-      <a href="http://en.wikipedia.org/wiki/CP437" name="Codepage 437">Codepage 437</a>)</li>
+      <li>ASCII</li>
       <li>UTF-8</li>
    </ul>
 </li>
@@ -199,30 +198,24 @@ of choise for further details.</p>
 	<ul>
 		<li>Text display, with or without line wrapping.</li>
 		<li>Binary file display.</li>
-		<li>Hex dump.</li>
+		<li>Hexadecimal.</li>
 		<li>Image rendering.</li>
 	</ul>
 </li>
+<li>Text Marking, Copying to Clipboard</li>
+<li>Text Search, Hex Search</li>
 <li>Fast file loading (using MMAP or incremented loading when possible, just like Midnight Commander's internal viewer</li>
-<li>Planned Features:
-	<ul>
-	<li>Text, Hex Search</li>
-	<li>Text Marking, Copying to Clipboard</li>
-	<li>More input modes: unicode, html.</li>
-	<li>and more...</li>
-	</ul>
-</li>
 </ul>
 
 
 <h3>Internal Viewer's Window</h3>
-<img src="img/gnome-cmd-iv-text-fixed.png" width="505" height="339" alt="Text mode with Fixed width font">
+<img src="img/gnome-cmd-iv-text.png" width="525" height="358" alt="Text mode with Fixed width font">
 <ul>
 	<li>The current file name is displayed in the window's title.</li>
-	<li>The file size (in bytes), and the current offset are displayed on the status bar</li>
-	<li>The current offset (both as bytes and as percentage) is relative to the first byte displayed on the first line</li>
+	<li>The file size (in bytes), and the current offset are displayed on the status bar.</li>
+	<li>The current offset in bytes is relative to the first byte displayed on the first line.</li>
 	<li>Use arrow keys to navigate the file.</li>
-	<li>Home, End, Page-Up, Page-Down and Mouse Wheel scrolling are also supported</li>
+	<li>Home, End, Page-Up, Page-Down and Mouse Wheel scrolling are supported.</li>
 </ul>
 
 
@@ -239,37 +232,32 @@ of choise for further details.</p>
 	<td>Close the internal viewer window</td>
 </tr>
 <tr>
-	<td>View|Wrap Lines</td>
+	<td>Text|Wrap Lines</td>
 	<td>W</td>
 	<td>Toggles line wrapping.<br>(Applicable only in text display modes)</td>
 </tr>
-<tr><td>Input Modes:</td></tr>
+<tr><td><b>Input Modes:</b></td></tr>
 <tr>
-	<td>View|ASCII</td>
-	<td>A</td>
-	<td>Sets ASCII input mode.<br>When in ASCII mode, you can also set the desired character encoding from the "View|Character Encoding" submenu.</td>
-</tr>
-<tr>
-	<td>View|UTF-8</td>
-	<td>U</td>
-	<td>Sets UTF-8 input mode.</td>
-</tr>
-<tr>
-	<td>View|Character Encodings</td>
+	<td>Text|Encoding</td>
 	<td></td>
 	<td>This menu contains all possible character encodings.<br>(If you need an additional encoding, send an email to the developers).</td>
 </tr>
 <tr>
-	<td>View|Character Encodings|ASCII</td>
+	<td>Text|Encoding|ASCII</td>
 	<td>A</td>
-	<td>Presing "A" will quickly set ASCII input mode, without any further character encodings.</td>
+	<td>Sets ASCII input mode.</td>
 </tr>
 <tr>
-	<td>View|Character Encodings|Terminal Font</td>
-	<td>Q</td>
-	<td>Presing "Q" will quickly set ASCII input mode, with Codepage 437 encoding.<br>(Good for binary and hex mode viewing)</td>
+	<td>Text|Encoding|UTF-8</td>
+	<td>U</td>
+	<td>Sets UTF-8 input mode.</td>
 </tr>
-<tr><td>Display modes:</td></tr>
+<tr>
+	<td>Text|Encoding|CP437</td>
+	<td>Q</td>
+	<td>Presing "Q" will quickly set ASCII input mode, with Codepage 437 encoding.<br>(Good for binary and hex mode viewing).</td>
+</tr>
+<tr><td><b>Display modes:</b></td></tr>
 <tr>
 	<td>View|Text</td>
 	<td>1</td>
@@ -290,10 +278,10 @@ of choise for further details.</p>
 	<td>4</td>
 	<td>Will try to load the file as an image.<br>Loading is done using GDK, so every GDK-supported format should work.</td>
 </tr>
-<tr><td>Font Size:</td></tr>
+<tr><td><b>Font Size:</b></td></tr>
 <tr>
 	<td>View|Larger Font</td>
-	<td>=</td>
+	<td>= or +</td>
 	<td>Increment the font size.</td>
 </tr>
 <tr>
@@ -301,7 +289,7 @@ of choise for further details.</p>
 	<td>-</td>
 	<td>Decrement the font size.</td>
 </tr>
-<tr><td>Image Manipulation:</td></tr>
+<tr><td><b>Image Manipulation:</b></td></tr>
 <tr>
 	<td>Image|Rotate Clockwise</td>
 	<td>CTRL+R</td>
@@ -327,7 +315,7 @@ of choise for further details.</p>
 	<td></td>
 	<td>Horizontally Flip the image.<br>(Applicable only in IMAGE display mode)</td>
 </tr>
-<tr><td>Settings:</td></tr>
+<tr><td><b>Settings:</b></td></tr>
 <tr>
 	<td>Settings|Binary Mode</td>
 	<td></td>
@@ -348,43 +336,33 @@ of choise for further details.</p>
 
 
 <h3><a name="input">Input Modes</a></h3>
-<p>Here's an example of using different input modes.<br>
-The displayed file is a UTF-8 file (this is actually the Hungarian translation file from the gnome-commander project).</p>
+<p>Here's an example of using different input modes. The displayed file is a UTF-8 file (this is actually the Hungarian translation file from the gnome-commander project).</p>
 
 <p>UTF-8 is an encoding scheme used to encode Unicode characters into a multibyte string. A single UTF-8 character 
 can be composed from up to 6 bytes.</p>
 
-<p>In ASCII mode (without any further chacarater encodings, press "CTRL+A" to set it), only bytes with ASCII value above 
+<p>In ASCII mode (without any further chacarater encodings, press "A" to set it), only bytes with ASCII value above 
 0x20 and below 0x7F are displayed. All other characters are shown as dots:</p>
-<img src="img/gnome-cmd-iv-text-ascii.png" width="507" height="354" alt="Text mode with ASCII encoding">
+<img src="img/gnome-cmd-iv-text-ascii.png" width="525" height="358" alt="Text mode with ASCII encoding">
 
-<p>In ASCII mode with Codepage 437 encoding (press "CTRL+Q" to set it), extended ASCII characters (above ASCII 0x7E) 
-are displayed.</p>
-<img src="img/gnome-cmd-iv-text-cp437.png" width="505" height="353" alt="Text mode with Codepage 437 encoding">
+<p>In ASCII mode with Codepage 437 encoding (press "Q" to set it), extended ASCII characters (above ASCII 0x7E) 
+are displayed:</p>
+<img src="img/gnome-cmd-iv-text-cp437.png" width="525" height="358" alt="Text mode with Codepage 437 encoding">
 
-<p>In UTF-8 Input mode (Press "U" to set it), the correct characters are displayed.</p>
-<img src="img/gnome-cmd-iv-text-utf8.png" width="505" height="353" alt="Text mode with UTF-8 encoding">
+<p>In UTF-8 Input mode (Press "U" to set it), the correct characters are displayed:</p>
+<img src="img/gnome-cmd-iv-text-utf8.png" width="525" height="358" alt="Text mode with UTF-8 encoding">
 
-<h3><a name="txt">Text Display Mode</a></h3>
-<p>In Text mode, you can set the input mode to either ASCII or UTF-8.<br>
-You can set line wrapping by pressing "W".<br>
-<br>
-Text with Fixed width font display (Press "1" to set it) is suitible for viewing source files:</p>
-<img src="img/gnome-cmd-iv-text-fixed.png" width="505" height="339" alt="Text mode with Fixed width font">
-
-<p>Text with Variable width font display (Press "2" to set it) is suitible for viewing text files:</p>
-<img src="img/gnome-cmd-iv-text-variable.png" width="505" height="339" alt="Text mode with Variable width font">
+<p>Other input modes such as cyrillic or greek can be selected in the "Text" menu, section "Encoding".</p>
 
 <h3><a name="bin">Binary Display Mode</a></h3>
-<p>Binary display mode is suitible for quickly viewing binary files (If that sort of thing is you bag...).
-In Binary display mode, you can only use ASCII input mode, with or without additional character encodings 
-(but not UTF-8). Number of bytes displayed on each line can be changed in the "Settings" menu.</p>
+<p>Binary display mode is suitible for quickly viewing binary files. In Binary display mode, the number of
+  bytes displayed on each line can be changed in the "Settings" menu.</p>
 
 <p>Viewing a file in Binary display mode, in ASCII input mode:</p>
-<img src="img/gnome-cmd-iv-bin-ascii.png" width="505" height="339" alt="Binary mode with ASCII encoding">
+<img src="img/gnome-cmd-iv-bin-ascii.png" width="525" height="358" alt="Binary mode with ASCII encoding">
 
 <p>The same file as above, with Codepage 437 encoding:</p>
-<img src="img/gnome-cmd-iv-bin-cp437.png" width="505" height="339" alt="Binary mode with Codepage 437 encoding">
+<img src="img/gnome-cmd-iv-bin-cp437.png" width="525" height="358" alt="Binary mode with Codepage 437 encoding">
 
 <h3><a name="hex">Hex dump Display Mode</a></h3>
 <p>This is a simple Hex dump display mode (similar to using <code>od -t x1</code>). In Hex dump display mode, 
@@ -395,17 +373,17 @@ each byte corresponds to a different ASCII value.</p>
 
 
 <p>ASCII Encoding:</p>
-<img src="img/gnome-cmd-iv-hex-ascii.png" width="505" height="339" alt="Hex mode with ASCII encoding">
+<img src="img/gnome-cmd-iv-hex-ascii.png" width="550" height="358" alt="Hex mode with ASCII encoding">
 
 <p>Codepage 437 Encoding:</p>
-<img src="img/gnome-cmd-iv-hex-cp437.png" width="505" height="339" alt="Hex mode with Codepage 437 encoding">
+<img src="img/gnome-cmd-iv-hex-cp437.png" width="550" height="358" alt="Hex mode with Codepage 437 encoding">
 
 <p>Cyrillic Encoding:</p>
-<img src="img/gnome-cmd-iv-hex-cyrillic.png" width="505" height="339" alt="Hex mode with Cyrillic encoding">
+<img src="img/gnome-cmd-iv-hex-cyrillic.png" width="550" height="358" alt="Hex mode with Cyrillic encoding">
 
 <h3><a name="img">Image Display Mode</a></h3>
 <p>The viewer starts with the image fitted to the viewer window size = larger window = larger view</p>
-<img src="img/gnome-cmd-iv-image.jpg" width="506" height="341" alt="Image mode">
+<img src="img/gnome-cmd-iv-image.jpg" width="525" height="358" alt="Image mode">
 
 <hr>
 <p class="cntr"><a href="#topp">To top of page</a></p>
