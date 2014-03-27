@@ -51,6 +51,17 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 #infor .shot {display:block; text-align:center;}
 #infor img  {border:0;}
 
+#lang {float:left; width:14em; min-width:204px; margin-left:4%; padding:0.4em; background:#bebecc; color:#000; border:1px solid #555;}
+#lang ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
+#lang ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; display:block; background:#e8e8e8; color:#22e;}
+#lang ul a:visited {background:#e8e8e8; color:#528;}
+#lang ul a:hover {background:#054269; color:#bbc;}
+#lang li,#menu li {margin-bottom:0em; padding:0em;}
+#lang h4 {margin-top:0px;}
+#lang p {margin:0.5em 1em 0.5em 1em;}
+#lang .shot {display:block; text-align:center;}
+#lang img  {border:0;}
+
 .imglist {list-style:none; }
 .imglist a {margin-left:0.6em; position:relative; top:-12px;;}
 
@@ -59,7 +70,7 @@ body {background:#fff; color:#000; margin-left:4%; margin-right:2%; font-family:
 p  {margin: 1em 3em 1em 0.5em;}
 a:link {background:transparent; color:#000; text-decoration:none; }
 a:visited {background:transparent; color:#000; text-decoration:none; }
-img, #infor ul, #menu, #hide a  {display:none; background:transparent; color:#fff;}
+img, #infor ul, #lang, #menu, #hide a  {display:none; background:transparent; color:#fff;}
 .stil, .htwo, #cont, #hide {background:transparent; color:#000; margin-left:0px; border:0;}
 .vit {background:transparent; color:#fff; font-weight:bold;}
 #urub {font-size:90%; text-align:center;}
