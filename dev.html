@@ -99,18 +99,35 @@ title="Please report bugs here">GCMD bugzilla page</a>.</p>
 
 <h2><img class="info" src="img/icons/devices/network-wireless.png" height="32" width="32"> <a name="current">Git Repository</a></h2>
 
-<p>The official Git repository of GNOME Commander is registered on 
-<a href="https://git.gnome.org">git.gnome.org</a>. It is maintained by 
-Uwe. You can check it out by the following commands:</p>
+<p>The official Git repository of GNOME Commander is registered on
+git.gnome.org. For more information about Git and Gnome
+visit <a href="http://live.gnome.org/Git">live.gnome.org/Git</a>. You
+can <a href="http://git.gnome.org/browse/gnome-commander/">browse the
+repository</a>
+or <a href="https://git.gnome.org/browse/gnome-commander/log/">view the
+changelog of the master branch</a> in your web browser. To check out
+the <abbr title="GNOME Commander">GCMD</abbr> repository to your local
+hard disc, enter the following commands:</p>
 
-<p class="cntr">The master branch:<br>
+<p class="cntr">The instable master branch:<br>
 <code>git clone git://git.gnome.org/gnome-commander</code></p>
 
 <p class="cntr">The current stable branch:<br>
 <code>git clone -b gcmd-1-4 git://git.gnome.org/gnome-commander</code></p>
 
-<p>You can also <a href="http://git.gnome.org/browse/gnome-commander/">browse
-the repository</a> in your web browser.</p>
+<p>The above only works for a first time download and not for updating
+the code. If you already cloned the repository, run <code>git
+pull</code> inside the "gnome-commander" directory to get the latest
+revision. To switch between the branches, run <code>git checkout
+$BRANCH</code>.</p>
+
+<p>For compiling the source code, run <code>autogen.sh && make</code>;
+install it with <code>make install</code> as root.</p>
+
+<p class="warning"><em>The current instable master branch is for testing
+purposes only! Do not handle important data with it.</em></p>
+
+<p>If you don't have Git installed, you may also download a snapshot package as a <code>tar.bz2</code> file from <a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-master.tar.bz2?h=master">here</a>.</p>
 
 <h2><img class="info" src="img/icons/apps/system-users.png" height="32" width="32"> <a name="contr">Contributing</a></h2>
 <p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback,
@@ -163,7 +180,7 @@ KBabel could also be a good tool if you also have the neccesary KDE libs install
 mail application please send them as gzipped or bzipped attachments.</p>
 
 <p>Alternatively have look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
-to start translating for more projects than just GCMD.</p>
+to start translating for more projects than just <abbr title="GNOME Commander">GCMD</abbr>.</p>
 
 <p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful,
 (not only European languages). It offers an easy access to the translations of open source projects. It acts as a kind
