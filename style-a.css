@@ -24,7 +24,7 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 .flr {float:right; margin-bottom:1em; margin-left:1em;}
 .info {vertical-align:middle; margin-right:4px;}
 
-#topp{text-align:center; padding-left:10em; min-width:30em; max-width:56em; color:#fff; border:0;}
+#topp{text-align:center; min-width:30em; max-width:56em; color:#fff; border:0;}
 #cont {text-align:left; padding-top:0em; margin-top:2em; background:#e8e8e8 no-repeat 4em 0px fixed; color:#000;}
 #urub {border:0; font-size:90%; font-family:sans-serif; margin-left:1em; margin-right:1em;}
 
