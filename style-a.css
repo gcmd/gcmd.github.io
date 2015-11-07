@@ -74,3 +74,9 @@ img, #infor ul, #lang, #menu, #hide a  {display:none; background:transparent; co
 #urub {font-size:90%; text-align:center;}
 }
 
+div.fork_github:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+   content:url(https://gcmd.github.io/img/fork_me_github.png);
+}
