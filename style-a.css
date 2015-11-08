@@ -78,5 +78,17 @@ div.fork_github:before {
     position: absolute;
     top: 0;
     right: 0;
-   content:url(https://gcmd.github.io/img/fork_me_github.png);
+    display: block;
+    content: url(https://gcmd.github.io/img/fork_me_github.png);
+    height: 149px;
+    width: 149px;
 }
+
+#box-link { 
+position: absolute; 
+top: 0; 
+right: 0; 
+width: 149px; 
+height: 149px; 
+background-color: transparent; 
+}	
