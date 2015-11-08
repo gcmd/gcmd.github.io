@@ -124,8 +124,10 @@ pull</code> inside the "gnome-commander" directory to get the latest
 revision. To switch between the branches, run <code>git checkout
 $BRANCH</code>.</p>
 
-<p>For compiling the source code, run <code>autogen.sh && make</code>;
-install it with <code>make install</code> as root.</p>
+<h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32"> <a name="build">Building from source</a></h2>
+<p>In general, the usual <code>./configure && make; sudo -i make install</code> procedure should work like a charm. If you are building
+the code checked out from Git, use <code>./autogen.sh</code> instead of <code>./configure</code>. Don't forget to install the dependencies
+which are reported in the configure step.</p>
 
 <p class="warning"><em>The current instable master branch is for testing
 purposes only! Do not handle important data with it.</em></p>
@@ -199,20 +201,6 @@ If you plan to hack the internal viewer, add features or just browse the source 
 this document first (However, note that <a href="http://git.gnome.org/browse/gnome-commander/tree/src/intviewer">the source files in Git</a>
 always are more updated than this document).</li>
 </ul>
-
-<h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32"> <a name="build">Building from source</a></h2>
-<h4>Required libraries:</h4>
-<ul>
-<li>GTK+ (2.8.0) or above for latest version.</li>
-<li>GnomeVFS (2.0) Used for most of the file handling. </li>
-<li>Glib (2.6.0)</li>
-<li>GNOME (2.0)</li>
-<li>GnomeUI (2.4)</li>
-</ul>
-<p>If you have the libraries above, and of course their sub-dependencies, devel-packages and a sane build
-environment, the usual "./configure make make install" procedure should work like a charm. If you are building
-the code checked out from Git, use ./autogen.sh instead of configure, in the Git case you also need to have
-the gnome-common files installed.</p>
 
 <hr>
 
