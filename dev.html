@@ -103,15 +103,13 @@ title="Please report bugs here">GCMD bugzilla page</a>.</p>
 <h2><img class="info" src="img/icons/devices/network-wireless.png" height="32" width="32"> <a name="current">Git Repository</a></h2>
 
 <p>The official Git repository of GNOME Commander is registered on
-git.gnome.org. There is also a copy at <a href="https://github.com/gcmd/gnome-commander">GitHub</a>.
+<a href="http://git.gnome.org/browse/gnome-commander/">git.gnome.org</a>.
+There is also a copy at <a href="https://github.com/gcmd/gnome-commander">GitHub</a>.
 For more information about Git and Gnome visit
-<a href="http://live.gnome.org/Git">live.gnome.org/Git</a>. You can
-<a href="http://git.gnome.org/browse/gnome-commander/">browse the
-repository</a> or
-<a href="https://git.gnome.org/browse/gnome-commander/log/">view the
-changelog of the master branch</a> in your web browser. To check out
-the <abbr title="GNOME Commander">GCMD</abbr> repository to your local
-hard disc, enter the following commands:</p>
+<a href="http://live.gnome.org/Git">live.gnome.org/Git</a>.</p>
+
+<p>To check out the <abbr title="GNOME Commander">GCMD</abbr> repository
+to your local hard disc, enter the following commands:</p>
 
 <p class="cntr">The instable master branch:<br>
 <code>git clone git://git.gnome.org/gnome-commander</code></p>
@@ -119,10 +117,9 @@ hard disc, enter the following commands:</p>
 <p class="cntr">The current stable branch:<br>
 <code>git clone -b gcmd-1-4 git://git.gnome.org/gnome-commander</code></p>
 
-<p>The above only works for a first time download and not for updating
-the code. If you already cloned the repository, run <code>git
-pull</code> inside the "gnome-commander" directory to get the latest
-revision. To switch between the branches, run <code>git checkout
+<p>If you already cloned the repository, run <code>git
+pull</code> inside the <tt>gnome-commander</tt> directory to get the
+latest code revision. To switch between the branches, run <code>git checkout
 $BRANCH</code>.</p>
 
 <h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32"> <a name="build">Building from source</a></h2>
@@ -137,10 +134,10 @@ purposes only! Do not handle important data with it.</em></p>
 
 <h2><img class="info" src="img/icons/apps/system-users.png" height="32" width="32"> <a name="contr">Contributing</a></h2>
 <p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback
-then you are welcome to contact us through <a href="index.html#maillists">our mailing lists</a> or
-<a href="index.html#authors">the authors</a> directly. If you plan to contribute 
-by using git, we recommend to have a look in the 
-<a href="http://git.gnome.org/cgit/gnome-commander/plain/README.commits">README.commits</a> document.</p>
+then you are welcome to contact us <a href="file:///home/uwe/Programmieren/Projekte/gcmd.github.io/index.html#maillists">directly</a>.
+You can also make a pull request on GitHub against the gnome-commander <a href="https://github.com/gcmd/gnome-commander">repository</a>
+of the gcmd organization.</p>
+
 <p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the
 <a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO file</a> first before sending
 <a href="index.html#authors">email to the authors</a> or <a href="index.html#maillists">the mailing lists</a>.</p>
@@ -171,11 +168,7 @@ and run <code>intltool-update LL</code>.</li>
 
 <p>You may find translation compedia to be quite handy as a reference. You can download some <code>po</code> files 
 from other projects and <a href="https://www.gnu.org/software/gettext/manual/html_node/Creating-Compendia.html">create</a> 
-such a compedium by:</p>
-
-<pre>
-msgcat -o compendium-LL.po *.po
-</pre>
+such a compedium by: <code>msgcat -o compendium-LL.po *.po</code>.</p>
 
 <p>There are several translation tools available. Some of them are: Poedit 
 (<a href="http://www.poedit.net">http://www.poedit.net</a>/)
@@ -194,7 +187,6 @@ of a central Memory Translation database where you can look up a translation sug
 to the server.</p>
 
 <h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32"> <a name="doc">Hacking documents</a></h2>
-<p>Links to documents regarding GNOME Commander internals.</p>
 <ul>
 <li><a href="http://git.gnome.org/cgit/gnome-commander/plain/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
 This document describes details of the 'intviewer' library, which implements GNOME Commander's Internal-Viewer.
