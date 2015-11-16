@@ -1,6 +1,6 @@
-body {background:#9a9aaa; color:#fff; font-family: sans-serif; font-size:90%; margin-right:9%; max-width: 1000px; min-width: 700px; margin: auto;}
+body {color:#fff; font-family: sans-serif; font-size:90%; margin-right:9%; max-width: 1000px; min-width: 700px; margin: auto;}
 h1{font-family:serif; color:#111; margin-top:0.2em;}
-h2{background:#bebecc; color:#111; border:1px solid #000; padding-left:6px; padding-top:2px; margin-top:1em; font-family:serif; }
+h2{background:#CBD0B9; color:#111; border:1px solid #000; padding-left:6px; padding-top:2px; margin-top:1em; font-family:serif; }
 h3 {margin-left:0.5em; margin-top:2em;}
 h4 {margin-left:0.5em; margin-bottom:0em;}
 h5 {margin:0.5em;}
@@ -25,23 +25,23 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 .info {vertical-align:middle; margin-right:4px;}
 
 #topp{text-align:center; min-width:30em; max-width:56em; color:#fff; border:0;}
-#cont {text-align:left; padding-top:0em; margin-top:2em; background:#e8e8e8 no-repeat 4em 0px fixed; color:#000;}
+#cont {text-align:left; padding-top:0em; margin-top:2em; background:#F0EED9 no-repeat 4em 0px fixed; color:#000;}
 #urub {border:0; font-size:90%; font-family:sans-serif; margin-left:1em; margin-right:1em;}
 
 #menu {margin-left: auto; margin-right: auto; width: 100%; height: 0px; font-weight:bold;}
 #menu a {text-decoration:none; padding:0.1em; background:transparent; color:#000000; font-size:110%;}
-#menu a:hover {background:#e8e8e8; color:#000;}
+#menu a:hover {background:#857F69; color:#000;}
 
-#hide {display:none; background:#bebecc; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em; padding:3px; font-size:80%;}
+#hide {display:none; background:#CBD0B9; color:#000; border:1px solid #777; font-weight:bold; margin-top:1em; padding:3px; font-size:80%;}
 #logo {float:left; margin-left:1em;}
 #float {float:right; margin-right:1em;}
 #keys {border:1px solid #000; width:90%; margin-left:4%;}
 #keys td {border-bottom:1px solid #000;}
 
-#infor {float:right; width:14em; min-width:204px; margin-left:4%; padding:0.4em; background:#bebecc; color:#000; border:1px solid #555;}
+#infor {float:right; width:14em; min-width:204px; margin-left:4%; padding:0.4em; background:#CBD0B9; color:#000; border:1px solid #555;}
 #infor ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
-#infor ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; display:block; background:#e8e8e8; color:#22e;}
-#infor ul a:visited {background:#e8e8e8; color:#528;}
+#infor ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; display:block; background:#F0EED9; color:#22e;}
+#infor ul a:visited {background:#F0EED9; color:#528;}
 #infor ul a:hover {background:#054269; color:#bbc;}
 #infor li,#menu li {margin-bottom:0em; padding:0em;}
 #infor h4 {margin-top:0px;}
@@ -49,10 +49,10 @@ code, pre {background:#ccc; color:#000; padding:0.2em;}
 #infor .shot {display:block; text-align:center;}
 #infor img  {border:0;}
 
-#lang {float:left; width:14em; min-width:204px; margin-left:4%; padding:0.4em; background:#bebecc; color:#000; border:1px solid #555;}
+#lang {float:left; width:14em; min-width:204px; margin-left:4%; padding:0.4em; background:#A29A87; color:#000; border:1px solid #555;}
 #lang ul {padding-left:1em; list-style-position:outside; list-style-type:none;}
-#lang ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; display:block; background:#e8e8e8; color:#22e;}
-#lang ul a:visited {background:#e8e8e8; color:#528;}
+#lang ul a {margin-bottom:0em; padding:0.2em; text-decoration:none; display:block; background:#F0EED9; color:#22e;}
+#lang ul a:visited {background:#F0EED9; color:#528;}
 #lang ul a:hover {background:#054269; color:#bbc;}
 #lang li,#menu li {margin-bottom:0em; padding:0em;}
 #lang h4 {margin-top:0px;}
