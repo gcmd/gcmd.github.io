@@ -131,37 +131,36 @@ purposes only! Do not handle important data with it.</em></p>
 
 <p>If you don't have Git installed, you may also download a snapshot package as a <code>tar.bz2</code> file from <a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-master.tar.bz2?h=master">here</a>.</p>
 
-<h2><img class="info" src="img/icons/apps/system-users.png" height="32" width="32" alt="Contributing"> <a name="contr">Contributing</a></h2>
-<p>If you want to contribute, send in patches, translations, having some useful idea or just some feedback
-then you are welcome to contact us <a href="index.html#maillists">directly</a>. You can also make a pull request 
-on GitHub against the gnome-commander <a href="https://github.com/gcmd/gnome-commander">repository</a>
-of the gcmd organization.</p>
+<h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32" alt="Contributing"> <a name="contr">Contributing by Developing</a></h2>
+<p>If you want to contribute, send in patches, having some useful idea or just some feedback
+then you are welcome to <a href="index.html#maillists">contact us</a>. You can also make a pull request 
+on GitHub against the <abbr title="GNOME Commander">GCMD</abbr> <a href="https://github.com/gcmd/gnome-commander">repository</a>.</p>
 
-<p>If you're not an programmer but have some good ideas for stuff that you want to see in this program, check the
+<p>If you have some good ideas for stuff that you want to see in this program, check the
 <a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO file</a> first before sending
-<a href="index.html#authors">email to the authors</a> or <a href="index.html#maillists">the mailing lists</a>.</p>
-<p>If you want to submit a patch please do so.</p>
+a message to <a href="index.html#maillists">the mailing lists</a>.</p>
+<p>If you want to submit a patch via email:</p>
 <ul>
 <li>Send an email with the patch to the developers or the developer list.</li>
-<li>Please use the -u flag when generating a patch.</li>
+<li>Please use the following command to generate the patch:<code>diff -Naur old_file new_file</code></li>
 <li>Include it as text together with a good explanation of what the patch does or what problem/bug it solves.</li>
-<li>You can also do all of that directly from Git using <code>git format-patch</code> and <code>git send-email</code>.</li>
+<li>You can also do all of that directly via git using <code>git format-patch</code> and <code>git send-email</code>.</li>
 </ul>
-<h4><a name="trnsl">Special note for translators:</a></h4>
 
-<p>Although GNOME Commander is currently available in over 40 languages, there are still many missing
-and those to improve. The current status of all project translations can be found at
-<a href="https://l10n.gnome.org/module/gnome-commander/">https://l10n.gnome.org/module/gnome-commander/</a>. </p>
+<h2><img class="info" src="img/icons/actions/edit-find-replace.png" height="32" width="32" alt="Contributing by Translating"><a name="trnsl">Contributing by Translating</a></h2>
 
-<p>For adding a new translation simply download the potfile(s) from that page
-and rename it to LL.po (replace "LL" with your language code, see the complete list 
-of <a href="https://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#Language-Codes">language codes</a>).</p>
+<p>The current status of all project translations can be found at
+<a href="https://l10n.gnome.org/module/gnome-commander/">https://l10n.gnome.org/module/gnome-commander/</a>. For adding a 
+new translation simply download the initial <a href="https://l10n.gnome.org/POT/gnome-commander.master/gnome-commander.master.pot">potfile</a> 
+of the master branch and start translating by renaming the file to LL.po (replace "LL" with your language code, see the complete list 
+of <a href="https://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#Language-Codes">language codes</a>). Or take an already
+existing po file from the list on the page given above.</p>
 
-<p>Here you will find the recipe on how to contribute your new or updated translation:</p>
+<p>Here you will find the recipe on how to contribute with your new or updated translation:</p>
 <ol>
 <li>Get a fresh copy of the program source (either from Git or snapshot)</li>
 <li>Unpack it and run <code>./autogen.sh</code>.</li>
-<li>Update proper LL.po file by usual chant: CD into the <code>po</code> directory
+<li>Update proper LL.po file: go into the <code>po</code> directory
 and run <code>intltool-update LL</code>.</li>
 </ol>
 
@@ -172,18 +171,12 @@ such a compedium by: <code>msgcat -o compendium-LL.po *.po</code>.</p>
 <p>There are several translation tools available. Some of them are: Poedit 
 (<a href="http://www.poedit.net">http://www.poedit.net</a>/)
 and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). 
-KBabel could also be a good tool if you also have the neccesary KDE libs installed.</p>
+KBabel could also be a good tool...</p>
 
-<p>All translation files (LL.po) MUST be UTF-8 and to avoid corruption by
-mail application please send them as gzipped or bzipped attachments.</p>
-
-<p>Alternatively have look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
+<p>All translation files (LL.po) must be UTF-8. To avoid corruption by
+mail application please send them as gzipped or bzipped attachments. Better create a merge request via GitHub.
+Alternatively have look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
 to start translating for more projects than just <abbr title="GNOME Commander">GCMD</abbr>.</p>
-
-<p>Translators may also find <a href="http://www.open-tran.eu/index.html">the service Open-Tran.eu </a>useful,
-(not only European languages). It offers an easy access to the translations of open source projects. It acts as a kind
-of a central Memory Translation database where you can look up a translation suggestion or submit a whole .po file
-to the server.</p>
 
 <h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32" alt="Hacking"> <a name="doc">Hacking documents</a></h2>
 <ul>
