@@ -106,7 +106,7 @@ branch.</li>
 versioning. Even numbers are stable versions, that are intended for all-day use. 
 Odd versions are development versions. The version number is stored as git-tags in the
 git repository. To see all of them, just type <code>git tag</code>. The current one is 
-also stored in the first line of <code>configure.ac</code>. 
+also stored in the first line of <code>configure.ac</code>.</p>
 
 <p>To check out the <abbr title="GNOME Commander">GCMD</abbr> repository
 to your local hard disc, enter the following commands:</p>
@@ -121,6 +121,17 @@ to your local hard disc, enter the following commands:</p>
 pull</code> inside the <tt>gnome-commander</tt> directory to get the
 latest code revision. To switch between the branches, run <code>git checkout
 $BRANCH</code>.</p>
+
+<h4>Tips for working with Git</h4>
+<p>
+<ul>
+<li>Why not automating <code>make</code> and <code>make check</code> before every commit?
+Nothing easier than that: Just type the following command when you are in the top directory of the
+<abbr title="GNOME Commander">GCMD</abbr> repository:<br>
+<code>ln -s ../../pre-commit.sh .git/hooks/pre-commit</code></br>
+Now, all your commits are automatically tested before they are actually committed.
+</li>
+</ul>
 
 <h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32" alt="Source code"> <a name="build">Building from source</a></h2>
 <p>In general, the usual <code>./configure && make; sudo -i make install</code> procedure should work like a charm. If you are building
