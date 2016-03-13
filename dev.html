@@ -129,9 +129,12 @@ $BRANCH</code>.</p>
 Nothing easier than that: Just type the following command when you are in the top directory of the
 <abbr title="GNOME Commander">GCMD</abbr> repository:<br>
 <code>ln -s ../../pre-commit.sh .git/hooks/pre-commit</code></br>
-Now, all your commits are automatically tested before they are actually committed.
+Now, all your commits are automatically tested before they are actually committed via <code>git commit</code>.
+When you only have a small commit to be made, where no check is necessary, you can avoid it with the command
+<code>git commit --no-verify</code>.
 </li>
 </ul>
+</p>
 
 <h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32" alt="Source code"> <a name="build">Building from source</a></h2>
 <p>In general, the usual <code>./configure && make; sudo -i make install</code> procedure should work like a charm. If you are building
@@ -142,6 +145,13 @@ which are reported in the configure step.</p>
 purposes only! Do not handle important data with it.</em></p>
 
 <p>If you don't have Git installed, you may also download a snapshot package as a <code>tar.bz2</code> file from <a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-master.tar.bz2?h=master">here</a>.</p>
+
+<h4>Building in Dockerfile</h4>
+<p>
+There exists a <a href="http://git.gnome.org/cgit/gnome-commander/plain/Dockerfile">Dockerfile</a> for compiling
+<abbr title="GNOME Commander">GCMD</abbr> in an Ubuntu environment. Start building it with the command
+<code>sudo docker build .</code> inside the top directory of the <abbr title="GNOME Commander">GCMD</abbr> repository.  
+</p>
 
 <h2><img class="info" src="img/icons/apps/preferences-desktop-keyboard-shortcuts.png" height="32" width="32" alt="Contributing"> <a name="contr">Contributing by Developing</a></h2>
 <p>If you want to contribute, send in patches, having some useful idea or just some feedback
