@@ -57,24 +57,6 @@ into the <a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO fil
 to sign up on our mailing lists and take part in discussions and development.</p>
 
 
-<h4>Branches and Versions</h4>
-<p>GNOME Commander is being developed in several branches:</p>
-<ul>
-<li>The <em>master</em> branch, where all the normal development takes place;</li>
-<li>One or more <em>stable</em> branches, named after the current stable release,
-which only includes bugfixes, doc updates, translation updates, but no new
-features;</li>
-<li>Optionally, some <em>feature branches</em>, where new ideas or big features
-are cooked until they are ready to be merged in the <em>master</em>
-branch.</li>
-</ul>
-
-<p>The version numbers (major, minor and micro) follows the quite usual standard
-of odd and even versioning. Even numbers are stable versions, that are intended for all-day use. 
-Odd versions are development versions that are usually not available as package/binary executable. 
-To use them, you have to compile them yourself. Remember this when talking about <abbr title="GNOME
-Commander">GCMD</abbr> or when sending patches.</p>
-
 <h4>Current plans</h4>
 <p>In the master branch (<abbr title="GNOME Commander">GCMD</abbr> v1.5) the team behind 
 <abbr title="GNOME Commander">GCMD</abbr> are now going to switch from
@@ -102,10 +84,29 @@ title="Please report bugs here">GCMD bugzilla page</a>.</p>
 <h2><img class="info" src="img/icons/devices/network-wireless.png" height="32" width="32" alt="Git"> <a name="current">Git Repository</a></h2>
 
 <p>The official Git repository of GNOME Commander is registered on
-<a href="http://git.gnome.org/browse/gnome-commander/">git.gnome.org</a>.
-There is also a copy at <a href="https://github.com/gcmd/gnome-commander">GitHub</a>.
+<a href="http://git.gnome.org/browse/gnome-commander/">git.gnome.org</a>, with a fork
+at <a href="https://github.com/gcmd/gnome-commander">GitHub.com</a>.
 For more information about Git and Gnome visit
 <a href="http://live.gnome.org/Git">live.gnome.org/Git</a>.</p>
+
+<h4>Branches and Versions</h4>
+<p>GNOME Commander is being developed in several branches:</p>
+<ul>
+<li>The <em>master</em> branch, where all the normal development takes place. It
+should always contain a runable version of <abbr title="GNOME Commander">GCMD</abbr>.</li>
+<li>One or more <em>stable</em> branches, named after the current stable release 
+(e.g. gcmd-1-4), which only includes bugfixes, doc updates, translation updates,
+but no new features;</li>
+<li>Optionally, some <em>feature branches</em>, where new ideas or big features
+are cooked until they are ready to be merged in the <em>master</em>
+branch.</li>
+</ul>
+
+<p>The version numbers (major, minor and micro) follow the standard of odd and even 
+versioning. Even numbers are stable versions, that are intended for all-day use. 
+Odd versions are development versions. The version number is stored as git-tags in the
+git repository. To see all of them, just type <code>git tag</code>. The current one is 
+also stored in the first line of <code>configure.ac</code>. 
 
 <p>To check out the <abbr title="GNOME Commander">GCMD</abbr> repository
 to your local hard disc, enter the following commands:</p>
