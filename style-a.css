@@ -28,6 +28,21 @@ span.c1 {color: #B40404}
 .c3 {text-align: right}
 .c2 {text-align: center}
 
+.title
+{
+    display: block;
+    border-top: 4px solid #a7a59b;
+    height: 1.75em;
+    line-height: 1.75em;
+    padding: 4px 6px;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 1em;
+    clear:both;
+}
+.title .date { float:right }
+.title .name { float:left }
+
 
 #topp{text-align:center; min-width:30em; max-width:56em; color:#fff; border:0;}
 #cont {text-align:left; padding-top:0em; margin-top:2em; background:#F0EED9 no-repeat 4em 0px fixed; color:#000;}
