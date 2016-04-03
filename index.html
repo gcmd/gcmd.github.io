@@ -1,27 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
-<head>
-<meta name="generator" content="Bluefish 2.2.7" >
-<title>The GNOME Commander homepage</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="KeyWords" content="gnome,commander,file manager">
-<meta name="Description" content="A powerful two pane file manager for the GNOME desktop">
-<meta name="author" content="Uwe Scholz" >
-<link rel="shortcut icon" href="img/icon.png" type="image/png">
-<link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<!--<script type="text/javascript" src="script/snowstorm.js"></script>-->
-</head>
+---
+layout: default
+title: The GNOME Commander Homepage
+---
 
-<body>
-<div class="stil" id="topp">
-<div class="fork_github"><a id="box-link" href="https://github.com/gcmd/gnome-commander" name="box-link"></a></div>
-<img src="img/logo.png" width="85" height="79" id="logo" alt="" name="logo"> <img src="img/floating.png" width="94" height="79" id="float" alt="" name="float">
-<h1>GNOME Commander</h1>
-<h2 id="urub">A powerful file manager for the GNOME desktop environment</h2>
-<div id="menu"><a href="index.html" title="The home page">[Home]</a> <a href="shots.html" title="Images tell a lot..">[Screenshots]</a> <a href="download.html" title="Links to downloads">[Download]</a> <a href="doc.html" title="Tips, tricks, help...">[Documentation]</a> <a href="dev.html" title="Contribute, report bugs, submit translations...">[Development]</a> <a href="newsblurbs.html" title="What others say about GNOME Commander...">[Press &amp; Media]</a></div>
-<div id="cont" class="stil">
 <h2><img class="info" src="img/icons/status/dialog-information.png" height="32" width="32" alt="Info"> Information<a name="information" id="information"></a></h2>
 <div id="infor"><a href="ss/MainWin-Classic.png" title="Click for full size screen shot of GCMD main window" class="shot"><img src="ss/shot.png" width="204" height="137" alt=""></a>
 <h5>1.4.8 released<br>
@@ -45,6 +26,18 @@ Mar 14, 2016</h5>
 </script></div>
 <p>For a quick overview have a look at <a href="shots.html">the screenshots</a>, images tell a lot.</p>
 <h2 class="nh"><img class="info" src="img/icons/apps/internet-news-reader.png" height="32" width="32" alt="News"> <a name="news" id="news">Latest news</a></h2>
+
+<ul class="posts">
+    {% for post in site.posts limit:4 %}
+    <li>
+        <span>{{ post.date | date_to_string }}</span>
+        &raquo;
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
+</ul>
+
 <h4 class="nh4"><img class="info" src="img/icons/emblems/emblem-notice.png" width="32" height="32" alt="">New release! v1.4.8 - Mar 14 2016</h4>
 <p>This is a <a href="https://download.gnome.org/sources/gnome-commander/1.4/gnome-commander-1.4.8.tar.xz" title="GNOME Commander 1.4.8">bugfix release</a> addressing known problems in 1.4.7 release.</p>
 <p>Read the <a href="https://download.gnome.org/sources/gnome-commander/1.4/gnome-commander-1.4.8.news">latest release news</a> for more details about this update.</p>
@@ -123,14 +116,4 @@ reasons, but anyone is welcome to sign up on the lists and post unmoderated.</p>
 </ul>
 <p>... or another one of these kind, send a picture of the donation to the dev-mailinglist and write some words which describe why you like Gnome Commander. This would be a high motivation for further development.</p>
 <p>And remember to celebrate the "<a href="https://fsfe.org/campaigns/ilovefs/">I love free software day</a>" on February, 14th. <img src="img/icons/emblems/emblem-favorite.png" alt="heart" class="info" height="32" width="32"></p>
-<hr>
-<p class="cntr"><a href="#topp"><br>
-To top of page</a></p>
 </div>
-<div>
-<p class="c4"><br>
-<a href="http://www.colourlovers.com/pattern/4284415/It_cant_be!">Background image</a> by <img src="http://static.colourlovers.com/favicon.ico" alt="heart" class="info" height="16" width="16"> <a href="http://www.colourlovers.com/lover/Raines/loveNote">Raines</a> &amp; <a href="http://www.colourlovers.com/lover/Anomalin/loveNote">Anomalin</a> (<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA</a>)</p>
-</div>
-</div>
-</body>
-</html>
