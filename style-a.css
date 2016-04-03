@@ -123,6 +123,7 @@ ul.posts {
   }
 
   ul.posts span {
+    color: #222;
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
   }
