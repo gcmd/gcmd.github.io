@@ -31,6 +31,7 @@ span.c1 {color: #B40404}
 .title
 {
     display: block;
+    background:#CBD0B9;
     border-top: 4px solid #a7a59b;
     height: 1.75em;
     line-height: 1.75em;
@@ -118,7 +119,7 @@ ul.posts {
   margin-bottom: 1em;
 }
   ul.posts li {
-    line-height: 1.75em;
+    line-height: 1.5em;
   }
 
   ul.posts span {
