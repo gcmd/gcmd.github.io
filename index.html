@@ -28,7 +28,7 @@ Mar 14, 2016</h5>
 <h2 class="nh"><img class="info" src="img/icons/apps/internet-news-reader.png" height="32" width="32" alt="News"> <a name="news" id="news">Latest news</a></h2>
 
 <ul class="posts">
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:8 %}
     <li>
         <span>{{ post.date | date_to_string }}</span>
         &raquo;
@@ -39,7 +39,7 @@ Mar 14, 2016</h5>
 </ul>
 
 <hr class="sruler">
-<p class="cntr"><a href="oldnews.html" title="Old news at this site">Old news</a></p>
+<p class="cntr"><a href="oldnews.html" title="All news at this site">All news</a></p>
 <hr>
 <h2><img class="info" src="img/icons/apps/help-browser.png" alt="About" height="32" width="32" title="About"> <a name="about" id="about">About GCMD</a></h2>
 <abbr title="GNOME Commander">GCMD</abbr> is built on the GTK-toolkit and GnomeVFS.<br>
