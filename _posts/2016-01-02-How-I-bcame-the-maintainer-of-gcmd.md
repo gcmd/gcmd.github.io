@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How I became maintainer of Gcmd and how it improved my live'
+title: 'How I became the next maintainer of Gcmd'
 tags: 'other'
 excerpt: ''
 ---
