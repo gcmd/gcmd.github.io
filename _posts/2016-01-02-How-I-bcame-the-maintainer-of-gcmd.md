@@ -62,4 +62,6 @@ contribute further to gcmd. :)
 
 I wish you all the best. Have a great new year 2016!
 
+Uwe Scholz
+
 *[GCMD]: Gnome Commander
