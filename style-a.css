@@ -351,6 +351,7 @@ div.fork_github::before {
     right: 0;
     top: 0;
     width: 149px;
+    border: 0;
 }
 #box-link {
     background-color: transparent;
