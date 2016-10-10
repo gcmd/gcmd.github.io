@@ -53,8 +53,13 @@ We encourage anyone to contribute with code, translations, bugreporting, new use
 just give some quality feedback that also is quite important.</p>
 
 <p>If you would like to get involved and don't know where to start, have a look especially 
-into the <a href="https://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO file</a>. You are also welcome 
-to sign up on our mailing lists and take part in discussions and development.</p>
+into the <a href="https://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO</a> file. This 
+file gives a hint on what we are working on, or like to work on, and
+maybe appreciate some community efforts on. You are also welcome 
+to sign up on our mailing lists and take part in discussions and development.
+If you are keen on fixing open bugs, have a look at
+our <a href="https://bugzilla.gnome.org/browse.cgi?product=gnome-commander"
+title="Please report bugs here">Bugzilla</a> page.</p>
 
 <h4>Current plans</h4>
 <p>The team behind <abbr title="GNOME Commander">GCMD</abbr> is currently working on switching from
@@ -66,25 +71,14 @@ obsolete libraries, e.g. from gnome-vfs to gvfs/GIO. This is a major task and, t
 python plugin support. Plugins should be dropped in the
 ~/.gnome-commander/plugins directory. The work on supporting meta-data
 also continues. The plan is to add this functionality to the searchtool,
-custom columns and the internal viewer. The
-<a href="https://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO
-file</a> gives a hint on what we are working on, or like to work on, and
-maybe appreciate some community efforts on. Users and developers are as
-usual welcome to contact us, ask questions and discuss the development
-on
-<a href="index.html#maillists">our mailinglists</a>. If you are keen on
-fixing open bugs, have a look at
-the <a href="https://bugzilla.gnome.org/browse.cgi?product=gnome-commander"
-title="Please report bugs here">GCMD bugzilla page</a>.</p>
+custom columns and the internal viewer.</p>
 
 
 <h2><img class="info" src="img/icons/devices/network-wireless.png" height="32" width="32" alt="Git"> <a name="current">Git Repository</a></h2>
 
 <p>The official Git repository of GNOME Commander is registered on
-<a href="http://git.gnome.org/browse/gnome-commander/">git.gnome.org</a>, with a fork
-at <a href="https://github.com/gcmd/gnome-commander">GitHub.com</a>.
-For more information about Git and Gnome visit
-<a href="https://live.gnome.org/Git">live.gnome.org/Git</a>.</p>
+<a href="http://git.gnome.org/browse/gnome-commander/">git.gnome.org</a>, but there exists also a fork
+at <a href="https://github.com/gcmd/gnome-commander">GitHub</a>.
 
 <h4>Branches and Versions</h4>
 <p>GNOME Commander is being developed in several branches:</p>
@@ -92,7 +86,7 @@ For more information about Git and Gnome visit
 <li>The <em>master</em> branch, where all the normal development takes place. It
 should always contain a runable version of <abbr title="GNOME Commander">GCMD</abbr>.</li>
 <li>One or more <em>stable</em> branches, named after the current stable release 
-(e.g. gcmd-1-4), which only includes bugfixes, doc updates, translation updates,
+(e.g. gcmd-1-6), which only includes bugfixes, doc updates, translation updates,
 but no new features;</li>
 <li>Optionally, some <em>feature branches</em>, where new ideas or big features
 are cooked until they are ready to be merged in the <em>master</em>
@@ -112,7 +106,7 @@ to your local hard disc, enter the following commands:</p>
 <code>git clone git://git.gnome.org/gnome-commander</code></p>
 
 <p class="cntr">The current stable branch:<br>
-<code>git clone -b gcmd-1-4 git://git.gnome.org/gnome-commander</code></p>
+<code>git clone -b gcmd-1-6 git://git.gnome.org/gnome-commander</code></p>
 
 <p>If you already cloned the repository, run <code>git
 pull</code> inside the <tt>gnome-commander</tt> directory to get the
@@ -138,11 +132,6 @@ When you only have a small commit to be made, where no check is necessary, you c
 the code checked out from Git, use <code>./autogen.sh</code> instead of <code>./configure</code>. Don't forget to install the dependencies
 which are reported in the configure step.</p>
 
-<p class="warning"><em>The current instable master branch is for testing
-purposes only! Do not handle important data with it.</em></p>
-
-<p>If you don't have Git installed, you may also download a snapshot package as a <code>tar.bz2</code> file from <a href="http://git.gnome.org/browse/gnome-commander/snapshot/gnome-commander-master.tar.bz2?h=master">here</a>.</p>
-
 <h4>Building in Dockerfile</h4>
 <p>
 There exists a <a href="http://git.gnome.org/cgit/gnome-commander/plain/Dockerfile">Dockerfile</a> for compiling
@@ -152,12 +141,12 @@ There exists a <a href="http://git.gnome.org/cgit/gnome-commander/plain/Dockerfi
 
 <h2><img class="info" src="img/icons/apps/preferences-desktop-keyboard-shortcuts.png" height="32" width="32" alt="Contributing"> <a name="contr">Contributing by Developing</a></h2>
 <p>If you want to contribute, send in patches, having some useful idea or just some feedback
-then you are welcome to <a href="index.html#maillists">contact us</a>. You can also make a pull request 
+then you are welcome to contact us or you can make a pull request 
 on GitHub against the <abbr title="GNOME Commander">GCMD</abbr> <a href="https://github.com/gcmd/gnome-commander">repository</a>.</p>
 
 <p>If you have some good ideas for stuff that you want to see in this program, check the
-<a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO file</a> first before sending
-a message to <a href="index.html#maillists">the mailing lists</a>.</p>
+<a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO</a> file first before sending
+a message to the mailing lists.</p>
 <p>If you want to submit a patch via email:</p>
 <ul>
 <li>Send an email with the patch to the developers or the developer list.</li>
@@ -169,11 +158,14 @@ a message to <a href="index.html#maillists">the mailing lists</a>.</p>
 <h2><img class="info" src="img/icons/actions/edit-find-replace.png" height="32" width="32" alt="Contributing by Translating"><a name="trnsl">Contributing by Translating</a></h2>
 
 <p>The current status of all project translations can be found at
-<a href="https://l10n.gnome.org/module/gnome-commander/">https://l10n.gnome.org/module/gnome-commander/</a>. For adding a 
-new translation simply download the initial <a href="https://l10n.gnome.org/POT/gnome-commander.master/gnome-commander.master.pot">potfile</a> 
-of the master branch and start translating by renaming the file to LL.po (replace "LL" with your language code, see the complete list 
-of <a href="https://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#Language-Codes">language codes</a>). Or take an already
-existing po file from the list on the page given above.</p>
+GNOME's <a href="https://l10n.gnome.org/module/gnome-commander/">Damned
+Lies</a>. For adding a new translation simply download the
+initial <a href="https://l10n.gnome.org/POT/gnome-commander.master/gnome-commander.master.pot">potfile</a>
+of the master branch and start translating by renaming the file to LL.po
+(replace "LL" with your language code, see the complete list of
+language <a href="https://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#Language-Codes">codes</a>).
+Or take an already existing po file from the list on the page given
+above.</p>
 
 <p>Here you will find the recipe on how to contribute with your new or updated translation:</p>
 <ol>
@@ -187,23 +179,22 @@ and run <code>intltool-update LL</code>.</li>
 from other projects and <a href="https://www.gnu.org/software/gettext/manual/html_node/Creating-Compendia.html">create</a> 
 such a compedium by: <code>msgcat -o compendium-LL.po *.po</code>.</p>
 
-<p>There are several translation tools available. Some of them are: Poedit 
-(<a href="http://www.poedit.net">http://www.poedit.net</a>/)
-and gtranslator (<a href="http://gtranslator.sourceforge.net">http://gtranslator.sourceforge.net</a>/). 
-KBabel could also be a good tool...</p>
+<p>There are several translation tools available. Some of them are: <a href="http://www.poedit.net">Poedit</a>/)
+and <a href="http://gtranslator.sourceforge.net">gtranslator</a>/).</p>
 
-<p>All translation files (LL.po) must be UTF-8. To avoid corruption by
-mail application please send them as gzipped or bzipped attachments. Better create a merge request via GitHub.
-Alternatively have look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
+<p>Have a look at <a href="http://l10n.gnome.org/">http://l10n.gnome.org/</a> if you want
 to start translating for more projects than just <abbr title="GNOME Commander">GCMD</abbr>.</p>
 
 <h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32" alt="Hacking"> <a name="doc">Hacking documents</a></h2>
 <ul>
-<li><a href="http://git.gnome.org/cgit/gnome-commander/plain/doc/internal_viewer_hacking.txt">Internal-Viewer Internals</a>.
-This document describes details of the 'intviewer' library, which implements GNOME Commander's Internal-Viewer.
-If you plan to hack the internal viewer, add features or just browse the source for fun, we recommend reading
-this document first (However, note that <a href="http://git.gnome.org/browse/gnome-commander/tree/src/intviewer">the source files in Git</a>
-always are more updated than this document).</li>
+<li><a href="http://git.gnome.org/cgit/gnome-commander/plain/doc/internal_viewer_hacking.txt">Internal-Viewer
+Internals</a>. This document describes details of the 'intviewer'
+library, which implements GNOME Commander's Internal-Viewer. If you plan
+to hack the internal viewer, add features or just browse the source for
+fun, we recommend reading this document first (However, note that the
+internal viewer source files
+in <a href="http://git.gnome.org/browse/gnome-commander/tree/src/intviewer">Git</a>
+are always more updated than this document).</li>
 </ul>
 
 <hr>
