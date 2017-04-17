@@ -12,17 +12,17 @@ us that parts of libraries are used which are not supported anymore.
 Also, Linux distributions don't like to distribute packages with
 compilation warnings.
 
-To overcome this problem I created the new Git branch
+To overcome this problem we created the new Git branch
 [ConvertWarningsToErrors](https://github.com/gcmd/gnome-commander/commits/ConvertWarningsToErrors)
 some days ago.
 
 This branch is derived from the master branch and its first commit is
 [2ecd245](https://github.com/gcmd/gnome-commander/commit/2ecd24547341618085cce43c8a9cb06f60b78d08).
-Here, I set up configure.ac and all Makefiles to convert all
+Here, we set up configure.ac and all Makefiles to convert all
 compilation warnings into compiler errors. This will force us to fix
 each warning to successfully compile GCMD in the end.
 
-**I'm asking for volunteers here to help me hunting down all warnings.**
+**We are asking for volunteers here to help us hunting down all warnings.**
 
 Making a first start is pretty easy:
 
@@ -45,8 +45,9 @@ warning-to-error conversion:
     make
 ```
 
-Fix the warnings in separate Git commits and send them to me as a patch
-via email, or idealy, fork the Github GCMD repo and create a pull
+Fix the warnings in separate Git commits and send them to
+[gcmd-devel@nongnu.org](mailto:gcmd-devel@nongnu.org) as a patch
+via email, or idealy, fork the Github GCMD repository and create a pull
 request on the github webpage.
 
 Together we can do it!
