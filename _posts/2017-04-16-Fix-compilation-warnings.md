@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: 'other'
-title: 'Fixing compilation warnings: Volunteers wanted'
+title: '[Done] Fixing compilation warnings: Volunteers wanted'
 excerpt: ''
 ---
 
@@ -51,5 +51,13 @@ via email, or idealy, fork the Github GCMD repository and create a pull
 request on the github webpage.
 
 Together we can do it!
+
+---
+
+**Update** [29. April 2017]: **All GCC compiler warnings fixed**
+
+All compilation warnings in branch ConvertWarningsToErrors
+have been fixed and all related commits have been merged into the master branch. This
+task can be regarded as fixed now.
 
 *[GCMD]: Gnome Commander
