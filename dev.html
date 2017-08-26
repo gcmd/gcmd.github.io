@@ -128,11 +128,13 @@ When you only have a small commit to be made, where no check is necessary, you c
 </p>
 
 <h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32" alt="Source code"> <a name="build">Building from source</a></h2>
-<p>In general, the usual <code>./configure && make; sudo -i make install</code> procedure should work like a charm. If you are building
-the code checked out from Git, use <code>./autogen.sh</code> instead of <code>./configure</code>. Don't forget to install the dependencies
-which are reported in the configure step.</p>
+<p>First, check out the source code as described in the previous section. The next step is the usual <code>./autogen.sh && make && sudo -i make install</code> procedure,
+which should work like a charm. If you are building the code from an unpacked tar archive use <code>./configure</code> instead of <code>./autogen.sh</code>.</p>
+<p>When you install Gnome Commander manually the first time and you discover some errors like <code>/configure: line 4721: GLIB_GSETTINGS: command not found</code> or 
+something similar you have to install some dependencies. If you are using Ubuntu you can find out which dependencies this are by looking inside the Gnome Commander Dockerfile (see below).
+The first <code>RUN</code> command contains all the apt-get commands for the required libraries.</p>
 
-<h4>Building in Dockerfile</h4>
+<h4>Building GCMD in Dockerfile</h4>
 <p>
 There exists a <a href="http://git.gnome.org/cgit/gnome-commander/plain/Dockerfile">Dockerfile</a> for compiling
 <abbr title="GNOME Commander">GCMD</abbr> in an Ubuntu environment. Start building it with the command
