@@ -40,6 +40,7 @@
 <li><a href="#current">Git Repository</a></li>
 <li><a href="#build">Build sources</a></li>
 <li><a href="#contr">Developing</a></li>
+<li><a href="#release">Releasing</a></li>
 <li><a href="#trnsl">Translating</a></li>
 <li><a href="#doc">Hacking documents</a></li>
 </ul>
@@ -186,6 +187,69 @@ and <a href="http://gtranslator.sourceforge.net">Gtranslator</a>.</p>
 
 <p>Have a look at <a href="http://l10n.gnome.org/">l10n.gnome.org</a> if you want
 to start translating for more projects than just <abbr title="GNOME Commander">GCMD</abbr>.</p>
+
+<p>
+	From time to time check strings marked for translation. Therefore, create updated <code>po/gnome-commander.pot</code> with <code>make check</code>. 
+	Then search for incorrect translations:<br> <code>podebug --format='[i18n]' --input po/de.po > output.po</code>.<br> Now in the output file all
+	found strings for translation are marked with a <code>[i18n]</code> tag. Then you have to start GCMD with this created po-file.
+</p>
+
+<h2><img class="info" src="img/icons//devices/network-wireless.png" height="32" width="32" alt="Making a release"><a name="release">Making a release</a></h2>
+<p>
+	<ul>
+		<li>Testing current code for Ubuntu: <code>docker build .</code></li>
+		<li>
+			Check <a href="https://wiki.gnome.org/MaintainersCorner">here</a> and 
+			<a href="http://www.gnome.org/start/unstable">here</a> for the release dates of Gnome and avoid collisions with their dates.
+		</li>
+		<li>
+			Before the next stable release set a date for it and send a mail to
+			the i18n list like <a href="https://mail.gnome.org/archives/gnome-i18n/2017-September/msg00140.html" name="Release note">this</a>.
+			(Maybe add the link to <a href="https://l10n.gnome.org/module/gnome-commander/">l10n.gnome.org/module/gnome-commander/</a> in the mail too.)
+		</li>
+		<li>
+			Take note of <a href="https://wiki.gnome.org/MaintainersCorner/Releasing">wiki.gnome.org/MaintainersCorner/Releasing</a> on the release day
+		</li>
+		<li>
+			Attention: Create an annotated instead of signed tag, e. g. <code>git tag -a 1.6.4</code>
+		</li>
+		<li>
+			After creating a new stable branch, let the i18n teams know so they can update their paths:
+			<a href="https://mail.gnome.org/archives/gnome-i18n/2017-October/msg00032.html">mail.gnome.org/archives/gnome-i18n/2017-October/msg00032.html</a>.
+		</li>
+	</ul>
+</p>
+<hr width="95%">
+<p>
+	<b>Testing/Creating a Gentoo ebuild</b><br>
+	<ul>
+		<li>
+			Create a local overlay via layman <a href="https://wiki.gentoo.org/wiki/Ebuild_repository#Layman">wiki.gentoo.org/wiki/Ebuild_repository#Layman</a>
+		</li>
+		<li>
+			After successful <code>make distcheck</code> move ebuild file from <code>data/</code> to <code>/usr/local/portage/gnome-extra/gnome-commander/</code><br>
+			<code>cd /usr/local/portage/gnome-extra/gnome-commander</code><br>
+			check ebuild and create manifest: <code>repoman manifest .</code><br> 
+			Perform <code>eix-update</code> if needed.
+		</li>
+		<li>
+			Install with emerge and possibly still test for the correct use of the USE flags
+			(<code>--without-exiv2 --without-taglib --without-libchm --without-libgsf --without-poppler</code>, python, etc).
+		</li>
+		<li>
+			Look for git pull request policy at <a href="https://wiki.gentoo.org/wiki/Gentoo_git_workflow">wiki.gentoo.org/wiki/Gentoo_git_workflow</a>
+		</li>
+		<li>
+			Create a fork of the Gentoo repo from <a href="https://github.com/gentoo/gentoo">github.com/gentoo/gentoo</a>, clone your fork,
+			add the new Manifest line and the ebuild file from the second point above into
+			<code>gnome-extra/gnome-commander/</code> and create a commit equal to 
+			<a href="https://github.com/gentoo/gentoo/commit/7f436be7e89e0ccc7b281b0122862c4223e084c0#diff-8a05fa997b0cf0baa31be4abb94fd462">this</a> one.
+		</li>
+		<li>
+			Push your commit to your repository at github and create a merge request to Gentoo's repository.
+		</li>
+	</ul>
+</p>
 
 <h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32" alt="Hacking"> <a name="doc">Hacking documents</a></h2>
 <ul>
