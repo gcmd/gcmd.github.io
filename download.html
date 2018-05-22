@@ -30,33 +30,39 @@
 <div id="infor">
 <h4>Versions</h4>
 <ul>
-<li><a href="#latest">Latest stable</a></li>
-<li><a href="#old">Old releases</a></li>
+<li><a href="#sources">Source releases</a></li>
+<li><a href="#SampleScripts">Sample Scripts</a></li>
+<li><a href="#build">Build sources</a></li>
 <li><a href="#external">External packages</a></li>
 </ul>
 </div>
 
-<h3><a name="old">All releases</a></h3>
-
-<p>All releases and their sha256sum hashes can be found on the
-<a href="https://download.gnome.org/sources/gnome-commander/">GNOME server</a></p>
-
-<h3><a name="latest">Latest release</a></h3>
+<h3><a name="sources">Latest release</a></h3>
 
 <p><a href="https://download.gnome.org/sources/gnome-commander/1.8/gnome-commander-1.8.1.tar.xz">gnome-commander-1.8.1.tar.xz</a> (7.0 MB)</p>
+<p><a href="https://download.gnome.org/sources/gnome-commander/1.8/gnome-commander-1.8.1.sha256sum">gnome-commander-1.8.1.sha256sum</a> (284 B)</p>
 <p><a href="signatures/gnome-commander-1.8.1.tar.xz.sig">gnome-commander-1.8.1.tar.xz.sig</a>
   (Signature file for verifying the downloaded tar archive with
   <code>gpg --verify gnome-commander-1.8.1.tar.xz.sig --gnome-commander-1.8.1.tar.xz</code>.
   My public key can be found on the Gnome Commander mainpage under the Authors section.)</p>
+<br>
+<p>Older releases can be found on the GNOME <a href="https://download.gnome.org/sources/gnome-commander/">download server</a>.</p>
 
-<h3><a name="Sample scripts">Sample scripts for the file popup menu</a></h3>
+<h3><a name="SampleScripts">Sample scripts for the file popup menu</a></h3>
 
 <p>Under this <a href="https://github.com/gcmd/gnome-commander/tree/master/gcmd-scripts">link</a> some
 sample scripts can be found. Move them into <code>~/.gnome-commander/scripts/</code> to extend the file popup menu (usable since v1.6.0).
 </p>
 
+<h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32" alt="Source code"> <a name="build">Building from source</a></h2>
+<p>Building the sources is done with the usual <code>./configure && make && sudo -i make install</code> procedure,
+which should work like a charm. </p>
+<p>When you install Gnome Commander manually the first time and you discover some errors like <code>./configure: line 4721: GLIB_GSETTINGS: command not found</code> or 
+something similar you have to install some dependency packages. These packages often contain of the name suffix "-devel". Search for them
+in your package manager and install them if needed. Another package you will also need is <code>yelp-tools</code> for generating the translated documentation.</p>
+
 <h2><img class="info" src="img/icons/apps/internet-web-browser.png" alt="External Downloads" height="32" width="32" title="External Downloads"> <a name="external">External binary downloads</a></h2>
-<p>Here is a list of links to external packages. These are 
+<p>Here is a list of links to external packages so you don't have to build Gnome Commander by yourself. These are 
 maintained by the distributions and not by the developers of <abbr title="GNOME Commander">GCMD</abbr>.
 Some links may point to very old versions of <abbr title="GNOME Commander">GCMD</abbr>.</p>
 <table width="96%">
