@@ -40,11 +40,11 @@
 <h3><a name="sources">Latest release</a></h3>
 
 <p><a href="https://download.gnome.org/sources/gnome-commander/1.8/gnome-commander-1.8.1.tar.xz">gnome-commander-1.8.1.tar.xz</a> (7.0 MB)</p>
-<p><a href="https://download.gnome.org/sources/gnome-commander/1.8/gnome-commander-1.8.1.sha256sum">gnome-commander-1.8.1.sha256sum</a> (284 B)</p>
+<p><a href="https://download.gnome.org/sources/gnome-commander/1.8/gnome-commander-1.8.1.sha256sum">gnome-commander-1.8.1.sha256sum</a></p>
 <p><a href="signatures/gnome-commander-1.8.1.tar.xz.sig">gnome-commander-1.8.1.tar.xz.sig</a>
   (Signature file for verifying the downloaded tar archive with
   <code>gpg --verify gnome-commander-1.8.1.tar.xz.sig --gnome-commander-1.8.1.tar.xz</code>.
-  My public key can be found on the Gnome Commander mainpage under the Authors section.)</p>
+  My public key can be found on the Gnome Commander mainpage under the authors section.)</p>
 <br>
 <p>Older releases can be found on the GNOME <a href="https://download.gnome.org/sources/gnome-commander/">download server</a>.</p>
 
@@ -58,8 +58,8 @@ sample scripts can be found. Move them into <code>~/.gnome-commander/scripts/</c
 <p>Building the sources is done with the usual <code>./configure && make && sudo -i make install</code> procedure,
 which should work like a charm. </p>
 <p>When you install Gnome Commander manually the first time and you discover some errors like <code>./configure: line 4721: GLIB_GSETTINGS: command not found</code> or 
-something similar you have to install some dependency packages. These packages often contain of the name suffix "-devel". Search for them
-in your package manager and install them if needed. Another package you will also need is <code>yelp-tools</code> for generating the translated documentation.</p>
+something similar you have to install some dependency packages. These packages often contain the name suffix "-devel". Search for them
+in your package manager and install them if needed. Another package you will also might need is <code>yelp-tools</code> for generating the translated documentation.</p>
 
 <p>If you ever decide the remove Gnome Commander again from your system, just type <code>sudo make uninstall</code>
 from the same directory in which you executed the <code>./configure</code> command.</p>
