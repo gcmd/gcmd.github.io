@@ -54,7 +54,7 @@ We encourage anyone to contribute with code, translations, bugreporting, new use
 just give some quality feedback that also is quite important.</p>
 
 <p>If you would like to get involved and don't know where to start, have a look especially 
-into the <a href="https://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO</a> file. This 
+into the <a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/TODO">TODO</a> file. This
 file gives a hint on what we are working on, or like to work on, and
 maybe appreciate some community efforts on. You are also welcome 
 to sign up on our mailing lists and take part in discussions and development.
@@ -78,8 +78,7 @@ custom columns and the internal viewer.</p>
 <h2><img class="info" src="img/icons/devices/network-wireless.png" height="32" width="32" alt="Git"> <a name="current">Git Repository</a></h2>
 
 <p>The official Git repository of GNOME Commander is registered on
-<a href="http://git.gnome.org/browse/gnome-commander/">Gnome.org</a>, but there exists also a fork
-at <a href="https://github.com/gcmd/gnome-commander">GitHub</a>.
+<a href="https://gitlab.gnome.org/GNOME/gnome-commander/">gitlab.gnome.org</a>.
 
 <h4>Branches and Versions</h4>
 <p>GNOME Commander is being developed in several branches:</p>
@@ -104,10 +103,10 @@ also stored in the first line of <code>configure.ac</code>.</p>
 to your local hard disc, enter the following commands:</p>
 
 <p class="cntr">The instable master branch:<br>
-<code>git clone git://git.gnome.org/gnome-commander</code></p>
+<code>git clone https://gitlab.gnome.org/GNOME/gnome-commander.git</code></p>
 
 <p class="cntr">The current stable branch:<br>
-<code>git clone -b gcmd-1-6 git://git.gnome.org/gnome-commander</code></p>
+<code>git clone -b gcmd-1-6 https://gitlab.gnome.org/GNOME/gnome-commander.git</code></p>
 
 <p>If you already cloned the repository, run <code>git
 pull</code> inside the <tt>gnome-commander</tt> directory to get the
@@ -137,7 +136,7 @@ The first <code>RUN</code> command contains all the apt-get commands for the req
 
 <h4>Building GCMD in Dockerfile</h4>
 <p>
-There exists a <a href="http://git.gnome.org/cgit/gnome-commander/plain/Dockerfile">Dockerfile</a> for compiling
+There exists a <a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/Dockerfile">Dockerfile</a> for compiling
 <abbr title="GNOME Commander">GCMD</abbr> in an Ubuntu environment. Start building it with the command
 <code>sudo docker build .</code> inside the top directory of the <abbr title="GNOME Commander">GCMD</abbr> repository.  
 </p>
@@ -148,7 +147,7 @@ then you are welcome to contact us or you can make a pull request
 on GitHub against the <abbr title="GNOME Commander">GCMD</abbr> <a href="https://github.com/gcmd/gnome-commander">repository</a>.</p>
 
 <p>If you have some good ideas for stuff that you want to see in this program, check the
-<a href="http://git.gnome.org/cgit/gnome-commander/plain/TODO">TODO</a> file first before sending
+<a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/TODO">TODO</a> file first before sending
 a message to the mailing lists.</p>
 <p>If you want to submit a patch via email:</p>
 <ul>
@@ -253,13 +252,13 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 
 <h2><img class="info" src="img/icons/devices/input-keyboard.png" height="32" width="32" alt="Hacking"> <a name="doc">Hacking documents</a></h2>
 <ul>
-<li><a href="http://git.gnome.org/cgit/gnome-commander/plain/doc/internal_viewer_hacking.txt">Internal-Viewer
+<li><a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/doc/internal_viewer_hacking.txt">Internal-Viewer
 Internals</a>. This document describes details of the 'intviewer'
 library, which implements GNOME Commander's Internal-Viewer. If you plan
 to hack the internal viewer, add features or just browse the source for
 fun, we recommend reading this document first (However, note that the
 internal viewer source files
-in <a href="http://git.gnome.org/browse/gnome-commander/tree/src/intviewer">Git</a>
+in <a href="https://gitlab.gnome.org/GNOME/gnome-commander/tree/master/src/intviewer">Git</a>
 are always more updated than this document).</li>
 </ul>
 

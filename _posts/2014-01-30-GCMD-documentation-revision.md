@@ -13,7 +13,4 @@ planned that string fixation will be in mid of February.
 After this deadline, the translation teams of GNOME can start to
 contribute so we may welcome GCMD v1.4.0 already in March. Stay tuned!
 
-You can have a look at the current work status at [GNOME
-git](https://git.gnome.org/browse/gnome-commander/log/).
-
 *[GCMD]: Gnome Commander
