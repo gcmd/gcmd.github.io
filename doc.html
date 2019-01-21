@@ -63,12 +63,8 @@ standard of handling MIME types, the editing of preferred programs in GNOME Comm
 broken (v 1.1.7). We do have this in our 
 <a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/TODO">TODO file</a>, 
 but until <abbr title="GNOME Commander">GCMD</abbr> can handle edititing of preferred programs, there 
-are two other ways of managing this on user basis; use nautilus or manually edit the configuration 
-files that controls MIME types in your home directory. Using Nautilus for doing this can feel quite 
-awkward for GNOME Commander users, we usually do not use GNOME Commander because we like using Nautilus.. 
-Anyway, here is how to do it the manual way:</p>
-<p>These configuration files  usually lives in <code>~/.local/share/applications</code>. 
-There are three types of files here:</p>
+is another way of managing this manually by setting up some files in <code>~/.local/share/applications</code>.
+There are three types of files in this folder:</p>
 <ul>
 <li><span>XXX-usercreated.desktop</span> Where "XXX" stands for the application in question. 
 These files contain information about which MIME types the application can handle, what command 
