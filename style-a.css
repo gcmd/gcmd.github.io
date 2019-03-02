@@ -343,16 +343,6 @@ img, #infor ul, #lang, #menu, #hide a {
     text-align: center;
 }
 }
-div.fork_github::before {
-    content: url("https://gcmd.github.io/img/fork_me_github.png");
-    display: block;
-    height: 149px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 149px;
-    border: 0;
-}
 #box-link {
     background-color: transparent;
     height: 149px;
