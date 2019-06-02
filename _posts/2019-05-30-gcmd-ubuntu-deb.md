@@ -8,7 +8,7 @@ excerpt: ''
 ### Introduction
 
 Gnome Commander is no longer available in the Debian, Ubuntu, Mint and
-some other repositories due to several old libraries used by GCMD. Until
+some other repositories due to the [removal of old libraries](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912383) used by GCMD. Until
 such time as that can be resolved it is necessary to manually install
 GCMD on Linux Distros which derive from Debian. Part 1 of this document
 will provide step by step instructions for compiling and installing GCMD
