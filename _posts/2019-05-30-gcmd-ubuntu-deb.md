@@ -145,4 +145,16 @@ Gnome commander should now be installed and ready to run and the new
 Gnome Commander menu entry should appear on the menu under
 "Accessories".
 
+### UPDATE (May 10, 2019)
+
+It has been observed that installation of the various development
+packages as described above will break Firefox in Ubuntu 18.04 on the
+Raspberry Pi platform. This does not appear to effect the 32 bit nor 64
+bit Intel/AMD platforms. Investigation has found that the offending
+packages are the result of installing gtk+2.0. Further testing has shown
+that GCMD may be successfully compiled and installed WITHOUT gtk+2.0.
+
+If you are planning to compile and install GCMD on Ubuntu or a Debian
+family distribution you can save some space by NOT installing gtk+2.0.
+
 *[GCMD]: Gnome Commander
