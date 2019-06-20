@@ -20,7 +20,7 @@ packages installed on an existing machine. The virtual machine approach
 just seems cleaner as it can be deleted or archived when the job is
 done.
 
-### Here are the steps to build the VM:
+### Steps to build the VM
 
 Install CentOS 7.6 Development and Creative Workstation from the
 installation DVD. Select these additional software groups:
@@ -33,6 +33,8 @@ After completing the installation, install all current updates and
 reboot the VM. A few additional packages are needed to build the .rpm
 package.
 
+### Steps to install Gnome Commander in CentOS
+
 Add the CentOS SCl repository which provides the GCC version 8 compiler
 and then install the necessary packages:
 
@@ -40,8 +42,21 @@ and then install the necessary packages:
     sudo yum install centos-release-scl
     sudo yum install devtoolset-8 libgnome-devel libgnomeui-devel
     sudo yum install rpmdevtools rpmlint exiv2-devel taglib-devel poppler-devel
-
 ```
+
+If you desire to include the single instance option it is necessary to
+add the following package to the machine on which you are compiling the
+application: `unique-dev` (available in the epel repository).
+A new option will appear later on under Settings in Gnome Commander:
+   
+```
+Multiple instances
+     [X] Don't start a new instance
+```
+
+On a new installation this option is checked by default. If you are
+upgrading an existing installation from a .rpm package this option may
+be unchecked.
 
 The next step is to obtain the Gnome Commander source code. It may
 be downloaded from the web site with a browser or if you prefer the
@@ -49,7 +64,6 @@ command line:
 
 ```
     wget https://download.gnome.org/sources/gnome-commander/1.10/gnome-commander-1.10.2.tar.xz 
-
 ```
 
 Extract the gnome-commander.spec file. This may be done with the archive

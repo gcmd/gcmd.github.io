@@ -107,6 +107,43 @@ not seem to impact any gnome-commander functions. In your applications
 menu the Gnome Commander icon should appear on the menu under
 "Accessories".
 
+-----
+
+It is possible to build Gnome Commander so that it includes the option
+to only run a single instance. The above instructions do not include
+this option. It will be possible to open Gnome Commander again and again
+and again.
+
+If you desire to include the single instance option it is necessary to
+add the following packag to the machine on which you are compiling the
+application:
+
+Ubuntu 18.04 etc. - install libunique-dev (available in the Universe repository)
+
+Once this is done it is necessary to run ./configure; make and sudo make
+install as described above. It is also possible to create a package with
+rpmbuild or checkinstall as described in Part 2 of this HowTo.
+
+A new option will appear under Settings in Gnome Commander:
+
+```
+   Multiple instances
+     [X] Don't start a new instance
+```
+
+On a new installation this option is checked by default. If you are
+upgrading an existing installation from a .deb package this option may
+be unchecked.
+
+A final note regarding building the package on Ubuntu. Installing the
+libunique-dev package AFTER compiling Gnome Commander seems to break the
+gcc version selection. This is easily fixed by running
+
+```
+sudo update-alternatives --config gcc
+```
+and selecting gcc version 8.
+
 ## Part 2 - Creating a deb file
 
 If it is desired to install GCMD on multiple computers without installing all of the development packages on each one and without going through the build process on each computer, these additional steps will help.
