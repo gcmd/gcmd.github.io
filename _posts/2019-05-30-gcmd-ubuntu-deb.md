@@ -20,6 +20,11 @@ The approach described below has been tested on Ubuntu Mate 18.04 on an
 Intel PC and on A Raspberry Pi 3B+, Ubuntu (Gnome) 19.04 and Linux Mint
 19.1 on an Intel PC. It should work on most similar distros.
 
+### UPDATE (July 19, 2020)
+
+It has been reported by some users that the approach below is not
+working with Linux Mint 20 and Ubuntu 20.04 LTS.
+
 ## Part 1 - Installation from source
 
 The first step is to create a development environment with the necessary
