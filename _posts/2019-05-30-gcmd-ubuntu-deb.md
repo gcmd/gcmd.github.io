@@ -20,6 +20,17 @@ The approach described below has been tested on Ubuntu Mate 18.04 on an
 Intel PC and on A Raspberry Pi 3B+, Ubuntu (Gnome) 19.04 and Linux Mint
 19.1 on an Intel PC. It should work on most similar distros.
 
+### UPDATE (December 27, 2020)
+
+GitHub user [tromoto
+reported](https://github.com/GNOME/gnome-commander/commit/70dbd38253aa538b4a4d4f7c56774115306d0c20#commitcomment-45449687)
+that it is possible to compile Gnome Commander on Ubuntu 20.04 with the
+use of external packages. He described his efforts in a comment on
+GitHub. As stated there, it is not needed to use GCC 8 explicitely, as
+GCC 9 is able to compile Gnome Commander out of the box. Also, you don't
+need libgnome-2.0 and libgnomeui-dev. I removed the installation steps
+of these packages below.
+
 ### UPDATE (July 19, 2020)
 
 It has been reported by some users that the approach below is not
@@ -39,26 +50,11 @@ executing these commands:
 ```
 sudo apt-get update
 sudo apt-get install -y build-essential itstool libglib2.0-dev libxml2-utils
-sudo apt-get install -y gtk+2.0 libgnome-2.0 libgnomeui-dev gcc-8 g++-8 
+sudo apt-get install -y gtk+2.0 
 ```
 
-gnome-commander requires version 8 of the gcc compiler to be used. This
-may be done by entering the following commands:
-
-```
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 700 --slave /usr/bin/g++ g++ /usr/bin/g++-7
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 --slave /usr/bin/g++ g++ /usr/bin/g++-8
-```
-
-Then enter the command:
-
-```
-sudo update-alternatives --config gcc
-```
-
-A dialog will be presented in the terminal. Select the version 8 option
-(2) and press enter. The computer is ready to build GCMD. Now it is time
-to obtain the source code.
+The computer is ready to build GCMD. Now it is time to obtain the source
+code.
 
 Get the latest gnome commander source code from the
 [Download](/download.html) section (currently
