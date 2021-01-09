@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="KeyWords" content="gnome,commander,file manager,documentation,faq,contributing">
 <meta name="Description" content="Documentation for the GNOME commander file manager">
-<meta name="author" content="Uwe Scholz" >
+<meta name="author" content="Unknown" >
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
 <!--<script type="text/javascript" src="script/snowstorm.js"></script>-->
@@ -43,6 +43,7 @@
 <li><a href="#release">Releasing</a></li>
 <li><a href="#trnsl">Translating</a></li>
 <li><a href="#doc">Hacking documents</a></li>
+<li><a href="#homepage">Updating the Homepage</a></li>
 </ul>
 <hr>
 <div class="c2"><a href="https://github.com/gcmd/gnome-commander/commits/gcmd-1-10" title="Commits on master branch"><img src="https://img.shields.io/github/commits-since/gcmd/gnome-commander/1.10.3/gcmd-1-10" alt="Commits on master branch"></a><br>
@@ -261,6 +262,21 @@ internal viewer source files
 in <a href="https://gitlab.gnome.org/GNOME/gnome-commander/tree/master/src/intviewer">Git</a>
 are always more updated than this document).</li>
 </ul>
+
+<hr>
+
+<h2><img class="info" src="img/icons/apps/internet-web-browser.png" height="32" width="32" alt="Updating the Homepage"> <a name="homepage">Updating the Homepage</a></h2>
+<p>If you want to contribute to the Gnome Commander homepage you can simply fork its 
+<a href="https://github.com/gcmd/gcmd.github.io.git">source code repository</a> and create a
+pull request with your updates.</p>
+<p>The page itself consists of simple html pages like the index.html or doc.html. But you will also notice that the
+blog posts which are shown on the index.html file are actually markdown posts in the "_posts" subdirectory. When pushing new blog posts in that
+folder, they are automatically processed by the <a href="https://jekyllrb.com/">Jekyll</a> tool on GitHub. No manuall work has to be done
+in that case. Just create a new markdown file, create a merge request, and when it is accepted, the new post will show up quickly
+on the Gnome Commander homepage.</p>
+<p>Before opening a pull request you may test the look of a new blog post by installing Jekyll locally on your machine and running
+"jekyll serve" in the main folder of the homepage repository. That will start a local webserver and you can visit the homepage in
+your browser on page http://localhost:4000.</p>
 
 <hr>
 
