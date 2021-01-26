@@ -30,6 +30,9 @@ tools to compile gnome-commander. This can be done on an existing Ubuntu
 installation or to a new installation on a test computer or a virtual
 machine. Starting from scratch:
 
+Add the Ubuntu 18.04 repos by editing the sources.list file with vim or
+your favorite text editor.
+
 ```
 sudo vim /etc/apt/sources.list
 ```
@@ -38,14 +41,13 @@ add the following two lines to the end of the file and save
 deb http://archive.ubuntu.com/ubuntu bionic universe
 deb http://archive.ubuntu.com/ubuntu bionic multiverse 
 ```
-Install Ubuntu or related OS and install all available updates. Install
-the development environment by opening a terminal (command window) and
+Install the development environment by opening a terminal (command window) and
 executing these commands:
 
 ```
 sudo apt-get update
-sudo apt-get install -y build-essential itstool libglib2.0-dev libxml2-utils
-sudo apt-get install -y gtk+2.0 
+sudo apt-get install -y build-essential itstool gawk libxml2-utils libglib2.0-dev 
+sudo apt-get install -y libgtk2.0-dev libgnomevfs2-dev
 ```
 
 The computer is ready to build GCMD. Now it is time to obtain the source
@@ -53,7 +55,7 @@ code.
 
 Get the latest gnome commander source code from the
 [Download](/download.html) section (currently
-gnome-commander-1.10.2.tar.xz). Right click on the link and "save as" to
+gnome-commander-1.10.3.tar.xz). Right click on the link and "save as" to
 a convenient location on your computer. You may optionally verify the
 file with the sha256 check sum or gpg signature provided on the web
 site.
@@ -67,11 +69,11 @@ If you prefer to do it all from the command line (make sure to check the web pag
 ```
 mkdir ~/development
 cd ~/development/
-wget https://download.gnome.org/sources/gnome-commander/1.10/gnome-commander-1.10.2.tar.xz .
-tar -xvf gnome-commander-1.10.2.tar.xz -C ~/development
+wget https://download.gnome.org/sources/gnome-commander/1.10/gnome-commander-1.10.3.tar.xz .
+tar -xvf gnome-commander-1.10.3.tar.xz -C ~/development
 ```
 
-In the terminal navigate to the top directory of the source (e.g. ``` ~/development/gnome-commander-1.10.2/ ``` ) and enter the command:
+In the terminal navigate to the top directory of the source (e.g. ``` ~/development/gnome-commander-1.10.3/ ``` ) and enter the command:
 
 ```
 ./configure
@@ -101,7 +103,10 @@ typing gnome-commander. You will probably see some error messages. They
 seem to relate to the old libraries used by GCMD. However, the errors do
 not seem to impact any gnome-commander functions. In your applications
 menu the Gnome Commander icon should appear on the menu under
-"Accessories".
+"Accessories". If it does not appear immediately, open the Mate 
+Main-Menu editor, navigate to Accessiories, observe that 
+gnome-commander is present and checked. Exit the menu editpr and the
+menu will refresh and gnome-commander should be present.
 
 -----
 
