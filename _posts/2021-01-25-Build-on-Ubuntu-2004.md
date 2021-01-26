@@ -119,13 +119,12 @@ If you desire to include the single instance option it is necessary to
 add the following packag to the machine on which you are compiling the
 application:
 
-Ubuntu 18.04 etc. - install libunique-dev (available in the Universe repository)
-
+```
+sudo apt-get install -y libunique-dev
+```
 Once this is done it is necessary to run ./configure; make and sudo make
-install as described above. It is also possible to create a package with
-rpmbuild or checkinstall as described in Part 2 of this HowTo.
-
-A new option will appear under Settings in Gnome Commander:
+install as described above. A new option will appear under Settings in 
+Gnome Commander:
 
 ```
    Multiple instances
@@ -135,15 +134,6 @@ A new option will appear under Settings in Gnome Commander:
 On a new installation this option is checked by default. If you are
 upgrading an existing installation from a .deb package this option may
 be unchecked.
-
-A final note regarding building the package on Ubuntu. Installing the
-libunique-dev package AFTER compiling Gnome Commander seems to break the
-gcc version selection. This is easily fixed by running
-
-```
-sudo update-alternatives --config gcc
-```
-and selecting gcc version 8.
 
 ## Part 2 - Creating a deb file
 
@@ -155,7 +145,7 @@ In the terminal type the following:
 sudo apt-get install checkinstall
 ```
 
-With the terminal pointing to the same directory as in Part 1 (e.g. ``` ~/devel/gnome-commander.1.10.2/ ```) type the following command:
+With the terminal pointing to the same directory as in Part 1 (e.g. ``` ~/devel/gnome-commander.1.10.3/ ```) type the following command:
 
 ```
 sudo checkinstall
@@ -168,7 +158,7 @@ terminal on the target machine, point it to the directory where the .deb
 file is located and issue the command:
 
 ```
-sudo gdebi gnome-commander_1.10.2-1_amd64.deb
+sudo gdebi gnome-commander_1.10.3-1_amd64.deb
 ```
 
 This will result in gnome-commander being installed. However, there is a
@@ -183,17 +173,6 @@ Gnome commander should now be installed and ready to run and the new
 Gnome Commander menu entry should appear on the menu under
 "Accessories".
 
-### UPDATE (May 10, 2019)
-
-It has been observed that installation of the various development
-packages as described above will break Firefox in Ubuntu 18.04 on the
-Raspberry Pi platform. This does not appear to effect the 32 bit nor 64
-bit Intel/AMD platforms. Investigation has found that the offending
-packages are the result of installing gtk+2.0. Further testing has shown
-that GCMD may be successfully compiled and installed WITHOUT gtk+2.0.
-
-If you are planning to compile and install GCMD on Ubuntu or a Debian
-family distribution you can save some space by NOT installing gtk+2.0.
 
 *[GCMD]: Gnome Commander
 
