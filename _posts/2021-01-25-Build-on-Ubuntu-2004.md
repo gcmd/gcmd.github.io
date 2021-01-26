@@ -13,11 +13,11 @@ such time as that can be resolved it is necessary to manually install
 GCMD on Linux Distros which derive from Debian. Part 1 of this document
 will provide step by step instructions for compiling and installing GCMD
 from its source code. Part 2 will describe a method for installing GCMD
-on multiple computes without having to install all of the development
+on multiple computers without having to install all of the development
 packages on each computer.
 
 The approach described below has been updated to work on Ubuntu Mate 20.04 on
-an Intel PC. The main issue is that several needed packages are not in the 
+an Intel PC. The main issue is that several required packages are not in the 
 20.04 repositories. As a workaround it is possible to add the Ubuntu 18.04
 repo to Ubuntu 20.04 in order to install those packages in order to build
 gnome-commander. Once this is done it is probably a good idea to disconnect
@@ -103,24 +103,21 @@ sudo make install
 When the process completes, GCMD should be ready to run. Try it by
 typing gnome-commander. You will probably see some error messages. They
 seem to relate to the old libraries used by GCMD. However, the errors do
-not seem to impact any gnome-commander functions. In your applications
-menu the Gnome Commander icon should appear on the menu under
-"Accessories". If it does not appear immediately, open the Mate 
-Main-Menu editor, navigate to Accessiories, observe that 
-gnome-commander is present and checked. Exit the menu editpr and the
-menu will refresh and gnome-commander should be present.
+not seem to impact any GCMD functions. In your applications menu the GCMD 
+icon should appear on the menu under "Accessories". 
+
+Note: If you experience any errors while using GCMD on Ubuntu 20.04.
+PLEASE file a [bug](https://gitlab.gnome.org/GNOME/gnome-commander/issues).
 
 -----
 
-It is possible to build Gnome Commander so that it includes the option
-to only run a single instance. The above instructions do not include
-this option. It will be possible to open Gnome Commander again and again
-and again.
+It is possible to build GCMD so that it includes the option to only run 
+a single instance. The above instructions do not include this option. It 
+will be possible to open Gnome Commander again and again and again.
 
 If you desire to include the single instance option it is necessary to
-add the following packag to the machine on which you are compiling the
+add the following package to the machine on which you are compiling the
 application:
-
 
 ```
 sudo apt-get install -y libunique-dev
@@ -128,7 +125,7 @@ sudo apt-get install -y libunique-dev
 
 Once this is done it is necessary to run ./configure; make and sudo make
 install as described above. A new option will appear under Settings in 
-Gnome Commander:
+GCMD:
 
 ```
    Multiple instances
@@ -145,7 +142,7 @@ If it is desired to install GCMD on multiple computers without installing
 all of the development packages on each one and without going through the 
 build process on each computer, these additional steps will help.
 
-In the terminal type the following:
+In the terminal of the computer used to compile GCMD type the following:
 
 ```
 sudo apt-get install checkinstall
@@ -171,9 +168,9 @@ sudo gdebi gnome-commander_1.10.3-1_amd64.deb
 
 This will result in gnome-commander being installed. However, there is a
 dependent package which gdebi will not install (two packages if you chose to
-build gnome-commander with the unique option.) It must be obtained from the
-Ubuntu 18.04 repo. As was done for the initial build, add the necessary repo
-to /etc/apt/sources.list. In this case only the univers repo is needed.
+build gnome-commander with the unique option.) The packages must be obtained 
+from the Ubuntu 18.04 repo. As was done for the initial build, add the necessary 
+repo to /etc/apt/sources.list. In this case only the univers repo is needed.
 
 ```
 sudo vim /etc/apt/sources.list
@@ -213,7 +210,7 @@ seem to work fine. The only difference is in the handling of the
 or added using the Software Sources GUI tool. The referenced file warns 
 not to edit manually as it might be overwritten by the Software Sources
 tool. However, to temporarily enable the 18.04 repo in order to build
-gnome-commander it will do the trick.
+gnome-commander editing the .list file directly will do the trick.
 
 
 
