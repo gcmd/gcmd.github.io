@@ -207,11 +207,13 @@ seem to work fine. The only difference is in the handling of the
 ```
 /etc/apt/sources.list.d/official-package-repositories.list 
 ```
-or added using the Software Sources GUI tool. The referenced file warns 
-not to edit manually as it might be overwritten by the Software Sources
-tool. However, to temporarily enable the 18.04 repo in order to build
-gnome-commander editing the .list file directly will do the trick.
+The repo may added using the Software Sources GUI tool. The referenced file 
+warns not to edit manually as it might be overwritten by the Software Sources
+tool. However, to temporarily enable the 18.04 repo in order to build GCMD, 
+editing the .list file directly will do the trick.
 
+Again, If you experience any errors while using GCMD on Ubuntu 20.04 or Mint 20
+or a recent version of Debian, PLEASE file a [bug](https://gitlab.gnome.org/GNOME/gnome-commander/issues).
 
 
 *[GCMD]: Gnome Commander
