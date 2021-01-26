@@ -170,7 +170,7 @@ This will result in gnome-commander being installed. However, there is a
 dependent package which gdebi will not install (two packages if you chose to
 build gnome-commander with the unique option.) The packages must be obtained 
 from the Ubuntu 18.04 repo. As was done for the initial build, add the necessary 
-repo to /etc/apt/sources.list. In this case only the univers repo is needed.
+repo to /etc/apt/sources.list. 
 
 ```
 sudo vim /etc/apt/sources.list
