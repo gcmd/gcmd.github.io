@@ -19,9 +19,9 @@ packages on each computer.
 The approach described below has been updated to work on Ubuntu Mate 20.04 on
 an Intel PC. The main issue is that several needed packages are not in the 
 20.04 repositories. As a workaround it is possible to add the Ubuntu 18.04
-repos to Ubuntu 20.04 in order to install those packages in order to build
+repo to Ubuntu 20.04 in order to install those packages in order to build
 gnome-commander. Once this is done it is probably a good idea to disconnect
-from the Ubuntu 18.04 repos.
+from the Ubuntu 18.04 repo.
 
 ## Part 1 - Installation from source
 
@@ -30,17 +30,19 @@ tools to compile gnome-commander. This can be done on an existing Ubuntu
 installation or to a new installation on a test computer or a virtual
 machine. Starting from scratch:
 
-Add the Ubuntu 18.04 repos by editing the sources.list file with vim or
+Add the Ubuntu 18.04 repo by editing the sources.list file with vim or
 your favorite text editor.
 
 ```
 sudo vim /etc/apt/sources.list
 ```
-add the following two lines to the end of the file and save
+
+add the following line to the end of the file and save
+
 ```
 deb http://archive.ubuntu.com/ubuntu bionic universe
-deb http://archive.ubuntu.com/ubuntu bionic multiverse 
 ```
+
 Install the development environment by opening a terminal (command window) and
 executing these commands:
 
@@ -119,9 +121,11 @@ If you desire to include the single instance option it is necessary to
 add the following packag to the machine on which you are compiling the
 application:
 
+
 ```
 sudo apt-get install -y libunique-dev
 ```
+
 Once this is done it is necessary to run ./configure; make and sudo make
 install as described above. A new option will appear under Settings in 
 Gnome Commander:
@@ -137,7 +141,9 @@ be unchecked.
 
 ## Part 2 - Creating a deb file
 
-If it is desired to install GCMD on multiple computers without installing all of the development packages on each one and without going through the build process on each computer, these additional steps will help.
+If it is desired to install GCMD on multiple computers without installing 
+all of the development packages on each one and without going through the 
+build process on each computer, these additional steps will help.
 
 In the terminal type the following:
 
@@ -145,7 +151,9 @@ In the terminal type the following:
 sudo apt-get install checkinstall
 ```
 
-With the terminal pointing to the same directory as in Part 1 (e.g. ``` ~/devel/gnome-commander.1.10.3/ ```) type the following command:
+With the terminal pointing to the same directory as in Part 1 
+(e.g. ``` ~/devel/gnome-commander.1.10.3/ ```) type the following command:
+
 
 ```
 sudo checkinstall
@@ -162,7 +170,8 @@ sudo gdebi gnome-commander_1.10.3-1_amd64.deb
 ```
 
 This will result in gnome-commander being installed. However, there is a
-dependent package which gdebi will not install. It must be obtained from the
+dependent package which gdebi will not install (two packages if you chose to
+build gnome-commander with the unique option.) It must be obtained from the
 Ubuntu 18.04 repo. As was done for the initial build, add the necessary repo
 to /etc/apt/sources.list. In this case only the univers repo is needed.
 
@@ -174,16 +183,38 @@ add the following line to the end of the file and save
 deb http://archive.ubuntu.com/ubuntu bionic universe
 ```
 
-Install the needed package by issuing the command:
+Install the needed package by issuing the commands:
 
 ```
+sudo pt-get update -y
 sudo apt-get install -y libgnomevfs2-0
 ```
+
+If using "unique" to enable the option to limit gnome-commander to only a 
+single instance, install the neessary package.
+
+```
+sudo apt-get install libunique-1.0
+```
+
 It would probably be a good idea to comment out the 18.04 repo in
 /etc/apt/sources.list by placing a # at the start of the line.
 Gnome commander should now be installed and ready to run and the 
 Gnome Commander menu entry should appear on the menu under
 "Accessories".
+
+Note:  These instructions have been tested on Linux Mint 20 and
+seem to work fine. The only difference is in the handling of the 
+18.04 repo. It needs to be added to the file:
+
+```
+/etc/apt/sources.list.d/official-package-repositories.list 
+```
+or added using the Software Sources GUI tool. The referenced file warns 
+not to edit manually as it might be overwritten by the Software Sources
+tool. However, to temporarily enable the 18.04 repo in order to build
+gnome-commander it will do the trick.
+
 
 
 *[GCMD]: Gnome Commander
