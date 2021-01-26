@@ -16,25 +16,12 @@ from its source code. Part 2 will describe a method for installing GCMD
 on multiple computes without having to install all of the development
 packages on each computer.
 
-The approach described below has been tested on Ubuntu Mate 18.04 on an
-Intel PC and on A Raspberry Pi 3B+, Ubuntu (Gnome) 19.04 and Linux Mint
-19.1 on an Intel PC. It should work on most similar distros.
-
-### UPDATE (December 27, 2020)
-
-GitHub user [tromoto
-reported](https://github.com/GNOME/gnome-commander/commit/70dbd38253aa538b4a4d4f7c56774115306d0c20#commitcomment-45449687)
-that it is possible to compile Gnome Commander on Ubuntu 20.04 with the
-use of external packages. He described his efforts in a comment on
-GitHub. As stated there, it is not needed to use GCC 8 explicitely, as
-GCC 9 is able to compile Gnome Commander out of the box. Also, you don't
-need libgnome-2.0 and libgnomeui-dev. I removed the installation steps
-of these packages below.
-
-### UPDATE (July 19, 2020)
-
-It has been reported by some users that the approach below is not
-working with Linux Mint 20 and Ubuntu 20.04 LTS.
+The approach described below has been updated to work on Ubuntu Mate 20.04 on
+an Intel PC. The main issue is that several needed packages are not in the 
+20.04 repositories. As a workaround it is possible to add the Ubuntu 18.04
+repos to Ubuntu 20.04 in order to install those packages in order to build
+gnome-commander. Once this is done it is probably a good idea to disconnect
+from the Ubuntu 18.04 repos.
 
 ## Part 1 - Installation from source
 
@@ -42,6 +29,16 @@ The first step is to create a development environment with the necessary
 tools to compile gnome-commander. This can be done on an existing Ubuntu
 installation or to a new installation on a test computer or a virtual
 machine. Starting from scratch:
+
+The Ubuntu 18.04 repos are added by editing the sources.list file using
+vim or a text editor of your choice
+----
+sudo vim /etc/apt/sources.list
+----
+add the following two lines to the end of the file and save
+
+deb http://archive.ubuntu.com/ubuntu bionic universe
+deb http://archive.ubuntu.com/ubuntu bionic multiverse 
 
 Install Ubuntu or related OS and install all available updates. Install
 the development environment by opening a terminal (command window) and
