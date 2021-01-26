@@ -30,16 +30,14 @@ tools to compile gnome-commander. This can be done on an existing Ubuntu
 installation or to a new installation on a test computer or a virtual
 machine. Starting from scratch:
 
-The Ubuntu 18.04 repos are added by editing the sources.list file using
-vim or a text editor of your choice
-----
+```
 sudo vim /etc/apt/sources.list
-----
+```
 add the following two lines to the end of the file and save
-
+```
 deb http://archive.ubuntu.com/ubuntu bionic universe
 deb http://archive.ubuntu.com/ubuntu bionic multiverse 
-
+```
 Install Ubuntu or related OS and install all available updates. Install
 the development environment by opening a terminal (command window) and
 executing these commands:
