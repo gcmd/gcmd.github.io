@@ -152,7 +152,7 @@ sudo checkinstall
 ```
 
 When this process completes you should find a file
-**``` gnome-commander_1.10.2-1_amd64.deb ```** in the current directory. Copy
+**``` gnome-commander_1.10.3-1_amd64.deb ```** in the current directory. Copy
 this file to the target machine where you wish to install GCMD. Open a
 terminal on the target machine, point it to the directory where the .deb
 file is located and issue the command:
@@ -162,14 +162,26 @@ sudo gdebi gnome-commander_1.10.3-1_amd64.deb
 ```
 
 This will result in gnome-commander being installed. However, there is a
-dependent package which gdebi will not install for some reason. Install
-this by issuing the command:
+dependent package which gdebi will not install. It must be obtained from the
+Ubuntu 18.04 repo. As was done for the initial build, add the necessary repo
+to /etc/apt/sources.list. In this case only the univers repo is needed.
 
 ```
-sudo apt-get install -y libgnomeui-0
+sudo vim /etc/apt/sources.list
+```
+add the following line to the end of the file and save
+```
+deb http://archive.ubuntu.com/ubuntu bionic universe
 ```
 
-Gnome commander should now be installed and ready to run and the new
+Install the needed package by issuing the command:
+
+```
+sudo apt-get install -y libgnomevfs2-0
+```
+It would probably be a good idea to comment out the 18.04 repo in
+/etc/apt/sources.list by placing a # at the start of the line.
+Gnome commander should now be installed and ready to run and the 
 Gnome Commander menu entry should appear on the menu under
 "Accessories".
 
