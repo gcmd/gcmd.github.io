@@ -20,13 +20,13 @@ The approach described below has been updated to work on Ubuntu Mate 20.04 on
 an Intel PC. The main issue is that several required packages are not in the 
 20.04 repositories. As a workaround it is possible to add the Ubuntu 18.04
 repo to Ubuntu 20.04 in order to install those packages in order to build
-gnome-commander. Once this is done it is probably a good idea to disconnect
+GCDR. Once this is done it is probably a good idea to disconnect
 from the Ubuntu 18.04 repo.
 
 ## Part 1 - Installation from source
 
 The first step is to create a development environment with the necessary
-tools to compile gnome-commander. This can be done on an existing Ubuntu
+tools to compile GCDR. This can be done on an existing Ubuntu
 installation or to a new installation on a test computer or a virtual
 machine. Starting from scratch:
 
