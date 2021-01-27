@@ -183,7 +183,7 @@ deb http://archive.ubuntu.com/ubuntu bionic universe
 Install the needed package by issuing the commands:
 
 ```
-sudo pt-get update -y
+sudo apt-get update -y
 sudo apt-get install -y libgnomevfs2-0
 ```
 
