@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ''
-title: 'Installing Gnome Commander on Debian, Ubuntu and Mint'
+title: 'Installing Ubuntu 20.04 and Mint 20'
 excerpt: ''
 ---
 
