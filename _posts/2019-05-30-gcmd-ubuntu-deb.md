@@ -36,6 +36,11 @@ of these packages below.
 It has been reported by some users that the approach below is not
 working with Linux Mint 20 and Ubuntu 20.04 LTS.
 
+### UPDATE (January 28, 2021)
+
+New instructions are available for building GCDR on Ubuntu 20.04 and
+Linux Mint 20. PLease check the Latest news on the home page.
+
 ## Part 1 - Installation from source
 
 The first step is to create a development environment with the necessary
