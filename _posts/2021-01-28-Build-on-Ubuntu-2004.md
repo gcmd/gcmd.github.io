@@ -85,7 +85,7 @@ This will verify that all necessary packages are available and that the
 environment will support compiling GCMD. It should end by stating:
 
 ```
-Type 'make' to build gnome-commander-1.10.2 and then 'make install' to install
+Type 'make' to build gnome-commander-1.10.3 and then 'make install' to install
 ```
 
 Next type:
