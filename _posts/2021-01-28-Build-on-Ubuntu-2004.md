@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: ''
-title: 'Installing Ubuntu 20.04 and Mint 20'
+title: 'Installing on Ubuntu 20.04 and Mint 20'
 excerpt: ''
 ---
 
