@@ -240,9 +240,14 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 			Look for git pull request policy at <a href="https://www.gentoo.org/glep/glep-0066.html">gentoo.org/glep/glep-0066.html</a>
 		</li>
 		<li>
+		   Use repoman or pkgcheck to test the new ebuild for errors or style issues from inside the folder where the new Manifest
+		   is located in the local gentoo repository. Example: <code>repoman -dx full</code> or
+		   <code>pkgcheck scan gnome-commander-1.12.1.ebuild</code>
+		</li>
+		<li>
 			Create a fork of the Gentoo repo from <a href="https://github.com/gentoo/gentoo">github.com/gentoo/gentoo</a>, clone your fork,
 			add the new Manifest line and the ebuild file from the second point above into
-			<code>gnome-extra/gnome-commander/</code> and create a commit with signing off (<code>git commit -s</code>), similar to
+			<code>gnome-extra/gnome-commander/</code> and create a commit with signing off by doing (<code>git add -p && pkgdev commit</code>), similar to
 			<a href="https://github.com/gentoo/gentoo/commit/7df1dacde12ab3c593d9f2711f0087eb7e540b25">this</a> one.
 		</li>
 		<li>
