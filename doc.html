@@ -49,53 +49,12 @@ see the <a href="dev.html">Development</a> page, section "Building from source".
 <div id="infor">
 <h4>Tips and tricks:</h4>
 <ul>
-<li><a href="#mime">Handling MIME types</a></li>
 <li><a href="#archives">Handling archives</a></li>
 <li><a href="#removable">Removable devices</a></li>
 <li><a href="#icon">Icon theme</a></li>
 <li><a href="#sh">Open a terminal</a></li>
 </ul>
 </div>
-
-<h3><a name="mime">Handling MIME types</a></h3>
-<p>Since GNOME has changed to follow <a href="https://www.freedesktop.org/">the freedesktop.org</a> 
-standard of handling MIME types, the editing of preferred programs in GNOME Commander is currently 
-broken (v 1.1.7). We do have this in our 
-<a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/TODO">TODO file</a>, 
-but until <abbr title="GNOME Commander">GCMD</abbr> can handle edititing of preferred programs, there 
-is another way of managing this manually by setting up some files in <code>~/.local/share/applications</code>.
-There are three types of files in this folder:</p>
-<ul>
-<li><span>XXX-usercreated.desktop</span> Where "XXX" stands for the application in question. 
-These files contain information about which MIME types the application can handle, what command 
-will be used for launching it, if it shall run in terminal, and language localization.<br>Example:
-<pre>
-[Desktop Entry]
-Encoding=UTF-8
-Name=display
-MimeType=image/png;image/jpeg;
-Exec='/usr/bin/display'
-Type=Application
-Terminal=false
-NoDisplay=true</pre></li>
-<li><span>mimeinfo.cache</span> This single file assigns every MIME type a list of applications. 
-These are the entries you will see via "Open with" in GCMD. However, instead of application commands, 
-each entry points to the .desktop files, like the XXX-usercreated.desktop from above. There can be 
-several possible targets for a single MIME type entry, separated by semicolon.<br>Example:
-<pre>
-[MIME Cache]
-audio/mpeg=xmms-usercreated.desktop;mpg123-usercreated.desktop;
-image/png=display-usercreated.desktop</pre></li>
-<li><span>defaults.list</span> This file controls which application that is the default one, the one 
-that starts when you double click a file. <br>Example:
-<pre>
-[Default Applications]
-audio/mpeg=xmms-usercreated.desktop
-image/png=display-usercreated.desktop</pre></li>
-</ul>
-<p>Please refer to <a href="https://www.freedesktop.org/">freedesktop.org</a> or your distribution 
-of choise for further details.</p>
-<hr>
 
 <h3><a name="archives">Handling archives</a></h3> 
 <p><abbr title="Gnome Commander">GCMD</abbr> can be configured so that
