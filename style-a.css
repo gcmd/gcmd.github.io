@@ -14,11 +14,10 @@ h1 {
     margin-top: 0.2em;
 }
 h2 {
-    background: #ecc73e none repeat scroll 0 0;
+    background: #ecc73e;
     border: 1px solid #000;
     color: #111;
     font-family: serif;
-    margin-top: 1em;
     padding-left: 6px;
     padding-top: 2px;
 }
@@ -31,9 +30,11 @@ h4 {
     margin-left: 0.5em;
 }
 h5 {
+	 text-align:center;
     margin: 0.5em;
 }
 p, table, object, pre {
+	 width: 96%;
     margin: 0.2em 3em 1em 1em;
 }
 li {
@@ -60,10 +61,10 @@ code, pre {
     padding: 0.2em;
 }
 p.c4 {
-    color: #333;
+    color: #000;
     font-size: 11px;
 }
-span.c1 {
+c1 {
     color: #8bcfe0;
 }
 .nh {
@@ -88,8 +89,6 @@ span.c1 {
 }
 .ram {
     border: 1px solid #000;
-    margin: 1em;
-    padding: 10px;
     width: 90%;
 }
 .warning {
@@ -124,7 +123,8 @@ span.c1 {
     height: 1.75em;
     line-height: 1.75em;
     margin-bottom: 1em;
-    padding: 4px 6px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .title .date {
     float: right;
@@ -133,9 +133,9 @@ span.c1 {
     float: left;
 }
 #topp {
-    border: 0 none;
+    border: 10px none;
     color: #fff;
-    max-width: 56em;
+    max-width: 1000px;
     min-width: 30em;
     text-align: center;
 }
@@ -149,9 +149,7 @@ span.c1 {
 #urub {
     border: 0 none;
     font-family: sans-serif;
-    font-size: 90%;
-    margin-left: 1em;
-    margin-right: 1em;
+    font-size: 100%;
 }
 #menu {
     font-weight: bold;

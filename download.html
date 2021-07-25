@@ -8,15 +8,19 @@
 <meta name="author" content="Uwe Scholz" >
 <link rel="shortcut icon" href="img/icon.png" type="image/png">
 <link href="style-a.css" rel="stylesheet" title="Default" type="text/css">
+<!--<script type="text/javascript" src="script/snowstorm.js"></script>-->
 </head>
+
 <body>
+
 <div class="stil" id="topp">
 <img src="img/logo.svg" width="85" height="79" id="logo" alt="">
 <img src="img/floating.png" width="94" height="79" id="float" alt="">
 <h1>GNOME Commander</h1>
 <h1 id="urub">A powerful file manager for the GNOME desktop environment</h1>
+</div>
 
-<div id="menu">
+<div id="menu" class="cntr">
 <a href="index.html" title="The home page">[Home]</a>
 <a href="shots.html" title="Images tell a lot..">[Screenshots]</a>
 <a href="download.html" title="Links to downloads">[Download]</a>
@@ -38,7 +42,7 @@
 </ul>
 </div>
 
-<h3><a name="sources">Latest release</a></h3>
+<h3><a id="sources">Latest release</a></h3>
 
 <p><a href="https://download.gnome.org/sources/gnome-commander/1.12/gnome-commander-1.12.2.tar.xz">gnome-commander-1.12.2.tar.xz</a> (7.2 MB)</p>
 <p><a href="https://download.gnome.org/sources/gnome-commander/1.12/gnome-commander-1.12.2.sha256sum">gnome-commander-1.12.2.sha256sum</a></p>
@@ -49,23 +53,27 @@
 <br>
 <p>Older releases can be found on the GNOME <a href="https://download.gnome.org/sources/gnome-commander/">download server</a>.</p>
 
-<h3><a name="SampleScripts">Sample scripts for the file popup menu</a></h3>
+<h3><a id="SampleScripts">Sample scripts for the file popup menu</a></h3>
 
 <p>Under this <a href="https://gitlab.gnome.org/GNOME/gnome-commander/tree/master/gcmd-scripts">link</a> some
 sample scripts can be found. Move them into <code>~/.gnome-commander/scripts/</code> to extend the file popup menu (usable since v1.6.0).
 </p>
 
-<h2><img class="info" src="img/icons/categories/applications-development.png" height="32" width="32" alt="Source code"> <a name="build">Installation on your Linux machine</a></h2>
+<h2><img class="info" src="img/icons/categories/applications-development.png" height="32" width="32" alt="Source code">
+  <a id="build">Installation on your Linux machine</a>
+</h2>
 <p>There exist three very detailed installation HowTos, created by Ken Taylor(*).
 See <a href="2019/05/30/gcmd-centos-rpm.html">here</a> for the installation of Gnome Commander in CentOS and
 <a href="2019/05/30/gcmd-ubuntu-deb.html">here</a> for the installation in Debian, Ubuntu or Linux Mint. Newly added are instructions for Ubuntu 20.04 <a href="2021/01/28/Build-on-Ubuntu-2004.html">here</a> </p>
 <p>(*) Thank you, Ken!</p>
-<h2><img class="info" src="img/icons/apps/internet-web-browser.png" alt="External Downloads" height="32" width="32" title="External Downloads"> <a name="external">External packages</a></h2>
+<h2><img class="info" src="img/icons/apps/internet-web-browser.png" alt="External Downloads" height="32" width="32" title="External Downloads"> 
+	<a id="external">External packages</a>
+</h2>
 <p>Here is a list of links to external packages so you don't have to build Gnome Commander by yourself. These are 
 maintained by the distributions and not by the developers of <abbr title="GNOME Commander">GCMD</abbr>.
 Some links may point to old versions of <abbr title="GNOME Commander">GCMD</abbr>.</p>
-<table width="96%">
-<tr valign="top">
+<table>
+<tr>
 <td>
 <ul class="imglist">
 <li><img src="img/gentoo.png" width="30" height="30" alt=""><a href="https://packages.gentoo.org/package/gnome-extra/gnome-commander">Gentoo</a></li>
@@ -78,37 +86,35 @@ Some links may point to old versions of <abbr title="GNOME Commander">GCMD</abbr
 </tr>
 </table>
 
-<h2><img class="info" src="img/icons/categories/applications-office.png" alt="Icons" height="32" width="32" title="Gnome Commander Icons"> <a name="icons">Gnome Commander Icon History</a></h2>
+<h2><img class="info" src="img/icons/categories/applications-office.png" alt="Icons" height="32" width="32" title="Gnome Commander Icons"> <a id="icons">Gnome Commander Icon History</a></h2>
 
-<p>
-<table width="50%">
+<table>
 <tr>
-<td align="center">2003</td>
-<td align="center">2003</td>
-<td align="center">2006</td>
-<td align="center">2019</td>
+	<td>2003</td>
+	<td>2003</td>
+	<td>2006</td>
+	<td>2019</td>
 </tr>
 <tr>
-<td align="center"><img src="img/logo-very-old-1.png" width="48" height="48" alt="logo-very-old-1.png"></td>
-<td align="center"><img src="img/logo-very-old-2.png" width="48" height="48" alt="logo-very-old-2.png"></td>
-<td align="center"><img src="img/logo-old.png" width="48" height="48" alt="logo-old.png"></td>
-<td align="center"><img src="img/logo.svg" width="50" height="50" alt="logo.svg"></td>
+	<td><img src="img/logo-very-old-1.png" width="48" height="48" alt="logo-very-old-1.png"></td>
+	<td><img src="img/logo-very-old-2.png" width="48" height="48" alt="logo-very-old-2.png"></td>
+	<td><img src="img/logo-old.png" width="48" height="48" alt="logo-old.png"></td>
+	<td><img src="img/logo.svg" width="50" height="50" alt="logo.svg"></td>
 </tr>
 <tr>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"><img src="img/internal-viewer-2006.png" width="48" height="48" alt="internal-viewer-2016.png"></td>
-<td align="center"><img src="img/internal-viewer-2019.svg" width="50" height="50" alt="internal-viewer-2019.svg"></td>
+	<td></td>
+	<td></td>
+	<td><img src="img/internal-viewer-2006.png" width="48" height="48" alt="internal-viewer-2016.png"></td>
+	<td><img src="img/internal-viewer-2019.svg" width="50" height="50" alt="internal-viewer-2019.svg"></td>
 </tr>
 </table>
-</p>
 
 <hr>
 
 <p class="cntr"><a href="#topp">To top of page</a></p>
 
 </div>
-<div>
+<div class="cntr">
 	&nbsp;<br>
 	<a href="https://validator.w3.org/check?uri=https://gcmd.github.io/download.html">
 		<img src="img/valid5.png" width="88" height="31" class="nobord" alt="Valid html 5">
