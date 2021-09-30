@@ -144,9 +144,14 @@ build process on each computer, these additional steps will help.
 
 In the terminal of the computer used to compile GCMD type the following:
 
+**Update from September 2021**: Don't execute the following command if
+you're working on Ubuntu 20.04, it can make your system unusable. See
+the following
+[link](https://github.com/GNOME/gnome-commander/commit/b897bb1cd9f7b6344d15ed8edd997db6f61e2b1c#commitcomment-49675884)!
 ```
 sudo apt-get install checkinstall
 ```
+
 
 With the terminal pointing to the same directory as in Part 1 
 (e.g. ``` ~/devel/gnome-commander.1.10.3/ ```) type the following command:
