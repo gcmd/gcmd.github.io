@@ -13,12 +13,10 @@ Also, Linux distributions don't like to distribute packages with
 compilation warnings.
 
 To overcome this problem we created the new Git branch
-[ConvertWarningsToErrors](https://github.com/gcmd/gnome-commander/commits/ConvertWarningsToErrors)
-some days ago.
+<code>ConvertWarningsToErrors</code> some days ago.
 
 This branch is derived from the master branch and its first commit is
-[2ecd245](https://github.com/gcmd/gnome-commander/commit/2ecd24547341618085cce43c8a9cb06f60b78d08).
-Here, we set up configure.ac and all Makefiles to convert all
+<code>2ecd245</code>. Here, we set up configure.ac and all Makefiles to convert all
 compilation warnings into compiler errors. This will force us to fix
 each warning to successfully compile GCMD in the end.
 
@@ -59,5 +57,9 @@ Together we can do it!
 All compilation warnings in branch ConvertWarningsToErrors
 have been fixed and all related commits have been merged into the master branch. This
 task can be regarded as fixed now.
+
+**Update** [30. January 2022]:
+
+The above mentioned GitHub repo does not exist anymore. Since some years already, Gnome Commander source code is hosted at [gitlab.gnome.org](https://gitlab.gnome.org/GNOME/gnome-commander))
 
 *[GCMD]: Gnome Commander
