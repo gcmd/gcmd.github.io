@@ -23,6 +23,12 @@ repo to Ubuntu 20.04 in order to install those packages in order to build
 GCDR. Once this is done it is probably a good idea to disconnect
 from the Ubuntu 18.04 repo.
 
+### UPDATE (February 09, 2022)
+
+Since February 05 2022 with the release of Gnome Commander 1.14.0, the program
+is not depending on gnome-vfs anymore. The installation of Gnome Commander
+in Ubuntu should therefore be much simpler than described below.
+
 ## Part 1 - Installation from source
 
 The first step is to create a development environment with the necessary

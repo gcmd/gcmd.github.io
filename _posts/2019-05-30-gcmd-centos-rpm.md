@@ -8,7 +8,7 @@ excerpt: ''
 ### Introduction
 
 Gnome Commander is usually available from the
-[nux-dextop](https://li.nux.ro/repos.html) repository. Until such time
+[nux-dextop](https://li.nux.ro/repos.html) (retired!) repository. Until such time
 as GCMD version 1.10.2 is added (nux IS a volunteer effort) you can
 build your own rpm file to install or update GCMD on your CentOS 7
 machines without installing all of the packages needed to build GCMD
