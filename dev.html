@@ -138,9 +138,22 @@ something similar you have to install some dependencies.</p>
 then you are welcome to contact us or you can make a pull request 
 on GitLab against the <abbr title="GNOME Commander">GCMD</abbr> <a href="https://gitlab.gnome.org/GNOME/gnome-commander">repository</a>.</p>
 
-<p>If you have some good ideas for stuff that you want to see in this program, check the
-<a href="https://gitlab.gnome.org/GNOME/gnome-commander/raw/master/TODO">TODO</a> file first before sending
-a message to the mailing lists.</p>
+<p>Here is a quick guide how to do contribute via GitLab after creating an account there and creating a fork of the origin repository in GitLab:</p>
+<ol>
+  <li><code>git clone https://gitlab.gnome.org/$USER/gnome-commander && cd gnome-commander</code></li>
+  <li>Next, add the original repo to your repo as a reference: <code> git remote add upstream https://gitlab.gnome.org/GNOME/gnome-commander.git</code></li>
+  <li>Create a branch where you track your work: <code>git checkout -b $BRANCH_NAME</code></li>
+  <li>Now create one or more commits that contain your work via <code>git commit -m "$DESCRIPTION"</code></li>
+  <li>If your work is for an already openend issue, say #26, on GitLab, the last commit should contain something like: <code>git commit -m "...; Closes: #26".</code> </li>
+  <li>To be on the safe side, do an update with the original repo, just to make sure that no conflicts have been created in the meantime:<code>git fetch upstream master && git rebase upstream/master</code></li>
+  <li>Push your changes to your fork on GitLab: <code>git push origin HEAD</code></li>
+  <li>You can create a merge request: Either by using the link that is shown to you on the terminal after the
+      last command, or by clicking on the "Create merge request" button in the GitLab web interface in your repository from the branch you created above.
+  </li>
+  <li>The maintainer of the original repository will then be notified by GitLab via email and can review, comment, and
+      review, ask for changes and finally accept the merge request. Then your change will be copied to the original repository.
+  </li>
+</ol>
 <p>If you want to submit a patch via email:</p>
 <ul>
 <li>Send an email with the patch to the developers or the developer list.</li>
