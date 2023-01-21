@@ -227,9 +227,10 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 			Create a local overlay via layman <a href="https://wiki.gentoo.org/wiki/Ebuild_repository#Layman">wiki.gentoo.org/wiki/Ebuild_repository#Layman</a>
 		</li>
 		<li>
-			After successful <code>make distcheck</code> move ebuild file from <code>data/</code> to <code>/usr/local/portage/gnome-extra/gnome-commander/</code><br>
+			After successful <code>meson dist -C
+			builddir</code> move the ebuild file from <code>builddir/data/</code> to <code>/usr/local/portage/gnome-extra/gnome-commander/</code><br>
 			<code>cd /usr/local/portage/gnome-extra/gnome-commander</code><br>
-			check ebuild and create manifest: <code>repoman manifest</code><br>
+			check ebuild and create manifest: <code>pkgdev manifest</code><br>
 			Perform <code>eix-update</code> if needed.
 		</li>
 		<li>
@@ -240,9 +241,9 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 			Look for git pull request policy at <a href="https://www.gentoo.org/glep/glep-0066.html">gentoo.org/glep/glep-0066.html</a>
 		</li>
 		<li>
-		   Use repoman or pkgcheck to test the new ebuild for errors or style issues from inside the folder where the new Manifest
-		   is located in the local gentoo repository. Example: <code>repoman -dx full</code> or
-		   <code>pkgcheck scan gnome-commander-1.12.1.ebuild</code> and finally <code>repoman commit</code> to prepare a commit to your repo.
+		   Use pkgcheck to test the new ebuild for errors or style issues from inside the folder where the new Manifest
+		   is located in the local gentoo repository:
+		   <code>pkgcheck scan gnome-commander-1.16.0.ebuild</code> and finally <code>pkgcheck commit</code> to prepare a commit to your repo.
 		</li>
 		<li>
 			Create a fork of the Gentoo repo from <a href="https://github.com/gentoo/gentoo">github.com/gentoo/gentoo</a>, clone your fork,
