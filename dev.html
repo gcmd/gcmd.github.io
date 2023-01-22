@@ -104,11 +104,11 @@ also stored in the first line of <code>configure.ac</code>.</p>
 <p>To check out the <abbr title="GNOME Commander">GCMD</abbr> repository
 to your local hard disc, enter the following commands:</p>
 
-<p class="cntr">The instable master branch:<br>
+<p class="cntr">The master branch for development (might be instable):<br>
 <code>git clone https://gitlab.gnome.org/GNOME/gnome-commander.git</code></p>
 
 <p class="cntr">The current stable branch:<br>
-<code>git clone -b gcmd-1-8 https://gitlab.gnome.org/GNOME/gnome-commander.git</code></p>
+<code>git clone -b gcmd-1-16 https://gitlab.gnome.org/GNOME/gnome-commander.git</code></p>
 
 <p>If you already cloned the repository, run <code>git
 pull</code> inside the <kbd>gnome-commander</kbd> directory to get the
@@ -117,7 +117,7 @@ $BRANCH</code>.</p>
 
 <h4>Tips for working with Git</h4>
 <ul>
-<li>Why not automating <code>make</code> and <code>make check</code> before every commit?
+<li>Why not automating <code>meson compile</code> and <code>meson test</code> before every commit?
 Nothing easier than that: Just type the following command when you are in the top directory of the
 <abbr title="GNOME Commander">GCMD</abbr> repository:<br>
 <code>ln -s ../../pre-commit.sh .git/hooks/pre-commit</code><br>
@@ -128,10 +128,13 @@ When you only have a small commit to be made, where no check is necessary, you c
 </ul>
 
 <h2><img class="info" src="img/icons/devices/media-floppy.png" height="32" width="32" alt="Source code"> <a id="build">Building from source</a></h2>
-<p>First, check out the source code as described in the previous section. The next step is the usual <code>./autogen.sh && make && sudo -i make install</code> procedure,
-which should work like a charm. If you are building the code from an unpacked tar archive use <code>./configure</code> instead of <code>./autogen.sh</code>.</p>
-<p>When you install Gnome Commander manually the first time and you discover some errors like <code>/configure: line 4721: GLIB_GSETTINGS: command not found</code> or 
-something similar you have to install some dependencies.</p>
+<p>First, check out the source code as described in the previous
+  section. The next step is <code>meson setup builddir && meson compile
+  -C builddir && meson install -C builddir</code>,
+which should work like a charm.</p>
+<p>When you compile Gnome Commander the first time and you discover some
+  dependency errors, install those dependency libraries through your
+  Linux distribution.</p>
 
 <h2><img class="info" src="img/icons/apps/preferences-desktop-keyboard-shortcuts.png" height="32" width="32" alt="Contributing"> <a id="contr">Contributing by Developing</a></h2>
 <p>If you want to contribute, send in patches, having some useful idea or just some feedback
@@ -177,7 +180,7 @@ above.</p>
 <p>Here you will find the recipe on how to contribute with your new or updated translation:</p>
 <ol>
 <li>Get a fresh copy of the program source (either from Git or snapshot)</li>
-<li>Unpack it and run <code>./autogen.sh</code>.</li>
+<li>Unpack it and run <code>meson setup builddir</code> for some basic checks.</li>
 <li>Update proper LL.po file: go into the <code>po</code> directory
 and run <code>intltool-update LL</code>.</li>
 </ol>
