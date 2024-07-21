@@ -14,7 +14,7 @@ h1 {
     margin-top: 0.2em;
 }
 h2 {
-    background: #ecc73e;
+    background: #C2CBCE;
     border: 1px solid #000;
     color: #111;
     font-family: serif;
@@ -194,7 +194,7 @@ c1 {
     border-bottom: 1px solid #000;
 }
 #infor {
-    background: #CAE2E8 none repeat scroll 0 0;
+    background: #E8F3F8 none repeat scroll 0 0;
     border: 1px solid #000;
     color: #000;
     float: right;
