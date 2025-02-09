@@ -204,7 +204,7 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 <h2><img class="info" src="img/icons//devices/network-wireless.png" height="32" width="32" alt="Making a release"><a id="release">Making a release</a></h2>
 	<ul>
 		<li>
-			After version 1.14.0 we will provide release information only in the AppData file. When preparing the release, validate the file through <code>appstream-util validate data/org.gnome.gnome-commander.appdata.xml.in</code>.
+			When preparing the release, update and validate the AppData file through <code>appstream-util validate data/org.gnome.gnome-commander.appdata.xml.in</code>.
 		</li>
 		<li>
 			Take note of <a href="https://handbook.gnome.org/maintainers/making-a-release.html">https://handbook.gnome.org/maintainers/making-a-release.html</a> on the release day
@@ -217,7 +217,7 @@ to start translating for more projects than just <abbr title="GNOME Commander">G
 		</li>
 	</ul>
 
-	<b>Testing/Creating a Gentoo ebuild</b><br>
+	<b>Testing/Creating a Gentoo ebuild - in case you are the maintainer of the gentoo ebuild</b><br>
 	<ul>
 		<li>
 			Create a local overlay via layman <a href="https://wiki.gentoo.org/wiki/Ebuild_repository#Layman">wiki.gentoo.org/wiki/Ebuild_repository#Layman</a>
