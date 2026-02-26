@@ -15,7 +15,7 @@ compilation warnings.
 To overcome this problem we created the new Git branch
 <code>ConvertWarningsToErrors</code> some days ago.
 
-This branch is derived from the master branch and its first commit is
+This branch is derived from the main branch and its first commit is
 <code>2ecd245</code>. Here, we set up configure.ac and all Makefiles to convert all
 compilation warnings into compiler errors. This will force us to fix
 each warning to successfully compile GCMD in the end.
@@ -55,7 +55,7 @@ Together we can do it!
 **Update** [29. April 2017]: **All GCC compiler warnings fixed**
 
 All compilation warnings in branch ConvertWarningsToErrors
-have been fixed and all related commits have been merged into the master branch. This
+have been fixed and all related commits have been merged into the main branch. This
 task can be regarded as fixed now.
 
 **Update** [30. January 2022]:
